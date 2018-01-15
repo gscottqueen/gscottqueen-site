@@ -1,6 +1,11 @@
 <template>
   <div class="not-found">
+    <div class="top">
+      <h1>{{ header }}</h1>
+    </div>
+    <div class="bottom">
       <h2>{{ msg }}</h2>
+    </div>
   </div>
 </template>
 
@@ -9,7 +14,8 @@ export default {
   name: 'NotFound',
   data() {
     return {
-      msg: '404 Not Found.',
+      header: '404',
+      msg: 'Sorry about that...',
     };
   },
 };
@@ -20,8 +26,45 @@ export default {
 
 .ultra {
 
-  h2{
-    font-weight: normal;
+  .not-found {
+
+    .top {
+    padding: 5% 10% 0;
+
+      h1 {
+        font-size: 90px;
+      }
+
+    }
+
+    .bottom {
+    padding: 0 10% 0;
+
+      h2{
+        font-weight: normal;
+      }
+
+    }
+
+  }
+
+}
+
+//dark-theme
+
+.neo-noir {
+
+  .not-found {
+
+    .top {
+
+      h1 {
+        color: #afeeee;
+        text-shadow:  0 0 14px #fff, 0 0 16px #fff, 0 0 18px #FF1177, 0 0 20px #FF1177;
+      }
+
+    }
+
   }
 
 }
