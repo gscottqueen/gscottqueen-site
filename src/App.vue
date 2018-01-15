@@ -4,6 +4,8 @@
     <footer>
       <p>Front End by G. Scott Queen.</p>
       <button @click="darkTheme()">Neo-Noir</button>
+        <router-link :to="'/'" >Hello World</router-link>
+        <router-link :to="'portfolio'">Portfolio</router-link>
     </footer>
   </div>
 </template>
@@ -39,6 +41,20 @@ footer {
   padding: 5% 10%;
   position: absolute;
   bottom: 0;
+}
+
+a {
+  color: white;
+  margin-left: 20px;
+  text-decoration-line: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+a.router-link-exact-active {
+  text-decoration-line: underline;
 }
 
 button {

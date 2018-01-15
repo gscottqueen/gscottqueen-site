@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="portfolio">
     <div class="top">
       <h1>{{ header }}</h1>
     </div>
@@ -11,11 +11,11 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Portfolio',
   data() {
     return {
-      header: 'Hello World.',
-      msg: 'This is a new WIP, and exist as an experiment in design, expereince, and creativity.',
+      header: 'Portfolio.',
+      msg: 'Attempts at making ideas a reality.',
     };
   },
 };
@@ -26,7 +26,7 @@ export default {
 
 .ultra {
 
-  .hello {
+  .portfolio {
 
     .top {
     padding: 5% 10% 0;
@@ -54,7 +54,7 @@ export default {
 
 .neo-noir {
 
-  .hello {
+  .portfolio {
 
     .top {
 
