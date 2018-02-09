@@ -6,6 +6,7 @@
       <button @click="darkTheme()">Neo-Noir</button>
         <router-link :to="'/'" >Hello World</router-link>
         <router-link :to="'portfolio'">Portfolio</router-link>
+        <router-link :to="'not-found'">404</router-link>
     </footer>
   </div>
 </template>

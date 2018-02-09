@@ -5,6 +5,7 @@
     </div>
     <div class="bottom">
       <h2>{{ msg }}</h2>
+      <router-link :to="'/'" >Head back home?</router-link>
     </div>
   </div>
 </template>
@@ -42,6 +43,10 @@ export default {
 
       h2{
         font-weight: normal;
+      }
+
+      a {
+        margin-left: 0;
       }
 
     }

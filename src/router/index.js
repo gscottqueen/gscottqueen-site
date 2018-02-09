@@ -20,7 +20,7 @@ export default new Router({
       component: Portfolio,
     },
     {
-      path: '/*',
+      path: '*',
       name: 'not-found',
       component: NotFound,
     },
