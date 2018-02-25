@@ -8,6 +8,7 @@ const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+const stylish = require('webpack-stylish')
 const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
@@ -45,6 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
+    new stylish(),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
@@ -55,7 +57,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true
+      inject: true,
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
