@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'portfolio-cards',
+  name: 'project-cards',
   data() {
     return {
       fullWidth: window.innerWidth,

@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li><router-link :to="'/'">Hello World</router-link></li>
-      <li><router-link :to="'portfolio'">Projects</router-link></li>
+      <li><router-link :to="'projects'">Projects</router-link></li>
       <!-- <li><router-link :to="'not-found'">404</router-link></li> -->
     </ul>
   </nav>

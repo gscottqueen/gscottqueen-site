@@ -1,24 +1,24 @@
 <template>
-  <div class="portfolio">
+  <div class="projects">
     <div class="top">
       <page-title></page-title>
     </div>
     <div class="bottom">
       <h2>{{ msg }}</h2>
-      <portfolio-cards></portfolio-cards>
+      <project-cards></project-cards>
     </div>
   </div>
 </template>
 
 <script>
 import PageTitle from '@/components/01-atoms/PageTitle';
-import PortfolioCards from '@/components/02-molecules/PortfolioCards';
+import ProjectCards from '@/components/02-molecules/ProjectCards';
 
 export default {
-  name: 'Portfolio',
+  name: 'Projects',
   components: {
     PageTitle,
-    PortfolioCards,
+    ProjectCards,
   },
   data() {
     return {

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
-import Portfolio from '@/components/Portfolio';
+import Projects from '@/components/Projects';
 import NotFound from '@/components/NotFound';
 
 Vue.use(Router);
@@ -16,13 +16,13 @@ export default new Router({
       meta: { title: 'Hello World' },
     },
     {
-      path: '/portfolio',
-      name: 'portfolio',
-      component: Portfolio,
-      meta: { title: 'Portfolio' },
+      path: '/projects',
+      name: 'projects',
+      component: Projects,
+      meta: { title: 'Projects' },
     },
     {
-      path: '*',
+      path: '/*/',
       name: 'not-found',
       component: NotFound,
       meta: { title: 'Error' },
