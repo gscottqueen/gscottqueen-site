@@ -3,26 +3,29 @@
     <router-view/>
     <footer>
       <p>Front End by G. Scott Queen.</p>
-      <button @click="darkTheme()">Neo-Noir</button>
-        <router-link :to="'/'" >Hello World</router-link>
-        <router-link :to="'portfolio'">Portfolio</router-link>
-        <router-link :to="'not-found'">404</router-link>
+      <theme-toggle></theme-toggle>
+      <footer-navigation></footer-navigation>
     </footer>
   </div>
 </template>
 
 <script>
+import ThemeToggle from '@/components/01-atoms/ThemeToggle';
+import FooterNavigation from '@/components/02-molecules/FooterNavigation';
+
 export default {
   name: 'App',
-  methods: {
-    darkTheme: function darkTheme() {
-      document.body.classList.toggle('neo-noir');
-    },
+  components: {
+    ThemeToggle,
+    FooterNavigation,
+  },
+  beforeMount() {
+    window.scrollTo(0, 0);
   },
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,29 +43,33 @@ body.neo-noir {
 
 footer {
   padding: 5% 10%;
-  position: absolute;
-  bottom: 0;
+}
+
+// TODO: set up a proper grid
+.top {
+  padding: 5% 10% 0;
+}
+
+.bottom {
+  padding: 0 10% 0;
 }
 
 a {
   color: white;
-  margin-left: 20px;
   text-decoration-line: none;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+
 }
 
-a:hover {
-  text-decoration-line: underline;
-}
+// TODO: get global variables working
+// // breakpoint variables
+// $mobile: 320px;
+// //at tablet portriat we should already be getting the desktop experience
+// $tablet: 690px;
+// //any adjustments larger than tablet landscape should should use this breakpoint
+// $desktop: 1025px;
 
-a.router-link-exact-active {
-  text-decoration-line: underline;
-}
-
-button {
-  border: solid #fff 1px;
-  padding: 5px 10px;
-  background: none;
-  color: white;
-  cursor: pointer;
-}
 </style>

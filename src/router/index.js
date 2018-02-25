@@ -13,16 +13,27 @@ export default new Router({
       path: '/',
       name: 'hello-world',
       component: HelloWorld,
+      meta: { title: 'Hello World' },
     },
     {
       path: '/portfolio',
       name: 'portfolio',
       component: Portfolio,
+      meta: { title: 'Portfolio' },
     },
     {
       path: '*',
       name: 'not-found',
       component: NotFound,
+      meta: { title: 'Error' },
     },
   ],
+  methods: {
+    setTitle: function setTitle() {
+      this.routes.beforeEach((to, from, next) => {
+        document.title = to.meta.title;
+        next();
+      });
+    },
+  },
 });
