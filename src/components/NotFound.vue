@@ -1,7 +1,7 @@
 <template>
   <div class="not-found">
     <div class="top">
-      <h1>{{ header }}</h1>
+      <page-title></page-title>
     </div>
     <div class="bottom">
       <h2>{{ msg }}</h2>
@@ -11,66 +11,21 @@
 </template>
 
 <script>
+import PageTitle from '@/components/01-atoms/PageTitle';
+
 export default {
   name: 'NotFound',
+  components: {
+    PageTitle,
+  },
   data() {
     return {
-      header: '404',
       msg: 'Sorry about that...',
     };
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss">
 
-.ultra {
-
-  .not-found {
-
-    .top {
-    padding: 5% 10% 0;
-
-      h1 {
-        font-size: 90px;
-      }
-
-    }
-
-    .bottom {
-    padding: 0 10% 0;
-
-      h2{
-        font-weight: normal;
-      }
-
-      a {
-        margin-left: 0;
-      }
-
-    }
-
-  }
-
-}
-
-//dark-theme
-
-.neo-noir {
-
-  .not-found {
-
-    .top {
-
-      h1 {
-        color: #afeeee;
-        text-shadow:  0 0 14px #fff, 0 0 16px #fff, 0 0 18px #FF1177, 0 0 20px #FF1177;
-      }
-
-    }
-
-  }
-
-}
 </style>
