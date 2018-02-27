@@ -3,7 +3,8 @@
     <ul>
       <li><router-link :to="'/'">Hello World</router-link></li>
       <li><router-link :to="'/projects'">Projects</router-link></li>
-      <li><router-link :to="'/projects/nested'">Nested</router-link></li>
+      <li><router-link :to="'/case-study'">Case Study</router-link></li>
+      <li><router-link :to="'/case-study/study-1'">Study-1</router-link></li>
       <li><router-link :to="'not-found'">404</router-link></li>
     </ul>
   </nav>

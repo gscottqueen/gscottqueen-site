@@ -12,7 +12,7 @@
 
 <script>
 import PageTitle from '@/components/01-atoms/PageTitle';
-import ProjectCards from '@/components/02-molecules/ProjectCards';
+import ProjectCards from '@/components/03-organisims/ProjectCards';
 
 export default {
   name: 'Projects',
