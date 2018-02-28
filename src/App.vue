@@ -1,23 +1,26 @@
 <template>
   <div id="app">
+    <navigator></navigator>
     <router-view/>
     <footer>
       <p>Front End by G. Scott Queen.</p>
       <theme-toggle></theme-toggle>
-      <footer-navigation></footer-navigation>
+      <navigation></navigation>
     </footer>
   </div>
 </template>
 
 <script>
 import ThemeToggle from '@/components/01-atoms/ThemeToggle';
-import FooterNavigation from '@/components/02-molecules/FooterNavigation';
+import Navigation from '@/components/02-molecules/Navigation';
+import Navigator from '@/components/03-organisims/Navigator';
 
 export default {
   name: 'App',
   components: {
     ThemeToggle,
-    FooterNavigation,
+    Navigation,
+    Navigator,
   },
   beforeMount() {
     window.scrollTo(0, 0);
@@ -31,6 +34,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
+}
+
+body {
+  margin: 0;
 }
 
 body.ultra {

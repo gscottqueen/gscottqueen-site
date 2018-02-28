@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul>
+  <nav class="main-nav--items">
+    <ul class="main-nav--links">
       <li><router-link :to="'/'">Hello World</router-link></li>
       <li><router-link :to="'/projects'">Projects</router-link></li>
       <li><router-link :to="'/case-study'">Case Study</router-link></li>
@@ -12,11 +12,12 @@
 
 <script>
 export default {
-  name: 'footer-navigation',
+  name: 'navigation',
 };
 </script>
 
 <style lang="scss">
+
 nav {
 
   ul {
