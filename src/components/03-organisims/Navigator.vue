@@ -5,7 +5,7 @@
   class="main-nav--icon el-icon-more"
   v-on:click="toggleMenu"
   v-on:keyup="toggleMenu"></i>
-  <navigation v-bind:class="{ invisible: isVisible }"></navigation>
+  <navigation></navigation>
 </div>
 </template>
 
@@ -19,12 +19,13 @@ export default {
   },
   data() {
     return {
-      isVisible: true,
+      isVisible: '',
     };
   },
   methods: {
     toggleMenu: function toggleMenu() {
-      this.isVisible = !this.isVisible;
+      const nav = document.getElementById('navigation');
+      nav.classList.toggle('invisible');
       document.body.classList.toggle('fixed');
     },
   },
@@ -82,4 +83,26 @@ export default {
   }
 
 }
+
+.neo-noir {
+
+  .main-nav  {
+
+    .main-nav--icon {
+      color: #ffecfe;
+    }
+
+    .main-nav--items .main-nav--links {
+    background: #1E1D2E;
+
+    a {
+      color: #afeeee;
+      text-shadow:  0 0 14px #fff, 0 0 16px #fff, 0 0 18px #FF1177, 0 0 20px #FF1177;
+    }
+
+  }
+
+}
+
+  }
 </style>

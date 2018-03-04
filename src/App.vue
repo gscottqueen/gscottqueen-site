@@ -5,7 +5,7 @@
     <footer>
       <p>Front End by G. Scott Queen.</p>
       <theme-toggle></theme-toggle>
-      <navigation></navigation>
+      <!-- <navigation></navigation> -->
     </footer>
   </div>
 </template>
@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-style: normal;
