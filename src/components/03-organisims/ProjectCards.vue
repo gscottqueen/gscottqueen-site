@@ -10,9 +10,31 @@
         <img src="../../assets/wild-vibez-317184.jpg" class="image">
         <div style="padding: 14px;">
           <span>Ball So Hard</span>
-          <div class="card__bottom clearfix">
-            <time class="time">{{ currentDate }}</time>
-            <el-button type="text" class="button">button</el-button>
+          <div
+          class="card__bottom clearfix">
+            <!-- <time class="time">{{ currentDate }}</time> -->
+            <a href="https://github.com/gscottqueen" target="_blank">
+              <el-tooltip
+              class="tool-tip"
+              effect="dark"
+              content="Heroku"
+              placement="top">
+                <el-button
+                type="text"
+                class="button button--view"
+                aria-label="See it in deeployed on Heroku"
+                target="_blank"></el-button></el-tooltip></a>
+            <a href="#" target="_blank">
+              <el-tooltip
+              class="tool-tip"
+              effect="dark"
+              content="GitHub"
+              placement="top">
+                <el-button
+                type="text"
+                class="button button--git-hub"
+                aria-label="See the code on GitHub"
+                target="_blank"></el-button></el-tooltip></a>
           </div>
         </div>
       </el-card>
@@ -76,9 +98,32 @@ export default {
   color: #999;
 }
 
+.el-tooltip.tool-tip {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #999;
+}
+
 .button {
   padding: 0;
   float: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+
+  &--git-hub {
+    background-image: url('../../assets/if_git-commit_298786.svg');
+  }
+
+  &--view {
+    background-image: url('../../assets/if_eye-24_103177.svg');
+    height: 30px;
+    position: relative;
+    top: 2px;
+  }
+
 }
 
 .image {
