@@ -25,7 +25,7 @@ export default {
   methods: {
     toggleMenu: function toggleMenu() {
       this.isVisible = !this.isVisible;
-      document.body.classList.add('fixed');
+      document.body.classList.toggle('fixed');
     },
   },
 };
