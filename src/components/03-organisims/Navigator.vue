@@ -1,6 +1,10 @@
 <template>
 <div class="main-nav">
-  <i class="main-nav--icon el-icon-more" v-on:click="toggleMenu" v-on:keyup="toggleMenu"></i>
+  <i
+  tabindex="0"
+  class="main-nav--icon el-icon-more"
+  v-on:click="toggleMenu"
+  v-on:keyup="toggleMenu"></i>
   <navigation v-bind:class="{ invisible: isVisible }"></navigation>
 </div>
 </template>
