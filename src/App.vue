@@ -51,6 +51,14 @@ body.neo-noir {
   background-color: #1E1D2E;
 }
 
+body.fixed {
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: fixed !important;
+  z-index: 0 !important;
+}
+
 footer {
   padding: 5% 10%;
 }
