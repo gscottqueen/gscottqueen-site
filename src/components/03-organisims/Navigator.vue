@@ -59,6 +59,17 @@ export default {
   .main-nav--items {
     position: absolute;
 
+      &:after {
+        content: '';
+        background-image: url('../../assets/circuit-board.svg');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        opacity: .03;
+      }
+
     .main-nav--links {
       display: flex;
       flex-direction: column;
@@ -67,37 +78,23 @@ export default {
       width: 100vw;
       height: 100vh;
       margin: 0;
-      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-      background-size: 400% 400%;
-      -webkit-animation: Gradient 20s ease infinite;
-      -moz-animation: Gradient 20s ease infinite;
-      animation: Gradient 20s ease infinite;
+      background: linear-gradient(-45deg, #00ffc3, #646AF4);
+      background-size: 100% 100%;
       list-style: none;
 
-      /*our animation frames*/
-      @keyframes Gradient {
-        0% {
-          background-position: 0% 50%
-        }
+      li {
+        z-index: 1;
 
-        50% {
-          background-position: 100% 50%
-        }
+        a {
+          color: #ffffff;
+          font-size: 55px;
+          line-height: 1.2;
+          font-weight: bold;
 
-        100% {
-          background-position: 0% 50%
-        }
+          @media (min-width: 690px) {
+            font-size: 90px;
+          }
 
-      }
-
-      a {
-        color: #ffffff;
-        font-size: 55px;
-        line-height: 1.2;
-        font-weight: bold;
-
-        @media (min-width: 690px) {
-          font-size: 90px;
         }
 
       }
