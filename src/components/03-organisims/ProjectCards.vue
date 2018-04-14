@@ -1,19 +1,21 @@
 <template>
-  <el-row class="card-group--wrapper"
-  :gutter="40">
-    <el-col
-    v-for="(o, index) in 4"
-    :span=span
-    :key="o"
-    :offset="index > 0 ? 0 : 0">
-      <el-card :body-style="{ padding: '0px', border: 'none'}">
+  <!-- <el-row class="card-group--wrapper"
+  :gutter="40"> -->
+    <!-- <el-col
+    :span=span> -->
+    <div class="card-group--wrapper">
+      <el-card
+      :body-style="{ padding: '0px', border: 'none'}"
+      v-for="(project, value, key) in projectsJson"
+      :key="key">
         <img src="../../assets/wild-vibez-317184.jpg" class="image">
         <div style="padding: 14px;">
-          <span>Ball So Hard</span>
+            <dt class="project-title">{{ project.title }}</dt>
+            <dt class="project-description">{{ project.description }}</dt>
+            <dt class="project-tag">{{ project.tags }}</dt>
           <div
           class="card__bottom clearfix">
-            <!-- <time class="time">{{ currentDate }}</time> -->
-            <a href="https://github.com/gscottqueen" target="_blank">
+            <!-- <a :href=project.githublink target="_blank">
               <el-tooltip
               class="tool-tip"
               effect="dark"
@@ -23,8 +25,8 @@
                 type="text"
                 class="button button--view"
                 aria-label="See it in deeployed on Heroku"
-                target="_blank"></el-button></el-tooltip></a>
-            <a href="#" target="_blank">
+                target="_blank"></el-button></el-tooltip></a> -->
+            <a :href=project.githublink target="_blank">
               <el-tooltip
               class="tool-tip"
               effect="dark"
@@ -38,15 +40,19 @@
           </div>
         </div>
       </el-card>
-    </el-col>
-  </el-row>
+    </div>
+    <!-- </el-col> -->
+  <!-- </el-row> -->
 </template>
 
 <script>
+import json from '../../data/projects.json';
+
 export default {
   name: 'project-cards',
   data() {
     return {
+      projectsJson: json,
       fullWidth: window.innerWidth,
       span: 12,
       currentDate: new Date(),
@@ -63,7 +69,7 @@ export default {
     // whenever the document is resized, set the 'fullwidth' variable
       this.fullWidth = window.innerWidth;
 
-      if (this.fullWidth < 690) {
+      if (this.fullWidth < 900) {
         this.span = 24;
       } else {
         this.span = 12;
@@ -77,6 +83,7 @@ export default {
 
 .card-group--wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
 
@@ -89,8 +96,23 @@ export default {
 .el-card {
   border: 0;
   border-radius: 0;
-  // min-width: 320px;
+  max-width: 450px;
   margin: 40px 0;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-tag {
+  font-style: italic;
+  font-size: 12px;
 }
 
 .time {

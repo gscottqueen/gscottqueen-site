@@ -1,12 +1,14 @@
 <template>
-<div class="main-nav">
-  <i
-  tabindex="0"
-  class="main-nav--icon"
-  v-on:click="toggleMenu"
-  v-on:keyup="toggleMenu"></i>
-  <navigation></navigation>
-</div>
+  <transition>
+    <div class="main-nav">
+      <i
+      tabindex="0"
+      class="main-nav--icon"
+      v-on:click="toggleMenu"
+      v-on:keyup="toggleMenu"></i>
+      <navigation></navigation>
+    </div>
+  </transition>
 </template>
 
 <script>
