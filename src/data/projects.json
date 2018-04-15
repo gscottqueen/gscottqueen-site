@@ -1,25 +1,25 @@
 {
   "marvelwar": {
     "applink": "",
-    "description": "Consuming the Marvel API to recreate the War card game with Marvel characters.",
+    "description": "Consuming the Marvel API to recreate the War card game.",
     "githublink": "https://github.com/gscottqueen/marvel-war",
-    "hero": "./url",
+    "hero": "mavel-war.jpg",
     "tags": "Vue, Open API",
     "title": "Marvel War"
     },
   "spaceinvaders": {
     "applink": "",
-    "description": "A Space reservation system, with a throwback inspiration to the 80's classic. Built in collaboration with g3r4.",
+    "description": "A space reservation system, with a throwback inspiration to the 80's classic.",
     "githublink": "https://github.com/gscottqueen/space-invaders-node-vue",
-    "hero":"./url",
+    "hero":"space-invaders-ipad.png",
     "tags": "Node API, Vue",
     "title":"Space Invaders"
     },
   "written": {
     "applink": "",
-    "description": "Screen Writters Script Software.",
+    "description": "A lightweight butalist software for writing simple movie scripts.",
     "githublink": "https://github.com/gscottqueen/written",
-    "hero":"./url",
+    "hero":"written-logo.jpg",
     "tags": "React",
     "title":"Written"
     }

@@ -8,8 +8,8 @@
       :body-style="{ padding: '0px', border: 'none'}"
       v-for="(project, value, key) in projectsJson"
       :key="key">
-        <img src="../../assets/wild-vibez-317184.jpg" class="image">
-        <div style="padding: 14px;">
+        <img :src="`static/img/${project.hero}`" class="image">
+        <div class="card-detail--wrapper" style="padding: 14px;">
             <dt class="project-title">{{ project.title }}</dt>
             <dt class="project-description">{{ project.description }}</dt>
             <dt class="project-tag">{{ project.tags }}</dt>
@@ -85,19 +85,26 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
-
-  @media (min-width: 690px) {
-    flex-direction: row;
-  }
-
 }
 
 .el-card {
   border: 0;
   border-radius: 0;
-  max-width: 450px;
+  max-width: 100%;
   margin: 40px 0;
+
+  @media (min-width: 990px) {
+    max-width: 48%;
+  }
+
+  @media (min-width: 1690px) {
+    max-width: 31%;
+  }
+
+}
+
+.card-detail--wrapper {
+  position: relative;
 }
 
 .project-title {
@@ -128,7 +135,9 @@ export default {
 
 .button {
   padding: 0;
-  float: right;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
@@ -149,7 +158,8 @@ export default {
 }
 
 .image {
-  width: 100%;
+  width: auto;
+  height: 550px;
   display: block;
 }
 
