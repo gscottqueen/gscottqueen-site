@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/04-pages/HelloWorld';
 import Projects from '@/components/04-pages/Projects';
-import ProjectCards from '@/components/03-organisims/ProjectCards';
+// import ProjectCards from '@/components/03-organisims/ProjectCards';
 import NotFound from '@/components/04-pages/NotFound';
 import CaseStudy from '@/components/04-pages/CaseStudy';
 
@@ -13,7 +13,19 @@ const routes = [
     path: '/',
     component: HelloWorld,
     name: 'hello-world',
-    meta: { title: 'Hello World' },
+    meta: {
+      title: 'Hello World',
+      metaTags: [
+        {
+          name: 'home',
+          content: 'Projects, in progress and completed.',
+        },
+        {
+          property: 'og:description',
+          content: 'Projects, in progress and completed.',
+        },
+      ],
+    },
   },
   {
     path: '/projects',
@@ -50,18 +62,52 @@ const routes = [
     },
     children: [
       {
-        path: '/case-study/study-1',
-        component: ProjectCards,
+        path: '/case-study/written',
+        component: CaseStudy,
         meta: {
-          title: 'Study 1',
+          title: 'Written',
           metaTags: [
             {
-              name: 'case-study-1',
-              content: 'NKOTB',
+              name: 'case-study',
+              content: 'A lightweight brutalist software for writing simple movie scripts.',
             },
             {
               property: 'og:description',
-              content: 'NKOTB',
+              content: 'A lightweight brutalist software for writing simple movie scripts.',
+            },
+          ],
+        },
+      },
+      {
+        path: '/case-study/space-invaders',
+        component: CaseStudy,
+        meta: {
+          title: 'Space Invaders',
+          metaTags: [
+            {
+              name: 'case-study',
+              content: 'A space reservation system, with a throwback inspiration to the classic.',
+            },
+            {
+              property: 'og:description',
+              content: 'A space reservation system, with a throwback inspiration to the classic.',
+            },
+          ],
+        },
+      },
+      {
+        path: '/case-study/marvel-war',
+        component: CaseStudy,
+        meta: {
+          title: 'Marvel War',
+          metaTags: [
+            {
+              name: 'case-study',
+              content: 'Consuming the Marvel API to recreate the War card game.',
+            },
+            {
+              property: 'og:description',
+              content: 'Consuming the Marvel API to recreate the War card game.',
             },
           ],
         },

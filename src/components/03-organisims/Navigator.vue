@@ -1,5 +1,4 @@
 <template>
-  <transition>
     <div class="main-nav">
       <i
       tabindex="0"
@@ -8,7 +7,6 @@
       v-on:keyup="toggleMenu"></i>
       <navigation></navigation>
     </div>
-  </transition>
 </template>
 
 <script>
@@ -42,20 +40,22 @@ export default {
 
 .main-nav, nav {
   z-index: 9998;
+  position: sticky;
+  top: 0;
 
   .main-nav--icon {
     position: absolute;
     right: 0;
     top: 10px;
     right: 10px;
-    font-size: 40px;
     cursor: pointer;
     z-index: 9999;
     background-image: url('../../assets/if_essential_set_menu_1110965.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
+    margin: 1rem;
   }
 
   .main-nav--items {

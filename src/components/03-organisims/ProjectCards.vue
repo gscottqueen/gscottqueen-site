@@ -1,48 +1,40 @@
 <template>
-  <!-- <el-row class="card-group--wrapper"
-  :gutter="40"> -->
-    <!-- <el-col
-    :span=span> -->
-    <div class="card-group--wrapper">
-      <el-card
-      :body-style="{ padding: '0px', border: 'none'}"
-      v-for="(project, value, key) in projectsJson"
-      :key="key">
-        <img :src="`static/img/${project.hero}`" class="image">
-        <div class="card-detail--wrapper" style="padding: 14px;">
-            <dt class="project-title">{{ project.title }}</dt>
-            <dt class="project-description">{{ project.description }}</dt>
-            <dt class="project-tag">{{ project.tags }}</dt>
-          <div
-          class="card__bottom clearfix">
-            <!-- <a :href=project.githublink target="_blank">
-              <el-tooltip
-              class="tool-tip"
-              effect="dark"
-              content="Heroku"
-              placement="top">
-                <el-button
-                type="text"
-                class="button button--view"
-                aria-label="See it in deeployed on Heroku"
-                target="_blank"></el-button></el-tooltip></a> -->
-            <a :href=project.githublink target="_blank">
-              <el-tooltip
-              class="tool-tip"
-              effect="dark"
-              content="GitHub"
-              placement="top">
-                <el-button
-                type="text"
-                class="button button--git-hub"
-                aria-label="See the code on GitHub"
-                target="_blank"></el-button></el-tooltip></a>
-          </div>
+  <div class="card-group--wrapper">
+    <el-card
+    :body-style="{ padding: '0px', border: 'none'}"
+    v-for="(project, value, key) in projectsJson"
+    :key="key">
+      <img :src="`static/img/${project.hero}`" class="image">
+      <div class="card-detail--wrapper" style="padding: 14px;">
+          <dt class="project-title">{{ project.title }}</dt>
+          <dt class="project-description">{{ project.description }}</dt>
+          <dt class="project-tag">{{ project.tags }}</dt>
+        <div
+        class="card__bottom clearfix">
+          <router-link :to="`${project.route}`">
+            <el-tooltip
+            class="tool-tip"
+            effect="dark"
+            content="Quick Look"
+            placement="top">
+              <el-button
+              type="text"
+              class="button button--view"
+              target="_blank"></el-button></el-tooltip></router-link>
+          <a :href=project.githublink target="_blank">
+            <el-tooltip
+            class="tool-tip"
+            effect="dark"
+            content="GitHub"
+            placement="top">
+              <el-button
+              type="text"
+              class="button button--git-hub"
+              target="_blank"></el-button></el-tooltip></a>
         </div>
-      </el-card>
-    </div>
-    <!-- </el-col> -->
-  <!-- </el-row> -->
+      </div>
+    </el-card>
+  </div>
 </template>
 
 <script>
@@ -111,6 +103,7 @@ export default {
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 700;
+  max-width: 65%;
 }
 
 .project-description {
@@ -150,17 +143,21 @@ export default {
 
   &--view {
     background-image: url('../../assets/if_eye-24_103177.svg');
-    height: 30px;
-    position: relative;
-    top: 2px;
+    right: 4rem;
+    width: 30px;
+    top: 1.2rem;
   }
 
 }
 
 .image {
   width: auto;
-  height: 550px;
+  height: 450px;
   display: block;
+
+  @media (min-width: 990px) {
+    height: 550px;
+  }
 }
 
 .clearfix:before,

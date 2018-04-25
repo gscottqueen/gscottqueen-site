@@ -4,6 +4,7 @@
     "description": "Consuming the Marvel API to recreate the War card game.",
     "githublink": "https://github.com/gscottqueen/marvel-war",
     "hero": "mavel-war.jpg",
+    "route": "/case-study/marvel-war",
     "tags": "Vue, Open API",
     "title": "Marvel War"
     },
@@ -12,15 +13,17 @@
     "description": "A space reservation system, with a throwback inspiration to the 80's classic.",
     "githublink": "https://github.com/gscottqueen/space-invaders-node-vue",
     "hero":"space-invaders-ipad.png",
+    "route": "/case-study/space-invaders",
     "tags": "Node API, Vue",
     "title":"Space Invaders"
     },
   "written": {
     "applink": "",
-    "description": "A lightweight butalist software for writing simple movie scripts.",
+    "description": "A lightweight brutalist software for writing simple movie scripts.",
     "githublink": "https://github.com/gscottqueen/written",
-    "hero":"written-logo.jpg",
+    "hero": "written-logo.jpg",
+    "route": "/case-study/written",
     "tags": "React",
-    "title":"Written"
+    "title": "Written"
     }
   }
