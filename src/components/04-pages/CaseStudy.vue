@@ -4,13 +4,13 @@
       v-for="(project, value, key) in projectsJson"
       :key="key">
       <div v-if="route === project.route">
+        <div class="case-study--bg-image">
+         <img :src="`../static/img/${project.hero}`">
+        </div>
         <div class="case-study--content">
           <h1 class="case-study--project-title">{{ project.title }}</h1>
           <dt class="case-study--project-description">{{ project.description }}</dt>
           <dt class="case-study--project-tag">{{ project.tags }}</dt>
-        </div>
-        <div class="case-study--bg-image">
-         <img :src="`../static/img/${project.hero}`">
         </div>
       </div>
     </div>
@@ -44,15 +44,17 @@ export default {
 <style lang="scss">
 
 .case-study {
-  overflow: hidden;
   position: relative;
   background-color: #fff;
 
+  @media (min-width: 990px) {
+    overflow: hidden;
+  }
+
   &--content {
     z-index: 1;
-    position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
     background-color: white;
     padding: 2rem 1rem;
     color: black;
@@ -62,6 +64,7 @@ export default {
       left: 40vw;
       top: 20vh;
       padding: 4rem 0 4rem 4rem;
+      position: absolute;
     }
   }
 
