@@ -53,6 +53,7 @@ export default {
     background-image: url('../../assets/if_essential_set_menu_1110965.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    filter: drop-shadow(-9px 5px 3.75rem #0000007d);
     height: 40px;
     width: 40px;
     margin: 1rem;
@@ -60,17 +61,6 @@ export default {
 
   .main-nav--items {
     position: absolute;
-
-      &:after {
-        content: '';
-        background-image: url('../../assets/circuit-board.svg');
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 0;
-        opacity: .03;
-      }
 
     .main-nav--links {
       display: flex;
@@ -80,7 +70,7 @@ export default {
       width: 100vw;
       height: 100vh;
       margin: 0;
-      background: linear-gradient(-45deg, #00ffc3, #646AF4);
+      background: #f0f0f1;
       background-size: 100% 100%;
       list-style: none;
 
@@ -88,7 +78,9 @@ export default {
         z-index: 1;
 
         a {
-          color: #ffffff;
+          color: white;
+          opacity: 0.3;
+          text-shadow: -9px 5px 3.75rem #0000007d;
           font-size: 55px;
           line-height: 1.2;
           font-weight: bold;
@@ -118,7 +110,19 @@ export default {
     .main-nav--items .main-nav--links {
     background: #1E1D2E;
 
+       &:after {
+        content: '';
+        background-image: url('../../assets/circuit-board.svg');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        opacity: .03;
+      }
+
     a {
+      opacity: 1;
       color: #afeeee;
       text-shadow:  0 0 14px #fff, 0 0 16px #fff, 0 0 18px #FF1177, 0 0 20px #FF1177;
     }

@@ -5,7 +5,7 @@
     "githublink": "https://github.com/gscottqueen/marvel-war",
     "hero": "mavel-war.jpg",
     "route": "/case-study/marvel-war",
-    "tags": "Vue, Open API",
+    "tags": ["Vue", "Open API"],
     "title": "Marvel War"
     },
   "spaceinvaders": {
@@ -14,7 +14,7 @@
     "githublink": "https://github.com/gscottqueen/space-invaders-node-vue",
     "hero":"space-invaders-ipad.png",
     "route": "/case-study/space-invaders",
-    "tags": "Node API, Vue",
+    "tags": ["Vue", "Open API"],
     "title":"Space Invaders"
     },
   "written": {
@@ -23,7 +23,7 @@
     "githublink": "https://github.com/gscottqueen/written",
     "hero": "written-logo.jpg",
     "route": "/case-study/written",
-    "tags": "React",
+    "tags": ["Vue", "Open API"],
     "title": "Written"
     }
   }

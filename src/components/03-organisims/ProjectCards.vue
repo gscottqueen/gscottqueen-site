@@ -8,7 +8,11 @@
       <div class="card-detail--wrapper" style="padding: 14px;">
           <dt class="project-title">{{ project.title }}</dt>
           <dt class="project-description">{{ project.description }}</dt>
-          <dt class="project-tag">{{ project.tags }}</dt>
+          <ul class="project-tag">
+            <li v-for="(tag, key) in project.tags" v-bind:key="key">
+              {{ tag }}
+            </li>
+          </ul>
         <div
         class="card__bottom clearfix">
           <router-link :to="`${project.route}`">
@@ -110,10 +114,22 @@ export default {
   margin-bottom: 10px;
 }
 
-.project-tag {
-  font-style: italic;
-  font-size: 12px;
-}
+  .project-tag {
+    text-transform: lowercase;
+    font-size: small;
+    list-style: none;
+    width: auto;
+    padding: 0;
+    display: flex;
+    color: #1E1D2E;
+
+    li {
+      background-color: #f9f9f9;
+      padding: 2px 10px;
+      margin-right: .5rem;
+      border-radius: 30px;
+    }
+  }
 
 .time {
   font-size: 13px;

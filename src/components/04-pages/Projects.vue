@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      msg: 'Attempts at making ideas a reality.',
+      msg: 'I like to keep a few ideas going at once. It keeps things interesting; I get to do a good bit of exploring, learning, and creative thinking.',
     };
   },
   beforeMount() {
@@ -32,5 +32,10 @@ export default {
 </script>
 
 <style lang="scss">
+  h2 {
 
+    @media (min-width: 990px) {
+      max-width: 70%;
+    }
+  }
 </style>

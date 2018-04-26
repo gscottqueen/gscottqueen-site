@@ -8,9 +8,15 @@
          <img :src="`../static/img/${project.hero}`">
         </div>
         <div class="case-study--content">
+        <div class="case-study--content-wrapper">
           <h1 class="case-study--project-title">{{ project.title }}</h1>
           <dt class="case-study--project-description">{{ project.description }}</dt>
-          <dt class="case-study--project-tag">{{ project.tags }}</dt>
+          <ul class="case-study--project-tag">
+            <li v-for="(tag, key) in project.tags" v-bind:key="key">
+              {{ tag }}
+            </li>
+          </ul>
+         </div>
         </div>
       </div>
     </div>
@@ -52,19 +58,25 @@ export default {
   }
 
   &--content {
-    z-index: 1;
-    left: 0;
-    top: 0;
+    width: auto;
     background-color: white;
-    padding: 2rem 1rem;
-    color: black;
-    width: 100%;
 
-    @media (min-width: 990px) {
-      left: 40vw;
-      top: 20vh;
-      padding: 4rem 0 4rem 4rem;
-      position: absolute;
+    &-wrapper {
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-color: white;
+      padding: 2rem 10% 2rem 10%;
+      margin-right: 2rem;
+      color: black;
+
+      @media (min-width: 990px) {
+        position: absolute;
+        left: 40vw;
+        top: 20vh;
+        width: 100%;
+        padding: 4rem 0 4rem 4rem;
+      }
     }
   }
 
@@ -84,6 +96,45 @@ export default {
 
     @media (min-width: 690px) {
       font-size: 90px;
+      max-width: 50%;
+    }
+  }
+
+  &--project-tag {
+    text-transform: lowercase;
+    font-size: small;
+    list-style: none;
+    width: auto;
+    padding: 0;
+    display: flex;
+    color: #1E1D2E;
+
+    li {
+      background-color: #f9f9f9;
+      padding: 2px 10px;
+      margin-right: .5rem;
+      border-radius: 30px;
+    }
+  }
+}
+
+//dark-theme
+.neo-noir {
+
+  .case-study {
+
+    &--content {
+      width: 100%;
+      background-color: #1E1D2E;
+
+      &-wrapper {
+       color: white;
+       background-color: #1E1D2E;
+      }
+    }
+
+    &--project-title {
+      color: white;
     }
   }
 }
