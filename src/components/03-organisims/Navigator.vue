@@ -65,7 +65,8 @@ export default {
     .main-nav--links {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
+      padding-top: 15%;
       text-align: center;
       width: 100vw;
       height: 100vh;
