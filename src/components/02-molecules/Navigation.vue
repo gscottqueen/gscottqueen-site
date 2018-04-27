@@ -8,8 +8,8 @@
         <router-link :to="'/'">Home</router-link></li>
       <li v-on:click="toggleMenu">
         <router-link :to="'/projects'">Projects</router-link></li>
-      <!-- <li v-on:click="toggleMenu">
-        <router-link :to="'/'">About</router-link></li> -->
+      <li v-on:click="toggleMenu">
+        <router-link :to="'/about'">About</router-link></li>
     </ul>
   </nav>
 </template>

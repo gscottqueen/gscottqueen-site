@@ -1,0 +1,11 @@
+{
+  "about": {
+    "applink": "",
+    "description": "Front End Developer focused on creating user interfaces for large scale CMS websites and client-side pixel perfect web applications.",
+    "githublink": "https://github.com/gscottqueen/marvel-war",
+    "route": "/about",
+    "hero": "queen.png",
+    "name": "G. Scott Queen",
+    "skills": [ "HTML5", "CSS3", "SASS/SCSS", "Javascript (JSX/ES6)", "Rapid Prototyping", "VueJS", "AngularJS", "React", "jQuery", "Drupal 8", "WordPress", "Django", "Gulp", "NPM", "Webpack", "Heroku", "Pantheon", "WCAG AA ADA", "VSCode", "Adobe Creative Suite", "Sketch", "InVision", "GitHub", "BitBucket", "Docksal", "DrupalVM", "Project Management", "Web Design", "Marketing", "Digital Strategy", "Web Applications", "User Experience", "User Interface Design", "Multimedia", "Brand Management", "Branding & Identity", "Web Content Management" ]
+    }
+  }

@@ -5,6 +5,7 @@ import Projects from '@/components/04-pages/Projects';
 // import ProjectCards from '@/components/03-organisims/ProjectCards';
 import NotFound from '@/components/04-pages/NotFound';
 import CaseStudy from '@/components/04-pages/CaseStudy';
+import About from '@/components/04-pages/About';
 
 Vue.use(Router);
 
@@ -40,6 +41,23 @@ const routes = [
         {
           property: 'og:description',
           content: 'Projects, in progress and completed.',
+        },
+      ],
+    },
+  },
+  {
+    path: '/about',
+    component: About,
+    meta: {
+      title: 'About',
+      metaTags: [
+        {
+          name: 'about',
+          content: 'A bit about myself.',
+        },
+        {
+          property: 'og:description',
+          content: 'A bit about myself.',
         },
       ],
     },

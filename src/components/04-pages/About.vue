@@ -1,18 +1,18 @@
 <template>
   <div class="case-study">
     <div
-      v-for="(project, value, key) in projectsJson"
+      v-for="(about, value, key) in projectsJson"
       :key="key">
-      <div v-if="route === project.route">
+      <div v-if="route === about.route">
         <div class="case-study--bg-image">
-         <img :src="`../static/img/${project.hero}`">
+         <img :src="`../static/img/${about.hero}`">
         </div>
         <div class="case-study--content">
         <div class="case-study--content-wrapper">
-          <h1 class="case-study--project-title">{{ project.title }}</h1>
-          <dt class="case-study--project-description">{{ project.description }}</dt>
+          <h1 class="case-study--project-title">{{ about.name }}</h1>
+          <dt class="case-study--project-description">{{ about.description }}</dt>
           <ul class="case-study--project-tag">
-            <li v-for="(tag, key) in project.tags" v-bind:key="key">
+            <li v-for="(tag, key) in about.skills" v-bind:key="key">
               {{ tag }}
             </li>
           </ul>
@@ -26,7 +26,7 @@
 <script>
 import PageTitle from '@/components/01-atoms/PageTitle';
 import PageDescription from '@/components/01-atoms/PageDescription';
-import json from '../../data/projects.json';
+import json from '../../data/about.json';
 
 export default {
   name: 'Projects',
@@ -100,14 +100,31 @@ export default {
     }
   }
 
+  &--project-description {
+    margin-bottom: 2rem;
+
+    @media (min-width: 990px) {
+      max-width: 40%;
+    }
+  }
+
   &--project-tag {
+    display: flex;
+    flex-wrap: wrap;
     text-transform: lowercase;
     font-size: small;
     list-style: none;
     width: auto;
     padding: 0;
-    display: flex;
     color: #1E1D2E;
+
+    @media (min-width: 690px) {
+      max-width: 90%;
+    }
+
+   @media (min-width: 990px) {
+      max-width: 50%;
+    }
 
     li {
       background-color: #f9f9f9;
