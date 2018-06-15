@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/04-pages/HelloWorld';
-import Projects from '@/components/04-pages/Projects';
+// import HelloWorld from '@/components/04-pages/HelloWorld';
+// import Projects from '@/components/04-pages/Projects';
 // import ProjectCards from '@/components/03-organisims/ProjectCards';
 import NotFound from '@/components/04-pages/NotFound';
-import CaseStudy from '@/components/04-pages/CaseStudy';
+// import CaseStudy from '@/components/04-pages/CaseStudy';
 import About from '@/components/04-pages/About';
 
 Vue.use(Router);
@@ -12,125 +12,40 @@ Vue.use(Router);
 const routes = [
   {
     path: '/',
-    component: HelloWorld,
-    name: 'hello-world',
-    meta: {
-      title: 'Hello World',
-      metaTags: [
-        {
-          name: 'home',
-          content: 'Projects, in progress and completed.',
-        },
-        {
-          property: 'og:description',
-          content: 'Projects, in progress and completed.',
-        },
-      ],
-    },
-  },
-  {
-    path: '/projects',
-    component: Projects,
-    meta: {
-      title: 'Projects',
-      metaTags: [
-        {
-          name: 'projects',
-          content: 'Projects, in progress and completed.',
-        },
-        {
-          property: 'og:description',
-          content: 'Projects, in progress and completed.',
-        },
-      ],
-    },
-  },
-  {
-    path: '/about',
     component: About,
     meta: {
-      title: 'About',
+      title: 'G. Scott Queen | Web Applications [Design & Develop]',
       metaTags: [
         {
-          name: 'about',
-          content: 'A bit about myself.',
+          name: 'title',
+          content: 'G. Scott Queen | Web Applications [Design & Develop]',
+        },
+        {
+          name: 'description',
+          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
         },
         {
           property: 'og:description',
-          content: 'A bit about myself.',
+          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
+        },
+        {
+          property: 'og:image',
+          content: 'http://www.gscottqueen.com/static/img/queen.png',
+        },
+        {
+          property: 'og:url',
+          content: 'http://www.gscottqueen.com/',
+        },
+        {
+          name: 'twitter:description',
+          content: 'Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
+        },
+        {
+          name: 'twitter:image:src',
+          content: 'http://www.gscottqueen.com/static/img/queen.png',
         },
       ],
     },
-  },
-  {
-    path: '/case-study',
-    component: CaseStudy,
-    meta: {
-      title: 'Case Study',
-      metaTags: [
-        {
-          name: 'case-study',
-          content: 'NKOTB',
-        },
-        {
-          property: 'og:description',
-          content: 'NKOTB',
-        },
-      ],
-    },
-    children: [
-      {
-        path: '/case-study/written',
-        component: CaseStudy,
-        meta: {
-          title: 'Written',
-          metaTags: [
-            {
-              name: 'case-study',
-              content: 'A lightweight brutalist software for writing simple movie scripts.',
-            },
-            {
-              property: 'og:description',
-              content: 'A lightweight brutalist software for writing simple movie scripts.',
-            },
-          ],
-        },
-      },
-      {
-        path: '/case-study/space-invaders',
-        component: CaseStudy,
-        meta: {
-          title: 'Space Invaders',
-          metaTags: [
-            {
-              name: 'case-study',
-              content: 'A space reservation system, with a throwback inspiration to the classic.',
-            },
-            {
-              property: 'og:description',
-              content: 'A space reservation system, with a throwback inspiration to the classic.',
-            },
-          ],
-        },
-      },
-      {
-        path: '/case-study/marvel-war',
-        component: CaseStudy,
-        meta: {
-          title: 'Marvel War',
-          metaTags: [
-            {
-              name: 'case-study',
-              content: 'Consuming the Marvel API to recreate the War card game.',
-            },
-            {
-              property: 'og:description',
-              content: 'Consuming the Marvel API to recreate the War card game.',
-            },
-          ],
-        },
-      },
-    ],
   },
   {
     path: '/*/',

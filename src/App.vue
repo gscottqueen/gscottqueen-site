@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <div class="app-body-wrapper">
-      <navigator></navigator>
+      <!-- <navigator></navigator> -->
       <router-view/>
-      <footer>
+      <!-- <footer>
         <p>Front End by G. Scott Queen.</p>
         <theme-toggle></theme-toggle>
-      </footer>
+      </footer> -->
     </div>
   </div>
 </template>
