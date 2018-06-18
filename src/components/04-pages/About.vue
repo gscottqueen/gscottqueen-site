@@ -5,11 +5,13 @@
       :key="key">
       <div v-if="route === route">
         <div class="about-view--bg-image">
-         <img :src="`../static/img/${about.hero}`">
+         <img class="hero" :src="`../static/img/${about.hero}`">
+         <img class="avatar" :src="`../static/img/${about.avatar}`">
         </div>
         <div class="about-view--content">
         <div class="about-view--content-wrapper">
           <h1 class="about-view--name">{{ about.name }}</h1>
+          <!-- eslint-disable-next-line -->
           <p class="about-view--description">Front End Developer and creator of <a href="//www.written-app.io">Written</a>, a light weight indie software that helps screenwriters create and collaborate. Founder of <a href="//www.inaurastudios.com">Inaura Studios</a>, a creative product incubator and digital space developing small to medium web applications and prototypes for big, mind to market ideas. </p>
           <h3>Working knowledge</h3>
           <ul class="about-view--tag">
@@ -76,6 +78,13 @@ export default {
   &--content {
     width: auto;
     background-color: white;
+    position: absolute;
+    top: 13rem;
+
+    @media (min-width: 990px) {
+      position: static;
+    }
+
 
     a {
       color: black;
@@ -114,9 +123,35 @@ export default {
   &--bg-image {
     z-index: -1;
     overflow: hidden;
+    background-color: #646AF4;
+
+    @media (min-width: 990px) {
+      background-color: #FFF;
+    }
 
     img {
-      height: 100vh;
+
+      &.hero {
+        height: 100vh;
+        display: none;
+
+        @media (min-width: 990px) {
+          display: block;
+        }
+      }
+      &.avatar {
+        display: block;
+        margin: 2rem auto;
+        border-radius: 110px;
+        border: inset 5px white;
+        position: absolute;
+        z-index: 2;
+        left: 3rem;
+
+        @media (min-width: 990px) {
+          display: none;
+        }
+      }
     }
   }
 
