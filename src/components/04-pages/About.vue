@@ -10,7 +10,7 @@
         <div class="about-view--content">
         <div class="about-view--content-wrapper">
           <h1 class="about-view--name">{{ about.name }}</h1>
-          <p class="about-view--description">Front End Developer and creator of <a href="https://www.written-app.io">Written</a>, a light weight indie software that helps screenwriters create and collaborate. Founder of <a href="https://www.inaurastudios.com">Inaura Studios</a>, a creative product incubator and digital space developing small to medium web applications and prototypes for big, mind to market ideas. </p>
+          <p class="about-view--description">Front End Developer and creator of <a href="//www.written-app.io">Written</a>, a light weight indie software that helps screenwriters create and collaborate. Founder of <a href="//www.inaurastudios.com">Inaura Studios</a>, a creative product incubator and digital space developing small to medium web applications and prototypes for big, mind to market ideas. </p>
           <h3>Working knowledge</h3>
           <ul class="about-view--tag">
             <li v-for="(tag, key) in about.skills" v-bind:key="key">
