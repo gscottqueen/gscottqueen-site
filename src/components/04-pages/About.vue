@@ -6,7 +6,6 @@
       <div v-if="route === route">
         <div class="about-view--bg-image">
          <img class="hero" :src="`../static/img/${about.hero}`">
-         <img class="avatar" :src="`../static/img/${about.avatar}`">
         </div>
         <div class="about-view--content">
         <div class="about-view--content-wrapper">
@@ -78,13 +77,6 @@ export default {
   &--content {
     width: auto;
     background-color: white;
-    position: absolute;
-    top: 13rem;
-
-    @media (min-width: 990px) {
-      position: static;
-    }
-
 
     a {
       color: black;
@@ -123,33 +115,16 @@ export default {
   &--bg-image {
     z-index: -1;
     overflow: hidden;
-    background-color: #646AF4;
-
-    @media (min-width: 990px) {
-      background-color: #FFF;
-    }
 
     img {
 
       &.hero {
-        height: 100vh;
-        display: none;
+        height: auto;
+        width: 150%;
 
         @media (min-width: 990px) {
-          display: block;
-        }
-      }
-      &.avatar {
-        display: block;
-        margin: 2rem auto;
-        border-radius: 110px;
-        border: inset 5px white;
-        position: absolute;
-        z-index: 2;
-        left: 3rem;
-
-        @media (min-width: 990px) {
-          display: none;
+          height: 100vh;
+          width: auto;
         }
       }
     }
@@ -220,27 +195,4 @@ export default {
     }
   }
 }
-
-//dark-theme
-// .neo-noir {
-
-//   .about-view {
-
-//     &--content {
-//       width: 100%;
-//       background-color: #1E1D2E;
-
-//       &-wrapper {
-//        color: white;
-//        background-color: #1E1D2E;
-//       }
-//     }
-
-//     &--name {
-//       color: white;
-//     }
-//   }
-// }
-
-
 </style>
