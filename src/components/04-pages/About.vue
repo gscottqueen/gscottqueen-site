@@ -135,7 +135,7 @@ export default {
     line-height: 1.2;
     margin-top: 0;
 
-    @media (min-width: 690px) {
+    @media (min-width: 900px) {
       font-size: 90px;
       max-width: 50%;
     }
