@@ -46,7 +46,8 @@ body {
 }
 
 body.ultra {
-  background-color: #646AF4;
+  // background-color: #646AF4;
+  background-color: #1E1D2E;
 }
 
 body.neo-noir {

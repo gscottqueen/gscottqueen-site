@@ -30,11 +30,11 @@ const routes = [
         },
         {
           property: 'og:image',
-          content: 'http://www.gscottqueen.com/static/img/queen.png',
+          content: '//www.gscottqueen.com/static/img/queen.png',
         },
         {
           property: 'og:url',
-          content: 'http://www.gscottqueen.com/',
+          content: '//www.gscottqueen.com/',
         },
         {
           name: 'twitter:description',
@@ -42,7 +42,7 @@ const routes = [
         },
         {
           name: 'twitter:image:src',
-          content: 'http://www.gscottqueen.com/static/img/queen.png',
+          content: '//www.gscottqueen.com/static/img/queen.png',
         },
       ],
     },
