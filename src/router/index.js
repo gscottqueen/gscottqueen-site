@@ -22,11 +22,11 @@ const routes = [
         },
         {
           name: 'description',
-          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
+          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Scripset, founder of Inaura Studios...',
         },
         {
           property: 'og:description',
-          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
+          content: 'Looking for G. Scott Queen or Web Application Developer? Queen is an indie front end developer producing web applications and prototypes, creator of Scripset, founder of Inaura Studios...',
         },
         {
           property: 'og:image',
@@ -38,7 +38,7 @@ const routes = [
         },
         {
           name: 'twitter:description',
-          content: 'Queen is an indie front end developer producing web applications and prototypes, creator of Written, founder of Inaura Studios...',
+          content: 'Queen is an indie front end developer producing web applications and prototypes, creator of Scripset, founder of Inaura Studios...',
         },
         {
           name: 'twitter:image:src',
