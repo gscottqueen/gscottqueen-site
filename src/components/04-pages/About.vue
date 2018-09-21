@@ -11,7 +11,7 @@
         <div class="about-view--content-wrapper">
           <h1 class="about-view--name">{{ about.name }}</h1>
           <!-- eslint-disable-next-line -->
-          <p class="about-view--description">Front End Developer and creator of <a href="//www.scriptset.app/">Scripset</a>, a light weight indie software that helps screenwriters get from <em>script</em> to set. Founder of Inaura Studios, a creative product incubator and digital space developing small to medium web applications and prototypes for big, mind to market ideas. </p>
+          <p class="about-view--description">Front End Developer and creator of <a href="//www.scriptset.app/">Scriptset</a>, a light weight indie software that helps screenwriters get from <em>script</em> to set. Founder of Inaura Studios, a creative product incubator and digital space developing small to medium web applications and prototypes for big, mind to market ideas. </p>
           <!-- <h3>Working knowledge</h3>
           <ul class="about-view--tag">
             <li v-for="(tag, key) in about.skills" v-bind:key="key">
