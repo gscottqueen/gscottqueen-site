@@ -11,7 +11,7 @@
         <div class="about-view--content-wrapper">
           <h1 class="about-view--name">{{ about.name }}</h1>
           <!-- eslint-disable-next-line -->
-          <p class="about-view--description">Front End Developer creating applications like <a href="//www.scriptset.app/">Scriptset</a>, a light weight indie software that helps screenwriters create and collaborate on scripts <em>Made for TV</em>. Queen also has a high interest in developing mental health improvement applications that create micro exercises through digital platforms; such as <a href="//www.dailymoment.app/">Daily Moment</a>, a rich notification app that encourages overcoming anxiety one moment at a time.</p>
+          <p class="about-view--description">Front End Developer creating applications like <a href="//scriptset-app-alpha.herokuapp.com/">Scriptset</a>, a light weight indie software that helps screenwriters create and collaborate on scripts <em>Made for TV</em>. Queen also has a high interest in developing mental health improvement applications that create micro exercises through digital platforms; such as <a href="//dailymoment-app-site.herokuapp.com/">Daily Moment</a>, a rich notification app that encourages overcoming anxiety one moment at a time.</p>
           <!-- <h3>Working knowledge</h3>
           <ul class="about-view--tag">
             <li v-for="(tag, key) in about.skills" v-bind:key="key">
