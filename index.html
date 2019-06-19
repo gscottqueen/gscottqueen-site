@@ -5,6 +5,64 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>G. Scott Queen</title>
   </head>
+  <style>
+
+  .about-view {
+    position: relative;
+    background-color: #fff;
+  }
+
+  .about-view--content {
+      width: auto;
+      background-color: white;
+    }
+
+  .about-view--content a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .about-view--content a:hover {
+    background-color: #ffffcc;
+  }
+
+  .about-view--content-wrapper {
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: white;
+    padding: 2rem 10% 2rem 10%;
+    margin-right: 2rem;
+    color: black;
+    line-height: 1.7;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-view--bg-image {
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .about-view--bg-image img.hero {
+    height: auto;
+    width: 150%;
+  }
+
+  .about-view--content--name {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  .about-view--content--description {
+    margin-bottom: 2rem;
+  }
+
+  </style>
   <body class="ultra">
     <div id="app"></div>
     <div class="about-view">
