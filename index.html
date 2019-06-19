@@ -7,7 +7,32 @@
   </head>
   <body class="ultra">
     <div id="app"></div>
-    <h1> Hello World!</h1>
-    <!-- built files will be auto injected -->
+    <div class="about-view">
+      <!-- <div v-for="(about, value, key) in projectsJson" :key="key"> -->
+        <!-- <div v-if="route === route"> -->
+          <div class="about-view--bg-image">
+            <img class="hero" src="//www.bixal.com/sites/default/files/styles/width_1400/public/2018-05/Bixal_Main_Employee_03.27.18_Queen.png?itok=LC-0A0oy">
+          </div>
+          <div class="about-view--content">
+            <div class="about-view--content-wrapper">
+              <h1 class="about-view--name">G. Scott Queen</h1>
+              <p class="about-view--description">Front End Developer creating applications like <a
+                  href="//scriptset-app-alpha.herokuapp.com/">Scriptset</a>, a light weight indie software that helps
+                screenwriters create and collaborate on scripts <em>Made for TV</em>. Queen also has a high interest in
+                developing mental health improvement applications that create micro exercises through digital platforms;
+                such as <a href="//dailymoment-app-site.herokuapp.com/">Daily Moment</a>, a rich notification app that
+                encourages overcoming anxiety one moment at a time.</p>
+              <!-- <ul v-for="(socialicons, key) in about.socialicons" v-bind:key="key" class="about-view--social">
+                <li v-for="(idetails, key) in socialicons" v-bind:key="key">
+                  <a class="about-view--social__link" v-bind:href="idetails.sociallink">
+                    <img class="about-view--social__icon" :src="`../static/img/${idetails.icon}`" />
+                  </a>
+                </li>
+              </ul> -->
+            <!-- </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
