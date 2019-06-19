@@ -7,15 +7,19 @@
   </head>
   <style>
 
+  body {
+    margin: 0;
+  }
+
   .about-view {
     position: relative;
     background-color: #fff;
   }
 
   .about-view--content {
-      width: auto;
-      background-color: white;
-    }
+    width: auto;
+    background-color: white;
+  }
 
   .about-view--content a {
     color: black;
@@ -50,6 +54,8 @@
   .about-view--bg-image img.hero {
     height: auto;
     width: 150%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
 
   .about-view--content--name {
