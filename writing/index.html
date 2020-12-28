@@ -36,13 +36,17 @@
       background-image: url('/images/tape.gif');
     }
     video {
-      left: -900px;
+      display: none;
+    }
+    .background {
+      height: -webkit-fill-available;
       position: fixed;
       top: 0;
-      min-height: 100%;
       z-index: -1;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
     }
     @media only screen and (min-width: 768px) {
       video {
@@ -53,6 +57,11 @@
         z-index: -1;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      .background {
+        display: none;
       }
     }
     h1 {
@@ -85,6 +94,7 @@
       <source src="/videos/writting.mov" type="video/mp4">
       Your browser does not support HTML video.
     </video>
+    <img class="background" src="/images/writting.png"/>
     <header>
       <div class="tape">
         <div>
