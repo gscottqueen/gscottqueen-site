@@ -1,20 +1,18 @@
-html {
-  font-family: 'Syne Mono', monospace;
-  background-color: #eae8e8;
-}
 article {
   max-width: 720px;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 0px 20px;
+  text-align: left;
+  font-family: 'Syne Mono', monospace;
 }
-h1 {
+article h1 {
   margin-top: 80px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
-hr {
+article hr {
   margin: 60px 0px 30px;
 }
-p {
+article p {
   font-size: 14px;
   line-height: 1.9;
 }

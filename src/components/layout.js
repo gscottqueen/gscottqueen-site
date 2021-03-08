@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children, bgImage }) => {
+const Layout = ({ children, bgImage = null, nonav }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -14,18 +14,17 @@ const Layout = ({ children, bgImage }) => {
         }
       }
     }
-  `)
+  `);
 
-  console.log(bgImage.childImageSharp.fluid.src);
-
-
+  const ImageURL =
+    bgImage !== null ? bgImage.childImageSharp.fluid.src : bgImage;
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      { !nonav && <Header/> }
       <div>
         <main
           style={{
-            backgroundImage: `url(${bgImage.childImageSharp.fluid.src})`,
+            backgroundImage: `url(${ImageURL})`,
           }}
         >
           {children}
@@ -34,7 +33,7 @@ const Layout = ({ children, bgImage }) => {
       </div>
     </>
   );
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Background from "../images/gscottqueen.png"
 import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {

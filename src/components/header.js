@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import './header.css'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
-      <div class="tape">
+      <div className="tape">
         <div>
           <h1><a href="/">G. Scott Queen</a></h1>
           <nav>
