@@ -1,17 +1,10 @@
-html {
-  font-family: 'Syne Mono', monospace;
-  font-size: 14px;
-  background-color: #ffffff;
-}
-body {
-  margin: 0;
-}
 section {
   display: grid;
   place-items: center;
   height: 100vh;
   padding: 10px;
 }
+
 img {
   width: auto;
   max-width: 100%;

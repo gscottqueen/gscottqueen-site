@@ -11,9 +11,9 @@ const Header = () => (
           <nav>
             <span>
               <span>
-                <a href="/art">Art</a>
+                <Link to="/art">Art</Link>
               </span> / <span>
-                <a href="/writing">Writing</a>
+                <Link to="/writing">Writing</Link>
               </span> / <span>
                   <a href="mailto:geoffreysqueen@gmail.com">Contact</a>
                 </span>

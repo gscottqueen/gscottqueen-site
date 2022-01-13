@@ -2,12 +2,14 @@ import React from "react"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import ListingTemplate from "../../templates/listing-template"
 import { Link } from "gatsby"
 import './index.css'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="G. Scott Queen | Writing" />
+    <ListingTemplate>
       <ul>
         <h2>Philosophy</h2>
         <li>
@@ -16,11 +18,12 @@ const IndexPage = () => (
           </Link>
         </li>
         <li>
-          <a href="/writing/the-possibility-of-agreement-in-aesthetic-judgments.html">
+          <Link to="/writing/the-possibility-of-agreement-in-aesthetic-judgments">
             The Possibility of Agreement in Aesthetic Judgments
-          </a>
+          </Link>
         </li>
       </ul>
+    </ListingTemplate>
   </Layout>
 );
 
