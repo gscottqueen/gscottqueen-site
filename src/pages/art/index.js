@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import ListingTemplate from "../../templates/listing-template"
-import { Link } from "gatsby"
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import ListingTemplate from "../../templates/listing-template";
+import { Link } from "gatsby";
 
 const IndexArt = () => (
   <Layout>
@@ -12,23 +12,38 @@ const IndexArt = () => (
       <ul>
         <ul>
           <h2>Sculpture</h2>
-          <li><Link to="/art/untitled-sculpture-1">Untitled Sculpture #1, 2011</Link></li>
-          <li><Link to="/art/persistence-of-man-over-nature">Persistence of Man Over Nature, 2010</Link></li>
+          <li>
+            <Link to="/art/untitled-sculpture-1">
+              Untitled Sculpture #1, 2011
+            </Link>
+          </li>
+          <li>
+            <Link to="/art/persistence-of-man-over-nature">
+              Persistence of Man Over Nature, 2010
+            </Link>
+          </li>
         </ul>
         <ul>
           <h2>Painting</h2>
-          <li><Link to="/art/on-the-way-to-telos">On the Way to Telos, 2012</Link></li>
-          <li><Link to="/art/we-are-one">We Are One, 2012</Link></li>
-          <li><Link to="/art/dark-matter">Dark Matter, 2011</Link></li>
-          <li><Link to="/art/strange-days">Strange Days, 2012</Link></li>
+          <li>
+            <Link to="/art/on-the-way-to-telos">On the Way to Telos, 2012</Link>
+          </li>
+          <li>
+            <Link to="/art/we-are-one">We Are One, 2012</Link>
+          </li>
+          <li>
+            <Link to="/art/dark-matter">Dark Matter, 2011</Link>
+          </li>
+          <li>
+            <Link to="/art/strange-days">Strange Days, 2012</Link>
+          </li>
         </ul>
       </ul>
     </ListingTemplate>
   </Layout>
 );
 
-export default IndexArt
-
+export default IndexArt;
 
 // <!DOCTYPE html>
 // <html>
@@ -118,19 +133,19 @@ export default IndexArt
 //     </header>
 //   <section id="main">
 //     <h1 hidden>Art</h1>
-    // <ul>
-    //   <ul>
-    //     <h2>Sculpture</h2>
-    //     <li><a to="/art/untitled-sculpture-1.html">Untitled Sculpture #1, 2011</a></li>
-    //     <li><a to="/art/persistence-of-man-over-nature.html">Persistence of Man Over Nature, 2010</a></li>
-    //   </ul>
-    //   <ul>
-    //     <h2>Painting</h2>
-    //     <li><a to="/art/on-the-way-to-telos.html">On the Way to Telos, 2012</a></li>
-    //     <li><a to="/art/we-are-one.html">We Are One, 2012</a></li>
-    //     <li><a to="/art/dark-matter.html">Dark Matter, 2011</a></li>
-    //   </ul>
-    // </ul>
+// <ul>
+//   <ul>
+//     <h2>Sculpture</h2>
+//     <li><a to="/art/untitled-sculpture-1.html">Untitled Sculpture #1, 2011</a></li>
+//     <li><a to="/art/persistence-of-man-over-nature.html">Persistence of Man Over Nature, 2010</a></li>
+//   </ul>
+//   <ul>
+//     <h2>Painting</h2>
+//     <li><a to="/art/on-the-way-to-telos.html">On the Way to Telos, 2012</a></li>
+//     <li><a to="/art/we-are-one.html">We Are One, 2012</a></li>
+//     <li><a to="/art/dark-matter.html">Dark Matter, 2011</a></li>
+//   </ul>
+// </ul>
 //   </section>
 //   </body>
 // </html>

@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js", "/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js", "fs", "/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js", "/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js", "/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"], root["fs"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_common_tags__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
+		root["lib"] = factory(root["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_common_tags__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -125,24 +125,6 @@ var plugins = [{
     "rehypePlugins": [],
     "mediaTypes": ["text/markdown", "text/x-markdown"],
     "root": "/Users/squeen/Projects/gscottqueen-site"
-  }
-}, {
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
-  options: {
-    "plugins": [],
-    "name": "gatsby-starter-default",
-    "short_name": "starter",
-    "start_url": "/",
-    "background_color": "#663399",
-    "theme_color": "#663399",
-    "display": "minimal-ui",
-    "icon": "src/images/gatsby-icon.png",
-    "legacy": true,
-    "theme_color_in_head": true,
-    "cache_busting_mode": "query",
-    "crossOrigin": "anonymous",
-    "include_favicon": true,
-    "cacheDigest": null
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -3823,243 +3805,6 @@ function onRenderBody(_ref) {
 }
 
 exports.onRenderBody = onRenderBody;
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-manifest/common.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/gatsby-plugin-manifest/common.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _fs = _interopRequireDefault(__webpack_require__(/*! fs */ "fs"));
-
-var _path = _interopRequireDefault(__webpack_require__(/*! path */ "path"));
-
-exports.favicons = [{
-  src: "favicon-32x32.png",
-  sizes: "32x32",
-  type: "image/png"
-}]; // default icons for generating icons
-
-exports.defaultIcons = [{
-  src: "icons/icon-48x48.png",
-  sizes: "48x48",
-  type: "image/png"
-}, {
-  src: "icons/icon-72x72.png",
-  sizes: "72x72",
-  type: "image/png"
-}, {
-  src: "icons/icon-96x96.png",
-  sizes: "96x96",
-  type: "image/png"
-}, {
-  src: "icons/icon-144x144.png",
-  sizes: "144x144",
-  type: "image/png"
-}, {
-  src: "icons/icon-192x192.png",
-  sizes: "192x192",
-  type: "image/png"
-}, {
-  src: "icons/icon-256x256.png",
-  sizes: "256x256",
-  type: "image/png"
-}, {
-  src: "icons/icon-384x384.png",
-  sizes: "384x384",
-  type: "image/png"
-}, {
-  src: "icons/icon-512x512.png",
-  sizes: "512x512",
-  type: "image/png"
-}];
-/**
- * Check if the icon exists on the filesystem
- *
- * @param {String} srcIcon Path of the icon
- */
-
-exports.doesIconExist = function doesIconExist(srcIcon) {
-  try {
-    return _fs.default.statSync(srcIcon).isFile();
-  } catch (e) {
-    if (e.code !== "ENOENT") {
-      throw e;
-    }
-
-    return false;
-  }
-};
-/**
- * @param {string} path The generic path to an icon
- * @param {string} digest The digest of the icon provided in the plugin's options.
- */
-
-
-exports.addDigestToPath = function (path, digest, method) {
-  if (method === "name") {
-    var parsedPath = _path.default.parse(path);
-
-    return parsedPath.dir + "/" + parsedPath.name + "-" + digest + parsedPath.ext;
-  }
-
-  if (method === "query") {
-    return path + "?v=" + digest;
-  }
-
-  return path;
-};
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-manifest/gatsby-ssr.js ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-var React = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-
-var _gatsby = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-
-var _common = __webpack_require__(/*! ./common.js */ "./node_modules/gatsby-plugin-manifest/common.js");
-
-var _getManifestPathname = _interopRequireDefault(__webpack_require__(/*! ./get-manifest-pathname */ "./node_modules/gatsby-plugin-manifest/get-manifest-pathname.js")); // TODO: remove for v3
-
-
-var withPrefix = _gatsby.withAssetPrefix || _gatsby.withPrefix;
-
-exports.onRenderBody = function (_ref, _ref2) {
-  var setHeadComponents = _ref.setHeadComponents,
-      _ref$pathname = _ref.pathname,
-      pathname = _ref$pathname === void 0 ? "/" : _ref$pathname;
-  var localize = _ref2.localize,
-      legacy = _ref2.legacy,
-      cacheBusting = _ref2.cache_busting_mode,
-      cacheDigest = _ref2.cacheDigest,
-      icon = _ref2.icon,
-      pluginIcons = _ref2.icons,
-      insertFaviconLinkTag = _ref2.include_favicon,
-      insertMetaTag = _ref2.theme_color_in_head,
-      theme_color = _ref2.theme_color,
-      _ref2$crossOrigin = _ref2.crossOrigin,
-      crossOrigin = _ref2$crossOrigin === void 0 ? "anonymous" : _ref2$crossOrigin; // We use this to build a final array to pass as the argument to setHeadComponents at the end of onRenderBody.
-
-  var headComponents = [];
-  var srcIconExists = !!icon;
-  var icons = pluginIcons || _common.defaultIcons;
-  var manifestFileName = (0, _getManifestPathname.default)(pathname, localize); // If icons were generated, also add a favicon link.
-
-  if (srcIconExists) {
-    if (insertFaviconLinkTag) {
-      _common.favicons.forEach(function (favicon) {
-        headComponents.push( /*#__PURE__*/React.createElement("link", {
-          key: "gatsby-plugin-manifest-icon-link-png",
-          rel: "icon",
-          href: withPrefix((0, _common.addDigestToPath)(favicon.src, cacheDigest, cacheBusting)),
-          type: "image/png"
-        }));
-      });
-
-      if (icon === null || icon === void 0 ? void 0 : icon.endsWith(".svg")) {
-        headComponents.push( /*#__PURE__*/React.createElement("link", {
-          key: "gatsby-plugin-manifest-icon-link-svg",
-          rel: "icon",
-          href: withPrefix((0, _common.addDigestToPath)("favicon.svg", cacheDigest, cacheBusting)),
-          type: "image/svg+xml"
-        }));
-      }
-    }
-  } // Add manifest link tag.
-
-
-  headComponents.push( /*#__PURE__*/React.createElement("link", {
-    key: "gatsby-plugin-manifest-link",
-    rel: "manifest",
-    href: (0, _gatsby.withPrefix)("/" + manifestFileName),
-    crossOrigin: crossOrigin
-  })); // The user has an option to opt out of the theme_color meta tag being inserted into the head.
-
-  if (theme_color && insertMetaTag) {
-    headComponents.push( /*#__PURE__*/React.createElement("meta", {
-      key: "gatsby-plugin-manifest-meta",
-      name: "theme-color",
-      content: theme_color
-    }));
-  }
-
-  if (legacy) {
-    icons.forEach(function (icon) {
-      headComponents.push( /*#__PURE__*/React.createElement("link", {
-        key: "gatsby-plugin-manifest-apple-touch-icon-" + icon.sizes,
-        rel: "apple-touch-icon",
-        sizes: icon.sizes,
-        href: withPrefix((0, _common.addDigestToPath)(icon.src, cacheDigest, srcIconExists ? cacheBusting : "none"))
-      }));
-    });
-  }
-
-  setHeadComponents(headComponents);
-  return true;
-};
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-manifest/get-manifest-pathname.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/gatsby-plugin-manifest/get-manifest-pathname.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.default = void 0;
-/**
- * Get a manifest filename depending on localized pathname
- *
- * @param {string} pathname
- * @param {Array<{start_url: string, lang: string}>} localizedManifests
- * @return string
- */
-
-var _default = function _default(pathname, localizedManifests) {
-  var defaultFilename = "manifest.webmanifest";
-
-  if (!Array.isArray(localizedManifests)) {
-    return defaultFilename;
-  }
-
-  var localizedManifest = localizedManifests.find(function (app) {
-    return pathname.startsWith(app.start_url);
-  });
-
-  if (!localizedManifest) {
-    return defaultFilename;
-  }
-
-  return "manifest_" + localizedManifest.lang + ".webmanifest";
-};
-
-exports.default = _default;
 
 /***/ }),
 
@@ -32260,7 +32005,7 @@ if (false) {} else {
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"allMdx\":{\"edges\":[{\"node\":{\"slug\":\"writing/logos-emc2\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null,\"medium\":null}}},{\"node\":{\"slug\":\"art/dark-matter\",\"frontmatter\":{\"title\":\"Dark Matter\",\"year\":2011,\"image\":\"dark-matter.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\",\"medium\":\"acrylic on canvas\"}}},{\"node\":{\"slug\":\"art/on-the-way-to-telos\",\"frontmatter\":{\"title\":\"On the Way to Telos\",\"year\":2012,\"image\":\"on-the-way-to-telos.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\",\"medium\":\"Oil, Mixed Media, on Burlap\"}}},{\"node\":{\"slug\":\"writing/the-possibility-of-agreement-in-aesthetic-judgments\",\"frontmatter\":{\"title\":\"test 2\",\"year\":null,\"image\":null,\"alt\":null,\"medium\":null}}},{\"node\":{\"slug\":\"art/strange-days\",\"frontmatter\":{\"title\":\"Strange Days\",\"year\":2012,\"image\":\"strange-days-3.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\",\"medium\":\"oil on archival paper\"}}},{\"node\":{\"slug\":\"art/untitled-sculpture-1\",\"frontmatter\":{\"title\":\"Untitled Sculpture #1\",\"year\":2011,\"image\":\"untitled-sculpture-1.png\",\"alt\":\"large horizontal sculpture, of rigid emotional lines carvend into a large rectangular piece of wood\",\"medium\":\"white pine, amber/hickory oil based stains\"}}},{\"node\":{\"slug\":\"art/persistence-of-man-over-nature\",\"frontmatter\":{\"title\":\"Persistence of Man Over Nature\",\"year\":2010,\"image\":\"persistance-of-man-over-nature.JPG\",\"alt\":\"large sculpture of bent metal bolted together reaching to the sky, integrated into a garden setting\",\"medium\":\"bent steel, galvanized bolts\"}}},{\"node\":{\"slug\":\"art/we-are-one\",\"frontmatter\":{\"title\":\"We Are One\",\"year\":2012,\"image\":\"we-are-one.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\",\"medium\":\"oil on archival paper\"}}}]}}}");
+module.exports = JSON.parse("{\"data\":{\"allMdx\":{\"edges\":[{\"node\":{\"slug\":\"writing/logos-emc2\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null,\"medium\":null}}},{\"node\":{\"slug\":\"art/on-the-way-to-telos\",\"frontmatter\":{\"title\":\"On the Way to Telos\",\"year\":2012,\"image\":\"on-the-way-to-telos.jpg\",\"alt\":\"concrete and organic bent structures piled into a corner, abstracted in blue\",\"medium\":\"Oil, Mixed Media, on Burlap\"}}},{\"node\":{\"slug\":\"art/dark-matter\",\"frontmatter\":{\"title\":\"Dark Matter\",\"year\":2011,\"image\":\"dark-matter.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\",\"medium\":\"Acrylic on Canvas\"}}},{\"node\":{\"slug\":\"writing/the-possibility-of-agreement-in-aesthetic-judgments\",\"frontmatter\":{\"title\":\"test 2\",\"year\":null,\"image\":null,\"alt\":null,\"medium\":null}}},{\"node\":{\"slug\":\"art/persistence-of-man-over-nature\",\"frontmatter\":{\"title\":\"Persistence of Man Over Nature\",\"year\":2010,\"image\":\"persistance-of-man-over-nature.JPG\",\"alt\":\"large sculpture of bent metal bolted together reaching to the sky, integrated into a garden setting\",\"medium\":\"Bent steel, Galvanized Bolts\"}}},{\"node\":{\"slug\":\"art/strange-days\",\"frontmatter\":{\"title\":\"Strange Days\",\"year\":2012,\"image\":\"strange-days-3.jpg\",\"alt\":\"oxidized colors of rust over surfaced mixed materials\",\"medium\":\"Oil, and Oxidized Metals, on Archival Paper\"}}},{\"node\":{\"slug\":\"art/we-are-one\",\"frontmatter\":{\"title\":\"We Are One\",\"year\":2012,\"image\":\"we-are-one.jpg\",\"alt\":\"abstracted, sculptural shapes, in the form of faces looking to each other\",\"medium\":\"Oil on Archival Paper\"}}},{\"node\":{\"slug\":\"art/untitled-sculpture-1\",\"frontmatter\":{\"title\":\"Untitled Sculpture #1\",\"year\":2011,\"image\":\"untitled-sculpture-1.png\",\"alt\":\"large horizontal sculpture, of rigid emotional lines carvend into a large rectangular piece of wood\",\"medium\":\"Wood, Amber oils\"}}}]}}}");
 
 /***/ }),
 
@@ -32335,9 +32080,9 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.c
   href: "/"
 }, "G. Scott Queen")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
   to: "/art"
-}, "Art")), " / ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+}, "Art")), " ", "/", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
   to: "/writing"
-}, "Writing")), " / ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+}, "Writing")), " ", "/", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
   href: "mailto:geoffreysqueen@gmail.com"
 }, "Contact")))))));
 
@@ -32643,7 +32388,7 @@ const GalleryTemplate = ({
   const data = _public_page_data_sq_d_2804282828_json__WEBPACK_IMPORTED_MODULE_0__.data;
   const findFrontMatter = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(() => data.allMdx.edges.find(({
     node
-  }) => node.slug === path.replace(/^\/|\/$/g, '')), [data, path]);
+  }) => node.slug === path.replace(/^\/|\/$/g, "")), [data, path]);
   if (!findFrontMatter) return null;
   let {
     node: {
@@ -32668,7 +32413,7 @@ const GalleryTemplate = ({
     alt: alt
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "citation"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("cite", null, "\"", title, "\", ", year), " - ", medium)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("cite", null, "\"", title, "\", ", year), " ", "- ", medium)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (GalleryTemplate);
@@ -32697,17 +32442,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_common_tags__;
 
 /***/ }),
 
-/***/ "fs":
-/*!*********************!*\
-  !*** external "fs" ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
-
-/***/ }),
-
 /***/ "lodash/merge":
 /*!***************************************************************************************!*\
   !*** external "/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js" ***!
@@ -32716,17 +32450,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_fs__;
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_lodash_merge__;
-
-/***/ }),
-
-/***/ "path":
-/*!***********************!*\
-  !*** external "path" ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_path__;
 
 /***/ }),
 

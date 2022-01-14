@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import ListingTemplate from "../../templates/listing-template"
-import { Link } from "gatsby"
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import ListingTemplate from "../../templates/listing-template";
+import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
@@ -26,4 +26,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage
+export default IndexPage;

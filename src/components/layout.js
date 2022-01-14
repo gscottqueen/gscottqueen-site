@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
 
 const Layout = ({ children, bgImage = null, nonav }) => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
     bgImage !== null ? bgImage.childImageSharp.fluid.src : bgImage;
   return (
     <>
-      { !nonav && <Header/> }
+      {!nonav && <Header />}
       <div>
         <main
           style={{
@@ -37,6 +37,6 @@ const Layout = ({ children, bgImage = null, nonav }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

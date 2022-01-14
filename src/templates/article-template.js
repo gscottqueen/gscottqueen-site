@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import './article-template.css'
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import "./article-template.css";
 
 const ArticleTemplate = ({ title, children }) => (
   <Layout nonav>
@@ -11,5 +11,4 @@ const ArticleTemplate = ({ title, children }) => (
   </Layout>
 );
 
-export default ArticleTemplate
-
+export default ArticleTemplate;

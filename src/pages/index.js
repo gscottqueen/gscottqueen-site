@@ -1,11 +1,10 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { useStaticQuery, graphql } from "gatsby";
 
 const IndexPage = () => {
-
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "gscottqueen.png" }) {
@@ -22,6 +21,7 @@ const IndexPage = () => {
     <Layout bgImage={data?.placeholderImage}>
       <SEO title="Home" />
     </Layout>
-  );};
+  );
+};
 
-export default IndexPage
+export default IndexPage;
