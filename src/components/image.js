@@ -1,36 +1,45 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React, { useMemo } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage } from "gatsby-plugin-image"
+import PropTypes from 'prop-types';
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-const Image = () => {
+const Image = ({ src, ...imgAttr }) => {
+  // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+      images: allFile(filter: {sourceInstanceName: { eq: "images" }}) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(placeholder: NONE)
+            }
           }
         }
       }
     }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
-  }
+  const findImage = useMemo(
+    () => data.images.edges.find(({ node }) => src === node.relativePath),
+    [data, src]
+  );
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  if (!findImage) return null;
 
-export default Image
+  let { node: { childImageSharp } = {} } = findImage;
+
+  return (
+    <GatsbyImage
+      image={childImageSharp.gatsbyImageData}
+      {...imgAttr}
+    />
+  )
+};
+
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+};
+
+export default Image;

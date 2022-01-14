@@ -6,6 +6,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    'gatsby-plugin-mdx-frontmatter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

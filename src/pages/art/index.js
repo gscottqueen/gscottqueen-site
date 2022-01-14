@@ -4,7 +4,6 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import ListingTemplate from "../../templates/listing-template"
 import { Link } from "gatsby"
-import './index.css'
 
 const IndexArt = () => (
   <Layout>

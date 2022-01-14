@@ -7,8 +7,7 @@ article {
 }
 
 article h1 {
-  margin-top: 80px;
-  margin-top: 0px;
+  margin: 80px 0px 40px 0px;
 }
 
 article hr {

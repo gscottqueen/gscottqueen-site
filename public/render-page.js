@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		module.exports = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js", "fs", "/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
+		define("lib", ["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js", "/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js", "fs", "/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js", "path", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
+		exports["lib"] = factory(require("/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"), require("fs"), require("/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"), require("path"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"], root["fs"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
+		root["lib"] = factory(root["/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js"], root["fs"], root["/Users/squeen/Projects/gscottqueen-site/node_modules/lodash/merge.js"], root["path"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE__reach_router__, __WEBPACK_EXTERNAL_MODULE_common_tags__, __WEBPACK_EXTERNAL_MODULE_fs__, __WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_path__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -105,6 +105,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-image/gatsby-ssr */ "./node_modules/gatsby-plugin-image/gatsby-ssr.js"),
   options: {
     "plugins": []
   }
@@ -401,6 +406,93 @@ exports.wrapPageElement = true;
  */
 
 exports.wrapRootElement = true;
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/02638e5666fbbce89371f58a95cf2fb6.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/02638e5666fbbce89371f58a95cf2fb6.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/templates/gallery-template.js */ "./src/templates/gallery-template.js");
+/* harmony import */ var _src_components_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../src/components/image.js */ "./src/components/image.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  GalleryTemplate: _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  Image: _src_components_image_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_2__
+});
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/9bb372c698eecba069ae59239aec304b.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/9bb372c698eecba069ae59239aec304b.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/templates/gallery-template.js */ "./src/templates/gallery-template.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  GalleryTemplate: _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/ace64ae5dfc8ac347dfdbb5fc286b41b.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/ace64ae5dfc8ac347dfdbb5fc286b41b.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/templates/gallery-template.js */ "./src/templates/gallery-template.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  GalleryLayout: _src_templates_gallery_template_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
+
+/***/ }),
+
+/***/ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e477834dc1b046be7d126d63b724e343.js":
+/*!********************************************************************************************!*\
+  !*** ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e477834dc1b046be7d126d63b724e343.js ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_templates_article_template_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/templates/article-template.js */ "./src/templates/article-template.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  ArticleLayout: _src_templates_article_template_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  React: react__WEBPACK_IMPORTED_MODULE_1__
+});
 
 /***/ }),
 
@@ -1654,6 +1746,66 @@ function _defineProperty(obj, key, value) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutProperties; });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/extends.js":
 /*!********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
@@ -2384,6 +2536,94 @@ exports.shallowCompare = shallowCompare;
 
 /***/ }),
 
+/***/ "./node_modules/camelcase/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/camelcase/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+const preserveCamelCase = string => {
+	let isLastCharLower = false;
+	let isLastCharUpper = false;
+	let isLastLastCharUpper = false;
+
+	for (let i = 0; i < string.length; i++) {
+		const character = string[i];
+
+		if (isLastCharLower && /[a-zA-Z]/.test(character) && character.toUpperCase() === character) {
+			string = string.slice(0, i) + '-' + string.slice(i);
+			isLastCharLower = false;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = true;
+			i++;
+		} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(character) && character.toLowerCase() === character) {
+			string = string.slice(0, i - 1) + '-' + string.slice(i - 1);
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = false;
+			isLastCharLower = true;
+		} else {
+			isLastCharLower = character.toLowerCase() === character && character.toUpperCase() !== character;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = character.toUpperCase() === character && character.toLowerCase() !== character;
+		}
+	}
+
+	return string;
+};
+
+const camelCase = (input, options) => {
+	if (!(typeof input === 'string' || Array.isArray(input))) {
+		throw new TypeError('Expected the input to be `string | string[]`');
+	}
+
+	options = Object.assign({
+		pascalCase: false
+	}, options);
+
+	const postProcess = x => options.pascalCase ? x.charAt(0).toUpperCase() + x.slice(1) : x;
+
+	if (Array.isArray(input)) {
+		input = input.map(x => x.trim())
+			.filter(x => x.length)
+			.join('-');
+	} else {
+		input = input.trim();
+	}
+
+	if (input.length === 0) {
+		return '';
+	}
+
+	if (input.length === 1) {
+		return options.pascalCase ? input.toUpperCase() : input.toLowerCase();
+	}
+
+	const hasUpperCase = input !== input.toLowerCase();
+
+	if (hasUpperCase) {
+		input = preserveCamelCase(input);
+	}
+
+	input = input
+		.replace(/^[_.\- ]+/, '')
+		.toLowerCase()
+		.replace(/[_.\- ]+(\w|$)/g, (_, p1) => p1.toUpperCase())
+		.replace(/\d+(\w|$)/g, m => m.toUpperCase());
+
+	return postProcess(input);
+};
+
+module.exports = camelCase;
+// TODO: Remove this for the next major release
+module.exports.default = camelCase;
+
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-link/index.js":
 /*!*******************************************!*\
   !*** ./node_modules/gatsby-link/index.js ***!
@@ -2784,6 +3024,832 @@ function parsePath(path) {
 
 /***/ }),
 
+/***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js ***!
+  \**********************************************************************/
+/*! exports provided: GatsbyImage, MainImage, Placeholder, StaticImage, generateImageData, getImage, getImageData, getLowResolutionImageURL, getSrc, getSrcSet, withArtDirection */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GatsbyImage", function() { return Y; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainImage", function() { return q; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Placeholder", function() { return C; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StaticImage", function() { return J; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateImageData", function() { return y; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getImage", function() { return R; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getImageData", function() { return W; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLowResolutionImageURL", function() { return w; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getSrc", function() { return x; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getSrcSet", function() { return I; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withArtDirection", function() { return j; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! common-tags */ "common-tags");
+/* harmony import */ var common_tags__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(common_tags__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! camelcase */ "./node_modules/camelcase/index.js");
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+
+function s() {
+  return s = Object.assign || function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var a = arguments[t];
+
+      for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
+    }
+
+    return e;
+  }, s.apply(this, arguments);
+}
+
+function l(e, t) {
+  if (null == e) return {};
+  var a,
+      i,
+      r = {},
+      n = Object.keys(e);
+
+  for (i = 0; i < n.length; i++) t.indexOf(a = n[i]) >= 0 || (r[a] = e[a]);
+
+  return r;
+}
+
+var d,
+    u = [.25, .5, 1, 2],
+    c = [750, 1080, 1366, 1920],
+    h = [320, 654, 768, 1024, 1366, 1600, 1920, 2048, 2560, 3440, 3840, 4096],
+    g = function (e) {
+  return console.warn(e);
+},
+    p = function (e, t) {
+  return e - t;
+},
+    m = function (e) {
+  return e.map(function (e) {
+    return e.src + " " + e.width + "w";
+  }).join(",\n");
+};
+
+function f(e) {
+  var t = e.lastIndexOf(".");
+
+  if (-1 !== t) {
+    var a = e.substr(t + 1);
+    if ("jpeg" === a) return "jpg";
+    if (3 === a.length || 4 === a.length) return a;
+  }
+}
+
+function v(e) {
+  var t = e.layout,
+      a = void 0 === t ? "constrained" : t,
+      i = e.width,
+      n = e.height,
+      o = e.sourceMetadata,
+      l = e.breakpoints,
+      d = e.aspectRatio,
+      u = e.formats,
+      c = void 0 === u ? ["auto", "webp"] : u;
+  return c = c.map(function (e) {
+    return e.toLowerCase();
+  }), a = camelcase__WEBPACK_IMPORTED_MODULE_2___default()(a), i && n ? s({}, e, {
+    formats: c,
+    layout: a,
+    aspectRatio: i / n
+  }) : (o.width && o.height && !d && (d = o.width / o.height), "fullWidth" === a ? (i = i || o.width || l[l.length - 1], n = n || Math.round(i / (d || 1.3333333333333333))) : (i || (i = n && d ? n * d : o.width ? o.width : n ? Math.round(n / 1.3333333333333333) : 800), d && !n ? n = Math.round(i / d) : d || (d = i / n)), s({}, e, {
+    width: i,
+    height: n,
+    aspectRatio: d,
+    layout: a,
+    formats: c
+  }));
+}
+
+function w(e, t) {
+  var a;
+  return void 0 === t && (t = 20), null == (a = (0, (e = v(e)).generateImageSource)(e.filename, t, Math.round(t / e.aspectRatio), e.sourceMetadata.format || "jpg", e.fit, e.options)) ? void 0 : a.src;
+}
+
+function y(e) {
+  var t,
+      a = (e = v(e)).pluginName,
+      r = e.sourceMetadata,
+      n = e.generateImageSource,
+      o = e.layout,
+      l = e.fit,
+      h = e.options,
+      p = e.width,
+      w = e.height,
+      y = e.filename,
+      M = e.reporter,
+      S = void 0 === M ? {
+    warn: g
+  } : M,
+      N = e.backgroundColor,
+      R = e.placeholderURL;
+  if (a || S.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'), "function" != typeof n) throw new Error("generateImageSource must be a function");
+  r && (r.width || r.height) ? r.format || (r.format = f(y)) : r = {
+    width: p,
+    height: w,
+    format: (null == (t = r) ? void 0 : t.format) || f(y) || "auto"
+  };
+  var x = new Set(e.formats);
+  (0 === x.size || x.has("auto") || x.has("")) && (x.delete("auto"), x.delete(""), x.add(r.format)), x.has("jpg") && x.has("png") && (S.warn("[" + a + "] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"), x.delete("jpg" === r.format ? "png" : "jpg"));
+
+  var I = function (e) {
+    var t = e.filename,
+        a = e.layout,
+        r = void 0 === a ? "constrained" : a,
+        n = e.sourceMetadata,
+        o = e.reporter,
+        l = void 0 === o ? {
+      warn: g
+    } : o,
+        h = e.breakpoints,
+        p = void 0 === h ? c : h,
+        m = Object.entries({
+      width: e.width,
+      height: e.height
+    }).filter(function (e) {
+      var t = e[1];
+      return "number" == typeof t && t < 1;
+    });
+    if (m.length) throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are " + m.map(function (e) {
+      return e.join(": ");
+    }).join(", "));
+    return "fixed" === r ? function (e) {
+      var t = e.filename,
+          a = e.sourceMetadata,
+          r = e.width,
+          n = e.height,
+          o = e.fit,
+          s = void 0 === o ? "cover" : o,
+          l = e.outputPixelDensities,
+          c = e.reporter,
+          h = void 0 === c ? {
+        warn: g
+      } : c,
+          p = a.width / a.height,
+          m = b(void 0 === l ? u : l);
+
+      if (r && n) {
+        var f = k(a, {
+          width: r,
+          height: n,
+          fit: s
+        });
+        r = f.width, n = f.height, p = f.aspectRatio;
+      }
+
+      r ? n || (n = Math.round(r / p)) : r = n ? Math.round(n * p) : 800;
+      var v,
+          w,
+          y = r;
+
+      if (a.width < r || a.height < n) {
+        var E = a.width < r ? "width" : "height";
+        h.warn(Object(common_tags__WEBPACK_IMPORTED_MODULE_1__["stripIndent"])(d || (v = ["\n    The requested ", ' "', 'px" for the image ', " was larger than the actual image ", " of ", "px. If possible, replace the current image with a larger one."], w || (w = v.slice(0)), v.raw = w, d = v), E, "width" === E ? r : n, t, E, a[E])), "width" === E ? (r = a.width, n = Math.round(r / p)) : r = (n = a.height) * p;
+      }
+
+      return {
+        sizes: m.filter(function (e) {
+          return e >= 1;
+        }).map(function (e) {
+          return Math.round(e * r);
+        }).filter(function (e) {
+          return e <= a.width;
+        }),
+        aspectRatio: p,
+        presentationWidth: y,
+        presentationHeight: Math.round(y / p),
+        unscaledWidth: r
+      };
+    }(e) : "constrained" === r ? E(e) : "fullWidth" === r ? E(s({
+      breakpoints: p
+    }, e)) : (l.warn("No valid layout was provided for the image at " + t + ". Valid image layouts are fixed, fullWidth, and constrained. Found " + r), {
+      sizes: [n.width],
+      presentationWidth: n.width,
+      presentationHeight: n.height,
+      aspectRatio: n.width / n.height,
+      unscaledWidth: n.width
+    });
+  }(s({}, e, {
+    sourceMetadata: r
+  })),
+      W = {
+    sources: []
+  },
+      j = e.sizes;
+
+  j || (j = function (e, t) {
+    switch (t) {
+      case "constrained":
+        return "(min-width: " + e + "px) " + e + "px, 100vw";
+
+      case "fixed":
+        return e + "px";
+
+      case "fullWidth":
+        return "100vw";
+
+      default:
+        return;
+    }
+  }(I.presentationWidth, o)), x.forEach(function (e) {
+    var t = I.sizes.map(function (t) {
+      var i = n(y, t, Math.round(t / I.aspectRatio), e, l, h);
+      if (null != i && i.width && i.height && i.src && i.format) return i;
+      S.warn("[" + a + "] The resolver for image " + y + " returned an invalid value.");
+    }).filter(Boolean);
+
+    if ("jpg" === e || "png" === e || "auto" === e) {
+      var i = t.find(function (e) {
+        return e.width === I.unscaledWidth;
+      }) || t[0];
+      i && (W.fallback = {
+        src: i.src,
+        srcSet: m(t),
+        sizes: j
+      });
+    } else {
+      var r;
+      null == (r = W.sources) || r.push({
+        srcSet: m(t),
+        sizes: j,
+        type: "image/" + e
+      });
+    }
+  });
+  var _ = {
+    images: W,
+    layout: o,
+    backgroundColor: N
+  };
+
+  switch (R && (_.placeholder = {
+    fallback: R
+  }), o) {
+    case "fixed":
+      _.width = I.presentationWidth, _.height = I.presentationHeight;
+      break;
+
+    case "fullWidth":
+      _.width = 1, _.height = 1 / I.aspectRatio;
+      break;
+
+    case "constrained":
+      _.width = e.width || I.presentationWidth || 1, _.height = (_.width || 1) / I.aspectRatio;
+  }
+
+  return _;
+}
+
+var b = function (e) {
+  return Array.from(new Set([1].concat(e))).sort(p);
+};
+
+function E(e) {
+  var t,
+      a = e.sourceMetadata,
+      i = e.width,
+      r = e.height,
+      n = e.fit,
+      o = void 0 === n ? "cover" : n,
+      s = e.outputPixelDensities,
+      l = e.breakpoints,
+      d = e.layout,
+      c = a.width / a.height,
+      h = b(void 0 === s ? u : s);
+
+  if (i && r) {
+    var g = k(a, {
+      width: i,
+      height: r,
+      fit: o
+    });
+    i = g.width, r = g.height, c = g.aspectRatio;
+  }
+
+  i = i && Math.min(i, a.width), r = r && Math.min(r, a.height), i || r || (r = (i = Math.min(800, a.width)) / c), i || (i = r * c);
+  var m = i;
+  return (a.width < i || a.height < r) && (i = a.width, r = a.height), i = Math.round(i), (null == l ? void 0 : l.length) > 0 ? (t = l.filter(function (e) {
+    return e <= a.width;
+  })).length < l.length && !t.includes(a.width) && t.push(a.width) : t = (t = h.map(function (e) {
+    return Math.round(e * i);
+  })).filter(function (e) {
+    return e <= a.width;
+  }), "constrained" !== d || t.includes(i) || t.push(i), {
+    sizes: t = t.sort(p),
+    aspectRatio: c,
+    presentationWidth: m,
+    presentationHeight: Math.round(m / c),
+    unscaledWidth: i
+  };
+}
+
+function k(e, t) {
+  var a = e.width / e.height,
+      i = t.width,
+      r = t.height;
+
+  switch (t.fit) {
+    case "fill":
+      i = t.width ? t.width : e.width, r = t.height ? t.height : e.height;
+      break;
+
+    case "inside":
+      var n = t.width ? t.width : Number.MAX_SAFE_INTEGER,
+          o = t.height ? t.height : Number.MAX_SAFE_INTEGER;
+      i = Math.min(n, Math.round(o * a)), r = Math.min(o, Math.round(n / a));
+      break;
+
+    case "outside":
+      var s = t.width ? t.width : 0,
+          l = t.height ? t.height : 0;
+      i = Math.max(s, Math.round(l * a)), r = Math.max(l, Math.round(s / a));
+      break;
+
+    default:
+      t.width && !t.height && (i = t.width, r = Math.round(t.width / a)), t.height && !t.width && (i = Math.round(t.height * a), r = t.height);
+  }
+
+  return {
+    width: i,
+    height: r,
+    aspectRatio: i / r
+  };
+}
+
+var M = ["baseUrl", "urlBuilder", "sourceWidth", "sourceHeight", "pluginName", "formats", "breakpoints", "options"],
+    S = ["images", "placeholder"];
+
+function N() {
+  return "undefined" != typeof GATSBY___IMAGE && GATSBY___IMAGE;
+}
+
+new Set();
+
+var R = function (e) {
+  var t;
+  return function (e) {
+    var t, a;
+    return Boolean(null == e || null == (t = e.images) || null == (a = t.fallback) ? void 0 : a.src);
+  }(e) ? e : function (e) {
+    return Boolean(null == e ? void 0 : e.gatsbyImageData);
+  }(e) ? e.gatsbyImageData : null == e || null == (t = e.childImageSharp) ? void 0 : t.gatsbyImageData;
+},
+    x = function (e) {
+  var t, a, i;
+  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.src;
+},
+    I = function (e) {
+  var t, a, i;
+  return null == (t = R(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.srcSet;
+};
+
+function W(e) {
+  var t,
+      a = e.baseUrl,
+      i = e.urlBuilder,
+      r = e.sourceWidth,
+      n = e.sourceHeight,
+      o = e.pluginName,
+      d = void 0 === o ? "getImageData" : o,
+      u = e.formats,
+      c = void 0 === u ? ["auto"] : u,
+      g = e.breakpoints,
+      p = e.options,
+      m = l(e, M);
+  return null != (t = g) && t.length || "fullWidth" !== m.layout && "FULL_WIDTH" !== m.layout || (g = h), y(s({}, m, {
+    pluginName: d,
+    generateImageSource: function (e, t, a, r) {
+      return {
+        width: t,
+        height: a,
+        format: r,
+        src: i({
+          baseUrl: e,
+          width: t,
+          height: a,
+          options: p,
+          format: r
+        })
+      };
+    },
+    filename: a,
+    formats: c,
+    breakpoints: g,
+    sourceMetadata: {
+      width: r,
+      height: n,
+      format: "auto"
+    }
+  }));
+}
+
+function j(e, t) {
+  var a,
+      i,
+      r,
+      n = e.images,
+      o = e.placeholder,
+      d = s({}, l(e, S), {
+    images: s({}, n, {
+      sources: []
+    }),
+    placeholder: o && s({}, o, {
+      sources: []
+    })
+  });
+  return t.forEach(function (t) {
+    var a,
+        i = t.media,
+        r = t.image;
+    i ? (r.layout !== e.layout && "development" === "development" && console.warn('[gatsby-plugin-image] Mismatched image layout: expected "' + e.layout + '" but received "' + r.layout + '". All art-directed images use the same layout as the default image'), (a = d.images.sources).push.apply(a, r.images.sources.map(function (e) {
+      return s({}, e, {
+        media: i
+      });
+    }).concat([{
+      media: i,
+      srcSet: r.images.fallback.srcSet
+    }])), d.placeholder && d.placeholder.sources.push({
+      media: i,
+      srcSet: r.placeholder.fallback
+    })) :  true && console.warn("[gatsby-plugin-image] All art-directed images passed to must have a value set for `media`. Skipping.");
+  }), (a = d.images.sources).push.apply(a, n.sources), null != o && o.sources && (null == (i = d.placeholder) || (r = i.sources).push.apply(r, o.sources)), d;
+}
+
+var _,
+    T = ["src", "srcSet", "loading", "alt", "shouldLoad", "innerRef"],
+    A = ["fallback", "sources", "shouldLoad"],
+    O = function (t) {
+  var a = t.src,
+      i = t.srcSet,
+      r = t.loading,
+      n = t.alt,
+      o = void 0 === n ? "" : n,
+      d = t.shouldLoad,
+      u = t.innerRef,
+      c = l(t, T);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", s({}, c, {
+    decoding: "async",
+    loading: r,
+    src: d ? a : void 0,
+    "data-src": d ? void 0 : a,
+    srcSet: d ? i : void 0,
+    "data-srcset": d ? void 0 : i,
+    alt: o,
+    ref: u
+  }));
+},
+    z = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (t, a) {
+  var i = t.fallback,
+      r = t.sources,
+      n = void 0 === r ? [] : r,
+      o = t.shouldLoad,
+      d = void 0 === o || o,
+      u = l(t, A),
+      c = u.sizes || (null == i ? void 0 : i.sizes),
+      h = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(O, s({}, u, i, {
+    sizes: c,
+    shouldLoad: d,
+    innerRef: a
+  }));
+  return n.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("picture", null, n.map(function (t) {
+    var a = t.media,
+        i = t.srcSet,
+        r = t.type;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
+      key: a + "-" + r + "-" + i,
+      type: r,
+      media: a,
+      srcSet: d ? i : void 0,
+      "data-srcset": d ? void 0 : i,
+      sizes: c
+    });
+  }), h) : h;
+});
+
+O.propTypes = {
+  src: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+  srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"]
+}, z.displayName = "Picture", z.propTypes = {
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_3__["bool"],
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__["exact"]({
+    src: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"]
+  }),
+  sources: prop_types__WEBPACK_IMPORTED_MODULE_3__["arrayOf"](prop_types__WEBPACK_IMPORTED_MODULE_3__["oneOfType"]([prop_types__WEBPACK_IMPORTED_MODULE_3__["exact"]({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+    type: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired
+  }), prop_types__WEBPACK_IMPORTED_MODULE_3__["exact"]({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+    type: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"].isRequired
+  })]))
+};
+
+var L = ["fallback"],
+    C = function (t) {
+  var a = t.fallback,
+      i = l(t, L);
+  return a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(z, s({}, i, {
+    fallback: {
+      src: a
+    },
+    "aria-hidden": !0,
+    alt: ""
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", s({}, i));
+};
+
+C.displayName = "Placeholder", C.propTypes = {
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_3__["string"],
+  sources: null == (_ = z.propTypes) ? void 0 : _.sources,
+  alt: function (e, t, a) {
+    return e[t] ? new Error("Invalid prop `" + t + "` supplied to `" + a + "`. Validation failed.") : null;
+  }
+};
+var q = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (t, a) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(z, s({
+    ref: a
+  }, t)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(z, s({}, t, {
+    shouldLoad: !0
+  }))));
+});
+q.displayName = "MainImage", q.propTypes = z.propTypes;
+
+var D = ["children"],
+    P = function () {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    type: "module",
+    dangerouslySetInnerHTML: {
+      __html: 'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}'
+    }
+  });
+},
+    H = function (t) {
+  var a = t.layout,
+      i = t.width,
+      r = t.height;
+  return "fullWidth" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    "aria-hidden": !0,
+    style: {
+      paddingTop: r / i * 100 + "%"
+    }
+  }) : "constrained" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      maxWidth: i,
+      display: "block"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    alt: "",
+    role: "presentation",
+    "aria-hidden": "true",
+    src: "data:image/svg+xml;charset=utf-8,%3Csvg height='" + r + "' width='" + i + "' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+    style: {
+      maxWidth: "100%",
+      display: "block",
+      position: "static"
+    }
+  })) : null;
+},
+    F = function (t) {
+  var i = t.children,
+      r = l(t, D);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H, s({}, r)), i, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(P, null));
+},
+    B = ["as", "children"],
+    G = ["as", "className", "class", "style", "image", "loading", "imgClassName", "imgStyle", "backgroundColor", "objectFit", "objectPosition"],
+    V = ["style", "className"],
+    U = function (e) {
+  return e.replace(/\n/g, "");
+},
+    X = function (t) {
+  var a = t.as,
+      i = void 0 === a ? "div" : a,
+      r = t.children,
+      n = l(t, B);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(i, s({}, n), r);
+},
+    Y = function (t) {
+  var a = t.as,
+      i = t.className,
+      r = t.class,
+      n = t.style,
+      o = t.image,
+      d = t.loading,
+      u = void 0 === d ? "lazy" : d,
+      c = t.imgClassName,
+      h = t.imgStyle,
+      g = t.backgroundColor,
+      p = t.objectFit,
+      m = t.objectPosition,
+      f = l(t, G);
+  if (!o) return console.warn("[gatsby-plugin-image] Missing image prop"), null;
+  r && (i = r), h = s({
+    objectFit: p,
+    objectPosition: m,
+    backgroundColor: g
+  }, h);
+
+  var v = o.width,
+      w = o.height,
+      y = o.layout,
+      b = o.images,
+      E = o.placeholder,
+      k = o.backgroundColor,
+      M = function (e, t, a) {
+    var i = {},
+        r = "gatsby-image-wrapper";
+    return N() || (i.position = "relative", i.overflow = "hidden"), "fixed" === a ? (i.width = e, i.height = t) : "constrained" === a && (N() || (i.display = "inline-block", i.verticalAlign = "top"), r = "gatsby-image-wrapper gatsby-image-wrapper-constrained"), {
+      className: r,
+      "data-gatsby-image-wrapper": "",
+      style: i
+    };
+  }(v, w, y),
+      S = M.style,
+      R = M.className,
+      x = l(M, V),
+      I = {
+    fallback: void 0,
+    sources: []
+  };
+
+  return b.fallback && (I.fallback = s({}, b.fallback, {
+    srcSet: b.fallback.srcSet ? U(b.fallback.srcSet) : void 0
+  })), b.sources && (I.sources = b.sources.map(function (e) {
+    return s({}, e, {
+      srcSet: U(e.srcSet)
+    });
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(X, s({}, x, {
+    as: a,
+    style: s({}, S, n, {
+      backgroundColor: g
+    }),
+    className: R + (i ? " " + i : "")
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(F, {
+    layout: y,
+    width: v,
+    height: w
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(C, s({}, function (e, t, a, i, r, n, o, l) {
+    var d = {};
+    n && (d.backgroundColor = n, "fixed" === a ? (d.width = i, d.height = r, d.backgroundColor = n, d.position = "relative") : ("constrained" === a || "fullWidth" === a) && (d.position = "absolute", d.top = 0, d.left = 0, d.bottom = 0, d.right = 0)), o && (d.objectFit = o), l && (d.objectPosition = l);
+    var u = s({}, e, {
+      "aria-hidden": !0,
+      "data-placeholder-image": "",
+      style: s({
+        opacity: 1,
+        transition: "opacity 500ms linear"
+      }, d)
+    });
+    return N() || (u.style = {
+      height: "100%",
+      left: 0,
+      position: "absolute",
+      top: 0,
+      width: "100%"
+    }), u;
+  }(E, 0, y, v, w, k, p, m))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(q, s({
+    "data-gatsby-image-ssr": "",
+    className: c
+  }, f, function (e, t, a, i, r, n, o, l) {
+    return void 0 === l && (l = {}), N() || (l = s({
+      height: "100%",
+      left: 0,
+      position: "absolute",
+      top: 0,
+      transform: "translateZ(0)",
+      transition: "opacity 250ms linear",
+      width: "100%",
+      willChange: "opacity"
+    }, l)), s({}, a, {
+      loading: i,
+      shouldLoad: e,
+      "data-main-image": "",
+      style: s({}, l, {
+        opacity: 0
+      }),
+      onLoad: function (e) {
+        var t = e.currentTarget,
+            a = new Image();
+        a.src = t.currentSrc, a.decode ? a.decode().catch(function () {}).then(function () {
+          r(!0);
+        }) : r(!0);
+      },
+      ref: void 0
+    });
+  }("eager" === u, 0, I, u, void 0, 0, 0, h)))));
+},
+    Z = ["src", "__imageData", "__error", "width", "height", "aspectRatio", "tracedSVGOptions", "placeholder", "formats", "quality", "transformOptions", "jpgOptions", "pngOptions", "webpOptions", "avifOptions", "blurredOptions"],
+    J = function (t) {
+  return function (a) {
+    var i = a.src,
+        r = a.__imageData,
+        n = a.__error,
+        o = l(a, Z);
+    return n && console.warn(n), r ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(t, s({
+      image: r
+    }, o)) : (console.warn("Image not loaded", i), n || "development" !== "development" || console.warn('Please ensure that "gatsby-plugin-image" is included in the plugins array in gatsby-config.js, and that your version of gatsby is at least 2.24.78'), null);
+  };
+}(Y),
+    K = function (e, t) {
+  return "fullWidth" !== e.layout || "width" !== t && "height" !== t || !e[t] ? prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.number.apply(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a, [e, t].concat([].slice.call(arguments, 2))) : new Error('"' + t + '" ' + e[t] + " may not be passed when layout is fullWidth.");
+},
+    Q = new Set(["fixed", "fullWidth", "constrained"]),
+    $ = {
+  src: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired,
+  alt: function (e, t, a) {
+    return e.alt || "" === e.alt ? prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.apply(prop_types__WEBPACK_IMPORTED_MODULE_3___default.a, [e, t, a].concat([].slice.call(arguments, 3))) : new Error('The "alt" prop is required in ' + a + '. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');
+  },
+  width: K,
+  height: K,
+  sizes: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  layout: function (e) {
+    if (void 0 !== e.layout && !Q.has(e.layout)) return new Error("Invalid value " + e.layout + '" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');
+  }
+};
+
+J.displayName = "StaticImage", J.propTypes = $;
+
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-image/gatsby-ssr.js":
+/*!********************************************************!*\
+  !*** ./node_modules/gatsby-plugin-image/gatsby-ssr.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var React = __webpack_require__(/*! react */ "react");
+
+var commonTags = __webpack_require__(/*! common-tags */ "common-tags");
+
+function _interopNamespace(e) {
+  if (e && e.__esModule) return e;
+  var n = Object.create(null);
+
+  if (e) {
+    Object.keys(e).forEach(function (k) {
+      if (k !== 'default') {
+        var d = Object.getOwnPropertyDescriptor(e, k);
+        Object.defineProperty(n, k, d.get ? d : {
+          enumerable: true,
+          get: function () {
+            return e[k];
+          }
+        });
+      }
+    });
+  }
+
+  n["default"] = e;
+  return n;
+}
+
+var React__namespace = /*#__PURE__*/_interopNamespace(React);
+
+var generateHtml = function generateHtml(str) {
+  return {
+    __html: commonTags.oneLine(str)
+  };
+};
+
+function onRenderBody(_ref) {
+  var setHeadComponents = _ref.setHeadComponents;
+  setHeadComponents([React__namespace.createElement("style", {
+    key: "gatsby-image-style",
+    dangerouslySetInnerHTML: generateHtml(".gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}")
+  }), React__namespace.createElement("noscript", {
+    key: "gatsby-image-style-noscript",
+    dangerouslySetInnerHTML: generateHtml("<style>" + ".gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}" + "</style>")
+  }), React__namespace.createElement("script", {
+    key: "gatsby-image-style-script",
+    type: "module",
+    dangerouslySetInnerHTML: generateHtml("const e=\"undefined\"!=typeof HTMLImageElement&&\"loading\"in HTMLImageElement.prototype;e&&document.body.addEventListener(\"load\",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector(\"[data-placeholder-image]\"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition=\"opacity 500ms linear\")}))}),!0);")
+  })]);
+}
+
+exports.onRenderBody = onRenderBody;
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-manifest/common.js":
 /*!*******************************************************!*\
   !*** ./node_modules/gatsby-plugin-manifest/common.js ***!
@@ -3087,7 +4153,15 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}));
+var scope_0 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/02638e5666fbbce89371f58a95cf2fb6.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/02638e5666fbbce89371f58a95cf2fb6.js").default;
+
+var scope_1 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/9bb372c698eecba069ae59239aec304b.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/9bb372c698eecba069ae59239aec304b.js").default;
+
+var scope_2 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/ace64ae5dfc8ac347dfdbb5fc286b41b.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/ace64ae5dfc8ac347dfdbb5fc286b41b.js").default;
+
+var scope_3 = __webpack_require__(/*! ./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e477834dc1b046be7d126d63b724e343.js */ "./.cache/caches/gatsby-plugin-mdx/mdx-scopes-dir/e477834dc1b046be7d126d63b724e343.js").default;
+
+/* harmony default export */ __webpack_exports__["default"] = (Object.assign({}, scope_0, scope_1, scope_2, scope_3));
 
 /***/ }),
 
@@ -31205,6 +32279,426 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./public/page-data/sq/d/308426744.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/308426744.json ***!
+  \**********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"allMdx\":{\"edges\":[{\"node\":{\"slug\":\"art/dark-matter\",\"frontmatter\":{\"title\":\"Dark Matter\",\"year\":2011,\"image\":\"dark-matter.jpg\",\"alt\":\"heavy black and white angles and large disk painting on rectangular canvas\"}}},{\"node\":{\"slug\":\"art/on-the-way-to-telos\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null}}},{\"node\":{\"slug\":\"writing/logos-emc2\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null}}},{\"node\":{\"slug\":\"art/persistence-of-man-over-nature\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null}}},{\"node\":{\"slug\":\"art/untitled-sculpture-1\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null}}},{\"node\":{\"slug\":\"art/we-are-one\",\"frontmatter\":{\"title\":\"\",\"year\":null,\"image\":null,\"alt\":null}}},{\"node\":{\"slug\":\"writing/the-possibility-of-agreement-in-aesthetic-judgments\",\"frontmatter\":{\"title\":\"test 2\",\"year\":null,\"image\":null,\"alt\":null}}}]}}}");
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3649515864.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3649515864.json ***!
+  \***********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Gatsby Default Starter\"}}}}");
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3662146390.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3662146390.json ***!
+  \***********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"images\":{\"edges\":[{\"node\":{\"relativePath\":\"gatsby-icon.png\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/4a9773549091c227cd2eb82ccd9c5e3a/ccc41/gatsby-icon.png\",\"srcSet\":\"/static/4a9773549091c227cd2eb82ccd9c5e3a/bf8e1/gatsby-icon.png 128w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/acb7c/gatsby-icon.png 256w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/ccc41/gatsby-icon.png 512w\",\"sizes\":\"(min-width: 512px) 512px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/4a9773549091c227cd2eb82ccd9c5e3a/6766a/gatsby-icon.webp 128w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/22bfc/gatsby-icon.webp 256w,\\n/static/4a9773549091c227cd2eb82ccd9c5e3a/d689f/gatsby-icon.webp 512w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 512px) 512px, 100vw\"}]},\"width\":512,\"height\":512}}}},{\"node\":{\"relativePath\":\"tape.gif\",\"childImageSharp\":null}},{\"node\":{\"relativePath\":\"from-within-another.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/86a1248ecf1a25a6348332fc91513fb2/6feb6/from-within-another.jpg\",\"srcSet\":\"/static/86a1248ecf1a25a6348332fc91513fb2/7bee9/from-within-another.jpg 128w,\\n/static/86a1248ecf1a25a6348332fc91513fb2/c78ec/from-within-another.jpg 256w,\\n/static/86a1248ecf1a25a6348332fc91513fb2/6feb6/from-within-another.jpg 512w\",\"sizes\":\"(min-width: 512px) 512px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/86a1248ecf1a25a6348332fc91513fb2/31cdb/from-within-another.webp 128w,\\n/static/86a1248ecf1a25a6348332fc91513fb2/e3e07/from-within-another.webp 256w,\\n/static/86a1248ecf1a25a6348332fc91513fb2/df3f8/from-within-another.webp 512w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 512px) 512px, 100vw\"}]},\"width\":512,\"height\":478.00000000000006}}}},{\"node\":{\"relativePath\":\"the-key-to-elightenment.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/d4d77c1993c7a0e62756fca7f795d4d7/18869/the-key-to-elightenment.jpg\",\"srcSet\":\"/static/d4d77c1993c7a0e62756fca7f795d4d7/d6f53/the-key-to-elightenment.jpg 100w,\\n/static/d4d77c1993c7a0e62756fca7f795d4d7/38177/the-key-to-elightenment.jpg 200w,\\n/static/d4d77c1993c7a0e62756fca7f795d4d7/18869/the-key-to-elightenment.jpg 400w\",\"sizes\":\"(min-width: 400px) 400px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/d4d77c1993c7a0e62756fca7f795d4d7/f2cb4/the-key-to-elightenment.webp 100w,\\n/static/d4d77c1993c7a0e62756fca7f795d4d7/f9911/the-key-to-elightenment.webp 200w,\\n/static/d4d77c1993c7a0e62756fca7f795d4d7/3d164/the-key-to-elightenment.webp 400w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 400px) 400px, 100vw\"}]},\"width\":400,\"height\":600}}}},{\"node\":{\"relativePath\":\"gatsby-astronaut.png\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/6d91c86c0fde632ba4cd01062fd9ccfa/b7804/gatsby-astronaut.png\",\"srcSet\":\"/static/6d91c86c0fde632ba4cd01062fd9ccfa/5aead/gatsby-astronaut.png 200w,\\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/d6138/gatsby-astronaut.png 400w,\\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/b7804/gatsby-astronaut.png 800w\",\"sizes\":\"(min-width: 800px) 800px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/6d91c86c0fde632ba4cd01062fd9ccfa/2e34e/gatsby-astronaut.webp 200w,\\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/416c3/gatsby-astronaut.webp 400w,\\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/c1587/gatsby-astronaut.webp 800w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 800px) 800px, 100vw\"}]},\"width\":800,\"height\":800}}}},{\"node\":{\"relativePath\":\"dark-matter.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/56b71a726e7d69fa403c229f3f595fa7/1bf68/dark-matter.jpg\",\"srcSet\":\"/static/56b71a726e7d69fa403c229f3f595fa7/77174/dark-matter.jpg 278w,\\n/static/56b71a726e7d69fa403c229f3f595fa7/6719a/dark-matter.jpg 555w,\\n/static/56b71a726e7d69fa403c229f3f595fa7/1bf68/dark-matter.jpg 1110w\",\"sizes\":\"(min-width: 1110px) 1110px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/56b71a726e7d69fa403c229f3f595fa7/5a96a/dark-matter.webp 278w,\\n/static/56b71a726e7d69fa403c229f3f595fa7/31c18/dark-matter.webp 555w,\\n/static/56b71a726e7d69fa403c229f3f595fa7/f0c4e/dark-matter.webp 1110w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1110px) 1110px, 100vw\"}]},\"width\":1110,\"height\":1600}}}},{\"node\":{\"relativePath\":\"strange-days1.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/48a937737df354e65f0c378dee70c0d1/20f39/strange-days1.jpg\",\"srcSet\":\"/static/48a937737df354e65f0c378dee70c0d1/f6769/strange-days1.jpg 327w,\\n/static/48a937737df354e65f0c378dee70c0d1/b82de/strange-days1.jpg 653w,\\n/static/48a937737df354e65f0c378dee70c0d1/20f39/strange-days1.jpg 1306w\",\"sizes\":\"(min-width: 1306px) 1306px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/48a937737df354e65f0c378dee70c0d1/6fad7/strange-days1.webp 327w,\\n/static/48a937737df354e65f0c378dee70c0d1/2c672/strange-days1.webp 653w,\\n/static/48a937737df354e65f0c378dee70c0d1/1a93d/strange-days1.webp 1306w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1306px) 1306px, 100vw\"}]},\"width\":1306,\"height\":1600}}}},{\"node\":{\"relativePath\":\"on-the-way-to-telos.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/77afb30be98676cb92a7bff182f7c332/cd45f/on-the-way-to-telos.jpg\",\"srcSet\":\"/static/77afb30be98676cb92a7bff182f7c332/966ce/on-the-way-to-telos.jpg 203w,\\n/static/77afb30be98676cb92a7bff182f7c332/bd793/on-the-way-to-telos.jpg 407w,\\n/static/77afb30be98676cb92a7bff182f7c332/cd45f/on-the-way-to-telos.jpg 813w\",\"sizes\":\"(min-width: 813px) 813px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/77afb30be98676cb92a7bff182f7c332/f159c/on-the-way-to-telos.webp 203w,\\n/static/77afb30be98676cb92a7bff182f7c332/0390f/on-the-way-to-telos.webp 407w,\\n/static/77afb30be98676cb92a7bff182f7c332/f92e4/on-the-way-to-telos.webp 813w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 813px) 813px, 100vw\"}]},\"width\":813,\"height\":1024}}}},{\"node\":{\"relativePath\":\"we-are-one.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/30abe1b3826e7f215a1349c2a67d2ec0/5261a/we-are-one.jpg\",\"srcSet\":\"/static/30abe1b3826e7f215a1349c2a67d2ec0/03b2e/we-are-one.jpg 390w,\\n/static/30abe1b3826e7f215a1349c2a67d2ec0/13291/we-are-one.jpg 779w,\\n/static/30abe1b3826e7f215a1349c2a67d2ec0/5261a/we-are-one.jpg 1558w\",\"sizes\":\"(min-width: 1558px) 1558px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/30abe1b3826e7f215a1349c2a67d2ec0/def7f/we-are-one.webp 390w,\\n/static/30abe1b3826e7f215a1349c2a67d2ec0/98bed/we-are-one.webp 779w,\\n/static/30abe1b3826e7f215a1349c2a67d2ec0/c296f/we-are-one.webp 1558w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1558px) 1558px, 100vw\"}]},\"width\":1558,\"height\":2048}}}},{\"node\":{\"relativePath\":\"gscottqueen.png\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/f0018555c6949e4568b603528560fb3e/9a796/gscottqueen.png\",\"srcSet\":\"/static/f0018555c6949e4568b603528560fb3e/40231/gscottqueen.png 211w,\\n/static/f0018555c6949e4568b603528560fb3e/40a6f/gscottqueen.png 422w,\\n/static/f0018555c6949e4568b603528560fb3e/9a796/gscottqueen.png 844w\",\"sizes\":\"(min-width: 844px) 844px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/f0018555c6949e4568b603528560fb3e/4e400/gscottqueen.webp 211w,\\n/static/f0018555c6949e4568b603528560fb3e/f57c3/gscottqueen.webp 422w,\\n/static/f0018555c6949e4568b603528560fb3e/aff6a/gscottqueen.webp 844w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 844px) 844px, 100vw\"}]},\"width\":844,\"height\":563}}}},{\"node\":{\"relativePath\":\"persistance-of-man-over-nature.JPG\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/59e3ac05b6f348cbce6a8120a1a2ee22/7a84a/persistance-of-man-over-nature.jpg\",\"srcSet\":\"/static/59e3ac05b6f348cbce6a8120a1a2ee22/2070e/persistance-of-man-over-nature.jpg 400w,\\n/static/59e3ac05b6f348cbce6a8120a1a2ee22/d0b9c/persistance-of-man-over-nature.jpg 800w,\\n/static/59e3ac05b6f348cbce6a8120a1a2ee22/7a84a/persistance-of-man-over-nature.jpg 1600w\",\"sizes\":\"(min-width: 1600px) 1600px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/59e3ac05b6f348cbce6a8120a1a2ee22/f5c71/persistance-of-man-over-nature.webp 400w,\\n/static/59e3ac05b6f348cbce6a8120a1a2ee22/0d27e/persistance-of-man-over-nature.webp 800w,\\n/static/59e3ac05b6f348cbce6a8120a1a2ee22/b924f/persistance-of-man-over-nature.webp 1600w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1600px) 1600px, 100vw\"}]},\"width\":1600,\"height\":1200}}}},{\"node\":{\"relativePath\":\"young-descartes.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/2a1183ce005af46bc46fda2d8670883e/05422/young-descartes.jpg\",\"srcSet\":\"/static/2a1183ce005af46bc46fda2d8670883e/22967/young-descartes.jpg 402w,\\n/static/2a1183ce005af46bc46fda2d8670883e/b46b3/young-descartes.jpg 803w,\\n/static/2a1183ce005af46bc46fda2d8670883e/05422/young-descartes.jpg 1606w\",\"sizes\":\"(min-width: 1606px) 1606px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/2a1183ce005af46bc46fda2d8670883e/43f41/young-descartes.webp 402w,\\n/static/2a1183ce005af46bc46fda2d8670883e/284f2/young-descartes.webp 803w,\\n/static/2a1183ce005af46bc46fda2d8670883e/c51d1/young-descartes.webp 1606w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1606px) 1606px, 100vw\"}]},\"width\":1606,\"height\":1920}}}},{\"node\":{\"relativePath\":\"bg.txt\",\"childImageSharp\":null}},{\"node\":{\"relativePath\":\"scarlette.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/4b3a27af7d0d366447de19143a6fedd9/c6ffb/scarlette.jpg\",\"srcSet\":\"/static/4b3a27af7d0d366447de19143a6fedd9/3f21e/scarlette.jpg 353w,\\n/static/4b3a27af7d0d366447de19143a6fedd9/17b1f/scarlette.jpg 706w,\\n/static/4b3a27af7d0d366447de19143a6fedd9/c6ffb/scarlette.jpg 1412w\",\"sizes\":\"(min-width: 1412px) 1412px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/4b3a27af7d0d366447de19143a6fedd9/f24f1/scarlette.webp 353w,\\n/static/4b3a27af7d0d366447de19143a6fedd9/18fdd/scarlette.webp 706w,\\n/static/4b3a27af7d0d366447de19143a6fedd9/eed10/scarlette.webp 1412w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1412px) 1412px, 100vw\"}]},\"width\":1412,\"height\":1919.9999999999998}}}},{\"node\":{\"relativePath\":\"untitled-sculpture-1.png\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/df3316d501d66f30de1cbce071b971ff/57df4/untitled-sculpture-1.png\",\"srcSet\":\"/static/df3316d501d66f30de1cbce071b971ff/904ec/untitled-sculpture-1.png 235w,\\n/static/df3316d501d66f30de1cbce071b971ff/5a282/untitled-sculpture-1.png 469w,\\n/static/df3316d501d66f30de1cbce071b971ff/57df4/untitled-sculpture-1.png 938w\",\"sizes\":\"(min-width: 938px) 938px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/df3316d501d66f30de1cbce071b971ff/09ab4/untitled-sculpture-1.webp 235w,\\n/static/df3316d501d66f30de1cbce071b971ff/6216d/untitled-sculpture-1.webp 469w,\\n/static/df3316d501d66f30de1cbce071b971ff/ca928/untitled-sculpture-1.webp 938w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 938px) 938px, 100vw\"}]},\"width\":938,\"height\":271}}}},{\"node\":{\"relativePath\":\"writting.png\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/de0a20e70377832fe9bea5f0fa640517/74bf5/writting.png\",\"srcSet\":\"/static/de0a20e70377832fe9bea5f0fa640517/7fc46/writting.png 719w,\\n/static/de0a20e70377832fe9bea5f0fa640517/ae996/writting.png 1438w,\\n/static/de0a20e70377832fe9bea5f0fa640517/74bf5/writting.png 2876w\",\"sizes\":\"(min-width: 2876px) 2876px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/de0a20e70377832fe9bea5f0fa640517/d3ff1/writting.webp 719w,\\n/static/de0a20e70377832fe9bea5f0fa640517/e57c5/writting.webp 1438w,\\n/static/de0a20e70377832fe9bea5f0fa640517/2bc13/writting.webp 2876w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 2876px) 2876px, 100vw\"}]},\"width\":2876,\"height\":1538}}}},{\"node\":{\"relativePath\":\"every-question-has-an-answer.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/3ad9b6708500a8ab8dca3969031d793e/fb472/every-question-has-an-answer.jpg\",\"srcSet\":\"/static/3ad9b6708500a8ab8dca3969031d793e/9a7c3/every-question-has-an-answer.jpg 343w,\\n/static/3ad9b6708500a8ab8dca3969031d793e/a6b34/every-question-has-an-answer.jpg 686w,\\n/static/3ad9b6708500a8ab8dca3969031d793e/fb472/every-question-has-an-answer.jpg 1372w\",\"sizes\":\"(min-width: 1372px) 1372px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/3ad9b6708500a8ab8dca3969031d793e/a54f1/every-question-has-an-answer.webp 343w,\\n/static/3ad9b6708500a8ab8dca3969031d793e/21f7b/every-question-has-an-answer.webp 686w,\\n/static/3ad9b6708500a8ab8dca3969031d793e/dd9df/every-question-has-an-answer.webp 1372w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1372px) 1372px, 100vw\"}]},\"width\":1372,\"height\":1920}}}},{\"node\":{\"relativePath\":\"this-that-and-the-other.jpg\",\"childImageSharp\":{\"gatsbyImageData\":{\"layout\":\"constrained\",\"images\":{\"fallback\":{\"src\":\"/static/c60cb519ecdc37565f39c94bfe0123d1/f940a/this-that-and-the-other.jpg\",\"srcSet\":\"/static/c60cb519ecdc37565f39c94bfe0123d1/9dd49/this-that-and-the-other.jpg 393w,\\n/static/c60cb519ecdc37565f39c94bfe0123d1/7a32a/this-that-and-the-other.jpg 785w,\\n/static/c60cb519ecdc37565f39c94bfe0123d1/f940a/this-that-and-the-other.jpg 1570w\",\"sizes\":\"(min-width: 1570px) 1570px, 100vw\"},\"sources\":[{\"srcSet\":\"/static/c60cb519ecdc37565f39c94bfe0123d1/bce99/this-that-and-the-other.webp 393w,\\n/static/c60cb519ecdc37565f39c94bfe0123d1/c03ed/this-that-and-the-other.webp 785w,\\n/static/c60cb519ecdc37565f39c94bfe0123d1/726b9/this-that-and-the-other.webp 1570w\",\"type\":\"image/webp\",\"sizes\":\"(min-width: 1570px) 1570px, 100vw\"}]},\"width\":1570,\"height\":1920}}}}]}}}");
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/63159454.json":
+/*!*********************************************!*\
+  !*** ./public/page-data/sq/d/63159454.json ***!
+  \*********************************************/
+/*! exports provided: data, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"Gatsby Default Starter\",\"description\":\"Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.\",\"author\":\"@gatsbyjs\"}}}}");
+
+/***/ }),
+
+/***/ "./src/components/header.css":
+/*!***********************************!*\
+  !*** ./src/components/header.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/header.js":
+/*!**********************************!*\
+  !*** ./src/components/header.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header.css */ "./src/components/header.css");
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_header_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  className: "tape"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "/"
+}, "G. Scott Queen")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+  to: "/art"
+}, "Art")), " / ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
+  to: "/writing"
+}, "Writing")), " / ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+  href: "mailto:geoffreysqueen@gmail.com"
+}, "Contact")))))));
+
+Header.propTypes = {
+  siteTitle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+};
+Header.defaultProps = {
+  siteTitle: ``
+};
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./src/components/image.js":
+/*!*********************************!*\
+  !*** ./src/components/image.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _public_page_data_sq_d_3662146390_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../public/page-data/sq/d/3662146390.json */ "./public/page-data/sq/d/3662146390.json");
+var _public_page_data_sq_d_3662146390_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/3662146390.json */ "./public/page-data/sq/d/3662146390.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+const Image = (_ref) => {
+  let {
+    src
+  } = _ref,
+      imgAttr = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["src"]);
+
+  // sourceInstanceName defined in gatsby-config
+  const data = _public_page_data_sq_d_3662146390_json__WEBPACK_IMPORTED_MODULE_1__.data;
+  const findImage = Object(react__WEBPACK_IMPORTED_MODULE_2__["useMemo"])(() => data.images.edges.find(({
+    node
+  }) => src === node.relativePath), [data, src]);
+  if (!findImage) return null;
+  let {
+    node: {
+      childImageSharp
+    } = {}
+  } = findImage;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__["GatsbyImage"], Object.assign({
+    image: childImageSharp.gatsbyImageData
+  }, imgAttr));
+};
+
+Image.propTypes = {
+  src: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string
+};
+/* harmony default export */ __webpack_exports__["default"] = (Image);
+
+/***/ }),
+
+/***/ "./src/components/layout.css":
+/*!***********************************!*\
+  !*** ./src/components/layout.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout.js":
+/*!**********************************!*\
+  !*** ./src/components/layout.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/3649515864.json */ "./public/page-data/sq/d/3649515864.json");
+var _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/3649515864.json */ "./public/page-data/sq/d/3649515864.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ "./src/components/header.js");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout.css */ "./src/components/layout.css");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_layout_css__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+const Layout = ({
+  children,
+  bgImage = null,
+  nonav
+}) => {
+  const data = _public_page_data_sq_d_3649515864_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const ImageURL = bgImage !== null ? bgImage.childImageSharp.fluid.src : bgImage;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, !nonav && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
+    style: {
+      backgroundImage: `url(${ImageURL})`
+    }
+  }, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", null)));
+};
+
+Layout.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.node.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/seo.js":
+/*!*******************************!*\
+  !*** ./src/components/seo.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/63159454.json */ "./public/page-data/sq/d/63159454.json");
+var _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/63159454.json */ "./public/page-data/sq/d/63159454.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-helmet */ "react-helmet");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+function SEO({
+  description,
+  lang,
+  meta,
+  title
+}) {
+  var _site$siteMetadata, _site$siteMetadata2;
+
+  const {
+    site
+  } = _public_page_data_sq_d_63159454_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = (_site$siteMetadata = site.siteMetadata) === null || _site$siteMetadata === void 0 ? void 0 : _site$siteMetadata.title;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_3__["Helmet"], {
+    htmlAttributes: {
+      lang
+    },
+    title: title,
+    titleTemplate: defaultTitle ? `%s | ${defaultTitle}` : null,
+    link: [{
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com"
+    }, {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap"
+    }, {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+    }],
+    meta: [{
+      name: `description`,
+      content: metaDescription
+    }, {
+      property: `og:title`,
+      content: title
+    }, {
+      property: `og:description`,
+      content: metaDescription
+    }, {
+      property: `og:type`,
+      content: `website`
+    }, {
+      name: `twitter:card`,
+      content: `summary`
+    }, {
+      name: `twitter:creator`,
+      content: ((_site$siteMetadata2 = site.siteMetadata) === null || _site$siteMetadata2 === void 0 ? void 0 : _site$siteMetadata2.author) || ``
+    }, {
+      name: `twitter:title`,
+      content: title
+    }, {
+      name: `twitter:description`,
+      content: metaDescription
+    }].concat(meta)
+  });
+}
+
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  description: ``
+};
+SEO.propTypes = {
+  description: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  lang: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
+  meta: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object),
+  title: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (SEO);
+
+/***/ }),
+
+/***/ "./src/templates/article-template.css":
+/*!********************************************!*\
+  !*** ./src/templates/article-template.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/templates/article-template.js":
+/*!*******************************************!*\
+  !*** ./src/templates/article-template.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _article_template_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./article-template.css */ "./src/templates/article-template.css");
+/* harmony import */ var _article_template_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_article_template_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+const ArticleTemplate = ({
+  title,
+  children
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  nonav: true
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  title: `G. Scott Queen | ${title}`
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+  id: `${title}`
+}, children));
+
+/* harmony default export */ __webpack_exports__["default"] = (ArticleTemplate);
+
+/***/ }),
+
+/***/ "./src/templates/gallery-template.css":
+/*!********************************************!*\
+  !*** ./src/templates/gallery-template.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./src/templates/gallery-template.js":
+/*!*******************************************!*\
+  !*** ./src/templates/gallery-template.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _public_page_data_sq_d_308426744_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../public/page-data/sq/d/308426744.json */ "./public/page-data/sq/d/308426744.json");
+var _public_page_data_sq_d_308426744_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../public/page-data/sq/d/308426744.json */ "./public/page-data/sq/d/308426744.json", 1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _components_image_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/image.js */ "./src/components/image.js");
+/* harmony import */ var _gallery_template_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./gallery-template.css */ "./src/templates/gallery-template.css");
+/* harmony import */ var _gallery_template_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_gallery_template_css__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+const GalleryTemplate = ({
+  path,
+  children
+}) => {
+  const data = _public_page_data_sq_d_308426744_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const findMarkdown = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(() => data.allMdx.edges.find(({
+    node
+  }) => node.slug === path.replace(/^\/|\/$/g, '')), [data, path]);
+  !findMarkdown ? null : ({
+    node: {
+      frontmatter
+    } = {}
+  } = findMarkdown); // if (!findMarkdown) return null;
+  // let { node: { frontmatter } = {} } = findMarkdown;
+
+  const {
+    title,
+    year,
+    image,
+    alt
+  } = frontmatter;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    nonav: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: `G. Scott Queen | ${title}`
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+    id: title
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_image_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    src: image,
+    alt: alt
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("cite", null, title, ", ", year)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (GalleryTemplate);
+
+/***/ }),
+
 /***/ "@reach/router":
 /*!**********************************************************************************************!*\
   !*** external "/Users/squeen/Projects/gscottqueen-site/node_modules/@reach/router/index.js" ***!
@@ -31213,6 +32707,17 @@ if (false) {} else {
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE__reach_router__;
+
+/***/ }),
+
+/***/ "common-tags":
+/*!************************************************************************************************!*\
+  !*** external "/Users/squeen/Projects/gscottqueen-site/node_modules/common-tags/lib/index.js" ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_common_tags__;
 
 /***/ }),
 
