@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `G. Scott Queen | Art and Creative Code`,
+    title: `G. Scott Queen | Artist`,
     description: `Conceptual artist combining technology and design for one of a kind installations in unique spaces.`,
   },
   plugins: [

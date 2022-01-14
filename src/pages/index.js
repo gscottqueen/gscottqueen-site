@@ -19,7 +19,7 @@ const IndexPage = () => {
 
   return (
     <Layout bgImage={data?.placeholderImage}>
-      <SEO title="Home" />
+      <SEO/>
     </Layout>
   );
 };

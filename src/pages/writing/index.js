@@ -7,8 +7,8 @@ import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="G. Scott Queen | Writing" />
-    <ListingTemplate>
+    <SEO title="Writing" />
+    <ListingTemplate title="Writing">
       <ul>
         <h2>Philosophy</h2>
         <li>
