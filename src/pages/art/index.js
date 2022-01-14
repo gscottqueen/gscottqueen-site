@@ -20,6 +20,7 @@ const IndexArt = () => (
           <li><Link to="/art/on-the-way-to-telos">On the Way to Telos, 2012</Link></li>
           <li><Link to="/art/we-are-one">We Are One, 2012</Link></li>
           <li><Link to="/art/dark-matter">Dark Matter, 2011</Link></li>
+          <li><Link to="/art/strange-days">Strange Days, 2012</Link></li>
         </ul>
       </ul>
     </ListingTemplate>

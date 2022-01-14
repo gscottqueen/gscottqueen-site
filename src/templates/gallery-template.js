@@ -42,7 +42,7 @@ return (
     <SEO title={`G. Scott Queen | ${title}`} />
     <section id={title}>
       <Image src={image} alt={alt}></Image>
-      <div class="citation"><cite>"{title}", {year}</cite> - {medium}</div>
+      <div className="citation"><cite>"{title}", {year}</cite> - {medium}</div>
     </section>
   </Layout>
 )
