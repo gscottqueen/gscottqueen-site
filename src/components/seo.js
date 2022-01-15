@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description !== undefined ? description : site.siteMetadata.description;
-  const defaultTitle = title !== undefined ? title : site.siteMetadata?.title;
+  const defaultTitle = title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title;
 
   return (
     <Helmet
