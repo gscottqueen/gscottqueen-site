@@ -23,6 +23,12 @@ const GalleryTemplate = ({ path, children }) => {
           }
         }
       }
+      allFile(filter: {sourceInstanceName: {eq: "images"}}) {
+        nodes {
+          publicURL
+          base
+        }
+      }
     }
   `);
 
@@ -38,9 +44,17 @@ const GalleryTemplate = ({ path, children }) => {
   let { node: { frontmatter } = {} } = findFrontMatter;
   const { title, year, image, alt, medium } = frontmatter;
 
+  const findDefaultImage = image
+    && data.allFile.nodes.find(
+        ({ base }) => base === image
+      )
+
+  if (!findFrontMatter) return null;
+  const {publicURL} = findDefaultImage
+
   return (
     <Layout nonav>
-      <SEO title={title} description={`${alt}; ${medium}`}/>
+      <SEO title={title} description={`${alt}; ${medium}`} defaultImage={publicURL}/>
       <section id={title}>
         <Image src={image} alt={alt}></Image>
         <div className="citation">
