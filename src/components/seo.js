@@ -51,8 +51,20 @@ function SEO({ description, lang, meta, title, defaultImage }) {
           content: metaDescription,
         },
         {
+          itemprop: `name`,
+          content: defaultTitle,
+        },
+        {
+          itemprop: `description`,
+          content: metaDescription,
+        },
+        {
+          itemprop: `image`,
+          content: defaultMetaImage,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: defaultTitle,
         },
         {
           property: `og:type`,
@@ -83,8 +95,8 @@ function SEO({ description, lang, meta, title, defaultImage }) {
           content: defaultTitle,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          name: `twitter:text:title`,
+          content: defaultTitle,
         },
         {
           name: `twitter:description`,
