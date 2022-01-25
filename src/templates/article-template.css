@@ -18,3 +18,12 @@ article p {
   font-size: 14px;
   line-height: 1.9;
 }
+
+article blockquote {
+  /* font-family: 'Rock Salt', cursive; */
+  line-height: 1.6;
+  size: 32px;
+  padding: 32px;
+  margin: 32px 0px;
+  background-color: rgba(244, 244, 244, 0.942);
+}
