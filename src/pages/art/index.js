@@ -3,7 +3,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-// import Image from "../../components/image";
+import Thumbnail from "../../components/thumbnail";
 import ListingTemplate from "../../templates/listing-template";
 import { Link } from "gatsby";
 
@@ -29,18 +29,20 @@ const ArtListing = ({groupValue}) => {
     return (
       <ul>
         <h2>{groupValue}</h2>
-        {data.allMdx.nodes.map((item,i) => {
-          const { group, slug, title, year } = item.frontmatter
-          console.log(group, groupValue)
-          return (
-            group === groupValue &&
-            <li key={`${group}-item-${i}`}>
-              <Link to={`/art/${slug}/`}>
-                {title}, {year}
-              </Link>
-            </li>
+        <div className="works-listing">
+          {data.allMdx.nodes.map((item,i) => {
+            const { group, slug, title, image } = item.frontmatter
+            return (
+              group === groupValue &&
+              <li key={`${group}-item-${i}`}>
+                <Link to={`/art/${slug}/`}>
+                  <Thumbnail src={image} />
+                  <div>{title}</div>
+                </Link>
+              </li>
+            )}
           )}
-        )}
+        </div>
     </ul>
   )
 }

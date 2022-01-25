@@ -1,9 +1,7 @@
 import React, { useMemo } from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import PropTypes from "prop-types";
 
-const Image = ({ src, thumbnail, ...imgAttr }) => {
+const Thumbnail = ({ src, ...imgAttr }) => {
   // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
@@ -12,10 +10,9 @@ const Image = ({ src, thumbnail, ...imgAttr }) => {
           node {
             relativePath
             childImageSharp {
-              resize(width: 180, height: 180, cropFocus: ENTROPY) {
+              resize(width: 300, height: 180, cropFocus: ENTROPY) {
                 src
               }
-              gatsbyImageData( placeholder: NONE )
             }
           }
         }
@@ -32,18 +29,7 @@ const Image = ({ src, thumbnail, ...imgAttr }) => {
 
   let { node: { childImageSharp } = {} } = findImage;
 
-  console.log({thumbnail})
-
-  const img = !thumbnail ? childImageSharp.gatsbyImageData : childImageSharp.resize.src
-
-  console.log(img)
-
-  return <GatsbyImage image={childImageSharp.gatsbyImageData} {...imgAttr} />;
+  return <img src={childImageSharp.resize.src} {...imgAttr} />;
 };
 
-Image.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string,
-};
-
-export default Image;
+export default Thumbnail;
