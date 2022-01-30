@@ -106,6 +106,11 @@ function SEO({ description, lang, meta, title, defaultImage }) {
           name: `twitter:image`,
           content: defaultMetaImage,
         },
+        {
+          name: 'viewport',
+          id: 'viewport',
+          content: 'width=device-width,user-scalable=yes,initial-scale=1'
+        }
       ].concat(meta)}
     />
   );

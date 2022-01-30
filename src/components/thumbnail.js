@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-const Thumbnail = ({ src, ...imgAttr }) => {
+const Thumbnail = ({ src, alt, ...imgAttr }) => {
   // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
@@ -29,7 +29,7 @@ const Thumbnail = ({ src, ...imgAttr }) => {
 
   let { node: { childImageSharp } = {} } = findImage;
 
-  return <img src={childImageSharp.resize.src} {...imgAttr} />;
+  return <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />;
 };
 
 export default Thumbnail;

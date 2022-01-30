@@ -1,7 +1,7 @@
 article {
   max-width: 720px;
   margin: 80px auto;
-  padding: 0px 20px;
+  padding: 0px 20px 80px;
   text-align: left;
   font-family: 'Syne Mono', monospace;
 }
@@ -20,7 +20,6 @@ article p {
 }
 
 article blockquote {
-  /* font-family: 'Rock Salt', cursive; */
   line-height: 1.6;
   size: 32px;
   padding: 32px;

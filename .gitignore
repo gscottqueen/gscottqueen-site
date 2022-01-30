@@ -65,12 +65,8 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
 
-# link check crawler
-crawler.txt
-
-# cypress
-cypress/snapshots/**/__diff_output__
-cypress/screenshots/*
+package-lock.json
