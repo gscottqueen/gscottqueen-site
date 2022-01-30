@@ -10,7 +10,7 @@ const Thumbnail = ({ src, ...imgAttr }) => {
           node {
             relativePath
             childImageSharp {
-              resize(width: 300, height: 180, cropFocus: ENTROPY) {
+              resize(width: 300, height: 200, cropFocus: ENTROPY) {
                 src
               }
             }

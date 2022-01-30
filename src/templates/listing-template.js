@@ -5,7 +5,7 @@ import "./listing-template.css";
 
 const ListingTemplate = ({ title, children }) => (
   <Layout nonav>
-    <section id={`${title}`}>{children}</section>
+    <section id={`${title}`} className="listing-template">{children}</section>
   </Layout>
 );
 

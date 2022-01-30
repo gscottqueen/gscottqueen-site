@@ -55,7 +55,7 @@ const GalleryTemplate = ({ path, children }) => {
   return (
     <Layout nonav>
       <SEO title={title} description={`${alt}; ${medium}`} defaultImage={publicURL}/>
-      <section id={title}>
+      <section id={title} className="gallery-template">
         <Image src={image} alt={alt}></Image>
         <div className="citation">
           <cite>

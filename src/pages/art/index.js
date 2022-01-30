@@ -31,12 +31,12 @@ const ArtListing = ({groupValue}) => {
         <h2>{groupValue}</h2>
         <div className="works-listing">
           {data.allMdx.nodes.map((item,i) => {
-            const { group, slug, title, image } = item.frontmatter
+            const { group, slug, title, image, alt } = item.frontmatter
             return (
               group === groupValue &&
               <li key={`${group}-item-${i}`}>
                 <Link to={`/art/${slug}/`}>
-                  <Thumbnail src={image} />
+                  <Thumbnail src={image} alt={alt}/>
                   <div>{title}</div>
                 </Link>
               </li>

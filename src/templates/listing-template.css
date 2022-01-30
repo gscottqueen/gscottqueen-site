@@ -1,4 +1,4 @@
-section {
+section.listing-template {
   text-align: center;
   margin-top: 144px;
 }
@@ -35,11 +35,7 @@ li {
   .works-listing {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  section {
-    margin-top: initial;
-  }
-}
