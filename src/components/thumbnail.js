@@ -1,7 +1,9 @@
 import React, { useMemo } from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import './thumbnail.css'
 
 const Thumbnail = ({ src, alt, ...imgAttr }) => {
+console.log(src)
   // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
@@ -10,7 +12,8 @@ const Thumbnail = ({ src, alt, ...imgAttr }) => {
           node {
             relativePath
             childImageSharp {
-              resize(width: 300, height: 200, cropFocus: ENTROPY) {
+
+               resize(width: 800, height: 800, cropFocus: ENTROPY) {
                 src
               }
             }
@@ -29,7 +32,12 @@ const Thumbnail = ({ src, alt, ...imgAttr }) => {
 
   let { node: { childImageSharp } = {} } = findImage;
 
-  return <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />;
+  return (
+    <div className="thumbnail-wrapper">
+      <div className="thumbnail-overlay"/>
+      <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
+    </div>
+  );
 };
 
 export default Thumbnail;
