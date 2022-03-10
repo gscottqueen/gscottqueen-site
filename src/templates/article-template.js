@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import "./article-template.css";
 
 const ArticleTemplate = ({ path, children }) => {
@@ -39,7 +39,7 @@ const ArticleTemplate = ({ path, children }) => {
 
   return (
   <Layout nonav>
-    <SEO title={title} description={description}/>
+    <Seo title={title} description={description}/>
     <article id={`${title}`}>{children}</article>
   </Layout>
 )};

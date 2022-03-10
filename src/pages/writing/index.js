@@ -1,13 +1,13 @@
 import React from "react";
 
 import Layout from "../../components/layout";
-import SEO from "../../components/seo";
+import Seo from "../../components/seo";
 import ListingTemplate from "../../templates/listing-template";
 import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Writing" />
+    <Seo title="Writing" />
     <ListingTemplate title="Writing">
       <ul>
         <h2>Philosophy</h2>

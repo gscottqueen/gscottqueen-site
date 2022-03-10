@@ -2,7 +2,7 @@ import React from "react";
 
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
-import SEO from "../../components/seo";
+import Seo from "../../components/seo";
 import Thumbnail from "../../components/thumbnail";
 import ListingTemplate from "../../templates/listing-template";
 import { Link } from "gatsby";
@@ -49,7 +49,7 @@ const ArtListing = ({groupValue}) => {
 
 const IndexArt = () => (
   <Layout>
-    <SEO title="Art" />
+    <Seo title="Art" />
     <ListingTemplate title="Art">
       <ul>
         <ArtListing groupValue="Sculpture" />

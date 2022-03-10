@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Image from "../components/image.js";
 import "./gallery-template.css";
 
@@ -54,7 +54,7 @@ const GalleryTemplate = ({ path, children }) => {
 
   return (
     <Layout nonav>
-      <SEO title={title} description={`${alt}; ${medium}`} defaultImage={publicURL}/>
+      <Seo title={title} description={`${alt}; ${medium}`} defaultImage={publicURL}/>
       <section id={title} className="gallery-template">
         <Image src={image} alt={alt}></Image>
         <div className="citation">
