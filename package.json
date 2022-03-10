@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gscottqueen-site",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Experiential site for artwork by G. Scott Queen",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "G. Scott Queen",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -27,7 +27,8 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "artist",
+    "sculptor"
   ],
   "license": "0BSD",
   "scripts": {
@@ -41,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/gscottqueen/gscottqueen-site"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gscottqueen/gscottqueen-site/issues"
   }
 }
