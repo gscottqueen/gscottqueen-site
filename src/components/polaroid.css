@@ -1,0 +1,17 @@
+.thumbnail-wrapper {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.thumbnail-overlay {
+  background-image: url("../images/polaroid-4.png");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 9999;
+}

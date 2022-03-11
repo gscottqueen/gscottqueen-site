@@ -3,9 +3,10 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import Thumbnail from "../../components/thumbnail";
+// import Thumbnail from "../../components/thumbnail";
 import ListingTemplate from "../../templates/listing-template";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+import Deck from "../../components/deck"
 
 const ArtListing = ({groupValue}) => {
   const data = useStaticQuery(graphql`
@@ -27,9 +28,11 @@ const ArtListing = ({groupValue}) => {
   `)
 
     return (
-      <ul>
-        <h2>{groupValue}</h2>
-        <div className="works-listing">
+    <div className="test">
+    {/* <Deck /> */}
+    {/* <ul className="test"> */}
+        {/* <h2>{groupValue}</h2> */}
+        {/* <div className="works-listing">
           {data.allMdx.nodes.map((item,i) => {
             const { group, slug, title, image, alt } = item.frontmatter
             return (
@@ -42,20 +45,24 @@ const ArtListing = ({groupValue}) => {
               </li>
             )}
           )}
-        </div>
-    </ul>
+        </div> */}
+    {/* </ul> */}
+    </div>
   )
 }
 
 const IndexArt = () => (
   <Layout>
     <Seo title="Art" />
-    <ListingTemplate title="Art">
-      <ul>
+    {/* <ListingTemplate title="Art" className="test"> */}
+    <div className="test">
+      <Deck />
+    </div>
+      {/* <ul>
         <ArtListing groupValue="Sculpture" />
         <ArtListing groupValue="Painting" />
-      </ul>
-    </ListingTemplate>
+      </ul> */}
+    {/* </ListingTemplate> */}
   </Layout>
 );
 

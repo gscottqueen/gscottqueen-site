@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import './thumbnail.css'
+import './polaroid.css'
 
-const Thumbnail = ({ src, alt, ...imgAttr }) => {
-console.log(src)
+const Polaroid = ({ src, alt, ...imgAttr }) => {
   // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
@@ -40,4 +39,4 @@ console.log(src)
   );
 };
 
-export default Thumbnail;
+export default Polaroid;

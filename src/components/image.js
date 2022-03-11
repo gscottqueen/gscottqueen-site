@@ -32,11 +32,7 @@ const Image = ({ src, thumbnail, ...imgAttr }) => {
 
   let { node: { childImageSharp } = {} } = findImage;
 
-  console.log({thumbnail})
-
-  const img = !thumbnail ? childImageSharp.gatsbyImageData : childImageSharp.resize.src
-
-  console.log(img)
+  // const img = !thumbnail ? childImageSharp.gatsbyImageData : childImageSharp.resize.src
 
   return <GatsbyImage image={childImageSharp.gatsbyImageData} {...imgAttr} />;
 };
