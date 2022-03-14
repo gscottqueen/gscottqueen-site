@@ -1,11 +1,11 @@
-.thumbnail-wrapper {
+.polaroid-wrapper {
   position: relative;
   width: 450px;
   margin: 0 auto;
   background-color: transparent;
 }
 
-.thumbnail-overlay {
+.polaroid-overlay {
   background-image: url("../images/polaroid-4.png");
   height: 100%;
   width: 100%;

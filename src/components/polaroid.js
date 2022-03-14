@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import './polaroid.css'
 
-const Polaroid = ({ src, alt, ...imgAttr }) => {
-  // sourceInstanceName defined in gatsby-config
+const Polaroid = ({ src, alt, slug, title, ...imgAttr }) => {
   const data = useStaticQuery(graphql`
     query {
       images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -11,7 +10,6 @@ const Polaroid = ({ src, alt, ...imgAttr }) => {
           node {
             relativePath
             childImageSharp {
-
                resize(width: 800, height: 800, cropFocus: ENTROPY) {
                 src
               }
@@ -32,9 +30,15 @@ const Polaroid = ({ src, alt, ...imgAttr }) => {
   let { node: { childImageSharp } = {} } = findImage;
 
   return (
-    <div className="thumbnail-wrapper">
-      <div className="thumbnail-overlay"/>
-      <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
+    <div className="polaroid-wrapper">
+    <Link to={`/art/${slug}/`}>
+        <div className="polaroid-overlay" />
+        <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
+        <span style={{
+          position: "relative",
+          top: "20px"
+      }}>{title}</span>
+    </Link>
     </div>
   );
 };
