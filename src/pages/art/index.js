@@ -4,7 +4,7 @@ import Seo from "../../components/seo";
 import Deck from "../../components/deck"
 
 const IndexArt = () => (
-  <Layout>
+  <Layout style={{position: "relative"}}>
     <Seo title="Art" />
     <div className="cards-wrapper">
       <Deck />

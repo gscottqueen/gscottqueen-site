@@ -51,8 +51,7 @@ const Deck = () => {
           title={markdownSources[i].frontmatter.title}
           src={ cards[i] }
           style={{
-            height: '500px',
-            clipPath: `polygon(12% 13%, 91% 13%, 90% 85%, 12% 85%)`}}
+            clipPath: `polygon(15% 13%, 85% 13%, 85% 85%, 15% 85%)`}}
             />
       </animated.div>
     </animated.div>

@@ -2,7 +2,7 @@
   overscroll-behavior-y: contain;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   will-change: transform;
   display: flex;
   align-items: center;
@@ -14,8 +14,4 @@
   background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 45vh;
-  max-width: 300px;
-  height: 85vh;
-  max-height: 570px;
 }
