@@ -10,7 +10,6 @@
 }
 
 .card-wrapper .card {
-  touch-action: none;
   background-color: transparent;
   background-size: auto 85%;
   background-repeat: no-repeat;
