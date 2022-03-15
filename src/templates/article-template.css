@@ -20,7 +20,16 @@ article p {
 }
 
 article .polaroid-wrapper {
-  float: right;
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media screen and (min-device-width: 720px) {
+  article .polaroid-wrapper {
+    float: right;
+    width: 500px;
+  }
 }
 
 article blockquote {
