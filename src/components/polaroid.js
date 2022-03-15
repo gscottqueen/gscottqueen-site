@@ -10,7 +10,7 @@ import './polaroid.css'
 //       clipPath: `polygon(15% 13%, 85% 13%, 85% 85%, 15% 85%)`}}
 //       />
 
-const Polaroid = ({ src, alt, slug, title, ...imgAttr }) => {
+const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
   const data = useStaticQuery(graphql`
     query {
       images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -39,7 +39,7 @@ const Polaroid = ({ src, alt, slug, title, ...imgAttr }) => {
 
   return (
     <div className="polaroid-wrapper">
-    <Link to={`/art/${slug}/`}>
+    <Link to={`/art/${year}/${slug}/`}>
         <div className="polaroid-overlay" />
         <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
         <div className="polaroid-title">{title}</div>
