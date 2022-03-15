@@ -45,14 +45,15 @@ const ArchiveListing = ({groupValue}) => {
   )
 }
 
-const groups = ["Concepts"]
+// TODO: set up new work structure
+// const groups = ["Concepts"]
 
 const IndexArchives = () => (
   <Layout>
     <Seo title="Art" />
     <ListingTemplate title="Art">
       {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
-      New work is evolving, in the meantime visit the <Link to={`archives`}>Archives</Link> to see previous work.
+      New concepts are in the works, in the meantime visit the <Link to={`archives`}>Archives</Link> to see previous years work.
     </ListingTemplate>
   </Layout>
 );

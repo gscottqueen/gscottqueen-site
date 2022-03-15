@@ -3,8 +3,12 @@ section.listing-template {
   margin-top: 144px;
 }
 
+.listing-wrapper ul {
+  margin-top: 60px;
+}
+
 h1 {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   margin: 0;
   line-height: 1.6;
 }
@@ -28,14 +32,5 @@ li {
 }
 
 .works-listing {
-  flex-wrap: column;
+  margin-top: 20px;
 }
-
-@media only screen and (min-width: 900px) {
-  .works-listing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-

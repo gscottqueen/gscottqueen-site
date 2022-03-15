@@ -49,10 +49,8 @@ const IndexArchive = () => (
   <Layout>
     <Seo title="Art" />
     <ListingTemplate title="Art">
-      <ul>
-        <ArchiveListing groupValue="Sculpture" />
-        <ArchiveListing groupValue="Painting" />
-      </ul>
+      <ArchiveListing groupValue="Sculpture" />
+      <ArchiveListing groupValue="Painting" />
     </ListingTemplate>
   </Layout>
 );
