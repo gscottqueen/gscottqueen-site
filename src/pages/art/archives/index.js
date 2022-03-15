@@ -1,15 +1,15 @@
 import React from "react";
 
 import { graphql, useStaticQuery } from "gatsby";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
-import ListingTemplate from "../../templates/listing-template";
+import Layout from "../../../components/layout";
+import Seo from "../../../components/seo";
+import ListingTemplate from "../../../templates/listing-template";
 import { Link } from "gatsby";
 
 const ArchiveListing = ({groupValue}) => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: {frontmatter: {archived: {eq: false}}}) {
+      allMdx(filter: {frontmatter: {archived: {eq: true}}}) {
         nodes {
           frontmatter {
             title
@@ -45,16 +45,16 @@ const ArchiveListing = ({groupValue}) => {
   )
 }
 
-const groups = ["Concepts"]
-
-const IndexArchives = () => (
+const IndexArchive = () => (
   <Layout>
     <Seo title="Art" />
     <ListingTemplate title="Art">
-      {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
-      New work is evolving, in the meantime visit the <Link to={`archives`}>Archives</Link> to see previous work.
+      <ul>
+        <ArchiveListing groupValue="Sculpture" />
+        <ArchiveListing groupValue="Painting" />
+      </ul>
     </ListingTemplate>
   </Layout>
 );
 
-export default IndexArchives;
+export default IndexArchive;

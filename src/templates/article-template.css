@@ -3,7 +3,7 @@ article {
   margin: 80px auto;
   padding: 0px 20px 80px;
   text-align: left;
-  font-family: 'Syne Mono', monospace;
+  font-family: "Syne Mono", monospace;
 }
 
 article h1 {
@@ -17,6 +17,10 @@ article hr {
 article p {
   font-size: 14px;
   line-height: 1.9;
+}
+
+article .polaroid-wrapper {
+  float: right;
 }
 
 article blockquote {
