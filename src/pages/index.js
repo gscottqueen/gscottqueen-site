@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import { useStaticQuery, graphql } from "gatsby";
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -15,13 +15,13 @@ const IndexPage = () => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <Layout bgImage={data?.placeholderImage}>
-      <Seo/>
+      <Seo />
     </Layout>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage

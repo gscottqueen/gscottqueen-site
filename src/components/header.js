@@ -1,7 +1,7 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
-import "./header.css";
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import './header.css'
 
 const Header = () => (
   <header>
@@ -14,12 +14,12 @@ const Header = () => (
           <span>
             <span>
               <Link to="/art">Art</Link>
-            </span>{" "}
-            /{" "}
+            </span>{' '}
+            /{' '}
             <span>
               <Link to="/writing">Writing</Link>
-            </span>{" "}
-            /{" "}
+            </span>{' '}
+            /{' '}
             <span>
               <a href="mailto:geoffreysqueen@gmail.com">Contact</a>
             </span>
@@ -28,14 +28,14 @@ const Header = () => (
       </div>
     </div>
   </header>
-);
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   siteTitle: ``,
-};
+}
 
-export default Header;
+export default Header

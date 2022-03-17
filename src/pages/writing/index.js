@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
-import ListingTemplate from "../../templates/listing-template";
-import { Link } from "gatsby";
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import ListingTemplate from '../../templates/listing-template'
+import { Link } from 'gatsby'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Writing" slug="writing"/>
+    <Seo title="Writing" slug="writing" />
     <ListingTemplate title="Writing">
       <ul>
         <h2>Philosophy</h2>
@@ -24,6 +24,6 @@ const IndexPage = () => (
       </ul>
     </ListingTemplate>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

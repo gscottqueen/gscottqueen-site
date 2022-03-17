@@ -1,16 +1,19 @@
-const url = process.env.NODE_ENV === 'development' ? 'localhost:8000' : `https://www.gscottqueen.com`;
+const url =
+  process.env.NODE_ENV === 'development'
+    ? 'localhost:8000'
+    : `https://www.gscottqueen.com`
 
 module.exports = {
   siteMetadata: {
     title: `G. Scott Queen | Artist`,
     description: `Conceptual artist combining technology and design for one of a kind installations in unique spaces.`,
     baseUrl: url,
-    defaultImage: `/images/gscottqueen.png`
+    defaultImage: `/images/gscottqueen.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    "gatsby-plugin-mdx-frontmatter",
+    'gatsby-plugin-mdx-frontmatter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,10 +49,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/pages/writing/`,
       },
     },
   ],
-};
+}

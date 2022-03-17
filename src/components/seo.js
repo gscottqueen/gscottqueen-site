@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 function Seo({ description, lang, meta, title, defaultImage, slug }) {
   const { site, allSitePage } = useStaticQuery(
@@ -24,27 +24,27 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         }
       }
     `
-  );
+  )
 
-  const metaDescription = description !== undefined ?
-    description
-    : site.siteMetadata.description;
+  const metaDescription =
+    description !== undefined ? description : site.siteMetadata.description
 
-  const defaultTitle = title !== undefined ?
-    `G. Scott Queen | ${title}`
-    : site.siteMetadata?.title;
+  const defaultTitle =
+    title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title
 
-  const defaultMetaImage = defaultImage !== undefined ?
-    `${site.siteMetadata.baseUrl}${defaultImage}`
-    : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
+  const defaultMetaImage =
+    defaultImage !== undefined
+      ? `${site.siteMetadata.baseUrl}${defaultImage}`
+      : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
 
-  const nodeObj = slug && allSitePage.edges.filter(page =>
-    page.node.path.includes(slug)
-      ? page.node.path
-      : null
+  const nodeObj =
+    slug &&
+    allSitePage.edges.filter((page) =>
+      page.node.path.includes(slug) ? page.node.path : null
     )
 
-  const canonicalURL = nodeObj && `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
+  const canonicalURL =
+    nodeObj && `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
 
   return (
     <Helmet
@@ -54,22 +54,22 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       title={defaultTitle}
       link={[
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
         },
         {
-          rel: "canonical",
+          rel: 'canonical',
           href: canonicalURL || site.siteMetadata.baseUrl,
         },
         {
-          rel: "stylesheet",
+          rel: 'stylesheet',
           href:
-            "https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap",
+            'https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap',
         },
         {
-          rel: "stylesheet",
+          rel: 'stylesheet',
           href:
-            "https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap",
+            'https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap',
         },
       ]}
       meta={[
@@ -99,7 +99,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         },
         {
           name: `og:url`,
-          content: canonicalURL || site.siteMetadata.baseUrl
+          content: canonicalURL || site.siteMetadata.baseUrl,
         },
         {
           property: `og:image`,
@@ -115,7 +115,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         },
         {
           name: `twitter:site`,
-          content: canonicalURL || site.siteMetadata.baseUrl
+          content: canonicalURL || site.siteMetadata.baseUrl,
         },
         {
           name: `twitter:creator`,
@@ -136,23 +136,23 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         {
           name: 'viewport',
           id: 'viewport',
-          content: 'width=device-width,user-scalable=yes,initial-scale=1'
-        }
+          content: 'width=device-width,user-scalable=yes,initial-scale=1',
+        },
       ].concat(meta)}
     />
-  );
+  )
 }
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-};
+}
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
-};
-export default Seo;
+}
+export default Seo

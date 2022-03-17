@@ -18,5 +18,5 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     type ItemValues {
       value: String @mdx
     }
-  `);
-};
+  `)
+}

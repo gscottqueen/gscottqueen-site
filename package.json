@@ -24,7 +24,8 @@
     "react-spring": "^9.4.3"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "husky": "^7.0.0"
   },
   "keywords": [
     "artist",
@@ -38,7 +39,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",

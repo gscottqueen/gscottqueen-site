@@ -1,7 +1,7 @@
-import React, { useMemo } from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import PropTypes from "prop-types";
+import React, { useMemo } from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import PropTypes from 'prop-types'
 
 const Image = ({ src, thumbnail, ...imgAttr }) => {
   // sourceInstanceName defined in gatsby-config
@@ -15,31 +15,31 @@ const Image = ({ src, thumbnail, ...imgAttr }) => {
               resize(width: 180, height: 180, cropFocus: ENTROPY) {
                 src
               }
-              gatsbyImageData( placeholder: NONE )
+              gatsbyImageData(placeholder: NONE)
             }
           }
         }
       }
     }
-  `);
+  `)
 
   const findImage = useMemo(
     () => data.images.edges.find(({ node }) => src === node.relativePath),
     [data, src]
-  );
+  )
 
-  if (!findImage) return null;
+  if (!findImage) return null
 
-  let { node: { childImageSharp } = {} } = findImage;
+  let { node: { childImageSharp } = {} } = findImage
 
   // const img = !thumbnail ? childImageSharp.gatsbyImageData : childImageSharp.resize.src
 
-  return <GatsbyImage image={childImageSharp.gatsbyImageData} {...imgAttr} />;
-};
+  return <GatsbyImage image={childImageSharp.gatsbyImageData} {...imgAttr} />
+}
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
-};
+}
 
-export default Image;
+export default Image

@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import { graphql, useStaticQuery } from "gatsby";
-import Layout from "../../components/layout";
-import Seo from "../../components/seo";
-import ListingTemplate from "../../templates/listing-template";
-import { Link } from "gatsby";
+import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import ListingTemplate from '../../templates/listing-template'
+import { Link } from 'gatsby'
 
-const ArchiveListing = ({groupValue}) => {
+const ArchiveListing = ({ groupValue }) => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(filter: {frontmatter: {archived: {eq: false}}}) {
+      allMdx(filter: { frontmatter: { archived: { eq: false } } }) {
         nodes {
           frontmatter {
             title
@@ -25,22 +25,23 @@ const ArchiveListing = ({groupValue}) => {
     }
   `)
 
-    return (
-      <ul>
-        <h2>{groupValue}</h2>
-        <div className="works-listing">
-          {data.allMdx.nodes.map((item,i) => {
-            const { group, slug, year, title } = item.frontmatter
-            return (
-              group === groupValue &&
+  return (
+    <ul>
+      <h2>{groupValue}</h2>
+      <div className="works-listing">
+        {data.allMdx.nodes.map((item, i) => {
+          const { group, slug, year, title } = item.frontmatter
+          return (
+            group === groupValue && (
               <li key={`${group}-item-${i}`}>
                 <Link to={`/art/${year}/${slug}/`}>
                   <div>{title}</div>
                 </Link>
               </li>
-            )}
-          )}
-        </div>
+            )
+          )
+        })}
+      </div>
     </ul>
   )
 }
@@ -50,12 +51,13 @@ const ArchiveListing = ({groupValue}) => {
 
 const IndexArchives = () => (
   <Layout>
-    <Seo title="Art" slug="art"/>
+    <Seo title="Art" slug="art" />
     <ListingTemplate title="Art">
       {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
-      New concepts are in the works, in the meantime visit the <Link to={`archives`}>archives</Link> to see previous years work.
+      New concepts are in the works, in the meantime visit the{' '}
+      <Link to={`archives`}>archives</Link> to see previous years work.
     </ListingTemplate>
   </Layout>
-);
+)
 
-export default IndexArchives;
+export default IndexArchives

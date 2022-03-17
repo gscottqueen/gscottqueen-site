@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import React, { useMemo } from 'react'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import './polaroid.css'
 
 //  <Polaroid
@@ -18,7 +18,7 @@ const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
           node {
             relativePath
             childImageSharp {
-               resize(width: 800, height: 800, cropFocus: ENTROPY) {
+              resize(width: 800, height: 800, cropFocus: ENTROPY) {
                 src
               }
             }
@@ -26,26 +26,26 @@ const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
         }
       }
     }
-  `);
+  `)
 
   const findImage = useMemo(
     () => data.images.edges.find(({ node }) => src === node.relativePath),
     [data, src]
-  );
+  )
 
-  if (!findImage) return null;
+  if (!findImage) return null
 
-  let { node: { childImageSharp } = {} } = findImage;
+  let { node: { childImageSharp } = {} } = findImage
 
   return (
     <div className="polaroid-wrapper">
-    <Link to={`/art/${year}/${slug}/`}>
+      <Link to={`/art/${year}/${slug}/`}>
         <div className="polaroid-overlay" />
         <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
         <div className="polaroid-title">{title}</div>
-    </Link>
+      </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Polaroid;
+export default Polaroid
