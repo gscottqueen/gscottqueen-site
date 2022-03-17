@@ -6,13 +6,13 @@ section.gallery-template {
   padding: 10px;
 }
 
-img {
+section.gallery-template img {
   width: auto;
   max-width: 100%;
   max-height: 70vh;
 }
 
-.citation {
+section.gallery-template .citation {
   text-align: center;
   width: 100%;
   background-color: #ffffff;
@@ -24,7 +24,7 @@ img {
     margin-top: 0px;
   }
 
-  .citation {
+  section.gallery-template .citation {
     position: absolute;
     bottom: 10px;
   }

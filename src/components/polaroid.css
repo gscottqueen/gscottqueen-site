@@ -6,11 +6,12 @@
 }
 
 .polaroid-wrapper img {
+  max-height: 500px;
   clip-path: polygon(20% 13%, 85% 13%, 85% 85%, 20% 85%);
 }
 
 .polaroid-overlay {
-  background-image: url("../images/polaroid-4.png");
+  background-image: url('../images/polaroid-4.png');
   height: 100%;
   width: 100%;
   background-size: contain;
@@ -21,7 +22,7 @@
 }
 
 .polaroid-title {
-  font-family: "Rock Salt", cursive;
+  font-family: 'Rock Salt', cursive;
   margin: 0;
   line-height: 1.6;
   position: absolute;
