@@ -12,7 +12,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
         <main
           style={
             bgImage !== null ?
-              { backgroundImage: `url(${bgImage.childImageSharp.fluid.src})`}
+              { backgroundImage: `url(${bgImage.childImageSharp.fluid.src})` }
               : {}
             }>
           {children}
