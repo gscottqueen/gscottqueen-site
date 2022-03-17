@@ -26,9 +26,17 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     `
   );
 
-  const metaDescription = description !== undefined ? description : site.siteMetadata.description;
-  const defaultTitle = title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title;
-  const defaultMetaImage = defaultImage !== undefined ? `${site.siteMetadata.baseUrl}${defaultImage}` : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
+  const metaDescription = description !== undefined ?
+    description
+    : site.siteMetadata.description;
+
+  const defaultTitle = title !== undefined ?
+    `G. Scott Queen | ${title}`
+    : site.siteMetadata?.title;
+
+  const defaultMetaImage = defaultImage !== undefined ?
+    `${site.siteMetadata.baseUrl}${defaultImage}`
+    : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
 
   const nodeObj = slug && allSitePage.edges.filter(page =>
     page.node.path.includes(slug)
