@@ -50,10 +50,10 @@ const ArchiveListing = ({groupValue}) => {
 
 const IndexArchives = () => (
   <Layout>
-    <Seo title="Art" />
+    <Seo title="Art" slug="art"/>
     <ListingTemplate title="Art">
       {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
-      New concepts are in the works, in the meantime visit the <Link to={`archives`}>Archives</Link> to see previous years work.
+      New concepts are in the works, in the meantime visit the <Link to={`archives`}>archives</Link> to see previous years work.
     </ListingTemplate>
   </Layout>
 );

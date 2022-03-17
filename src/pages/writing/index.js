@@ -7,12 +7,12 @@ import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Writing" />
+    <Seo title="Writing" slug="writing"/>
     <ListingTemplate title="Writing">
       <ul>
         <h2>Philosophy</h2>
         <li>
-          <Link to="/writing/logos-emc2">
+          <Link to="/writing/logos-equals-mc2">
             Logos = mc<sup>2</sup>
           </Link>
         </li>

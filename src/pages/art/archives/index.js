@@ -47,7 +47,7 @@ const ArchiveListing = ({groupValue}) => {
 
 const IndexArchive = () => (
   <Layout>
-    <Seo title="Art" />
+    <Seo title="Art" slug="archives"/>
     <ListingTemplate title="Art">
       <ArchiveListing groupValue="Sculpture" />
       <ArchiveListing groupValue="Painting" />

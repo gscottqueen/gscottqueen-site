@@ -19,6 +19,7 @@ const GalleryTemplate = ({ path, children }) => {
               image
               alt
               medium
+              slug
             }
           }
         }
@@ -42,7 +43,7 @@ const GalleryTemplate = ({ path, children }) => {
 
   if (!findFrontMatter) return null;
   let { node: { frontmatter } = {} } = findFrontMatter;
-  const { title, year, image, alt, medium } = frontmatter;
+  const { title, year, image, alt, medium, slug } = frontmatter;
 
   const findDefaultImage = image
     && data.allFile.nodes.find(
@@ -50,11 +51,11 @@ const GalleryTemplate = ({ path, children }) => {
       )
 
   if (!findFrontMatter) return null;
-  const {publicURL} = findDefaultImage
+  const { publicURL } = findDefaultImage
 
   return (
     <Layout nonav>
-      <Seo title={title} description={`${alt}; ${medium}`} defaultImage={publicURL}/>
+      <Seo title={title} description={`${alt}; ${medium}`} defaultImage={publicURL} slug={slug}/>
       <section id={title} className="gallery-template">
         <Image src={image} alt={alt}></Image>
         <div className="citation">

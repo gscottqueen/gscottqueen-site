@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function Seo({ description, lang, meta, title, defaultImage }) {
-  const { site } = useStaticQuery(
+function Seo({ description, lang, meta, title, defaultImage, slug }) {
+  const { site, allSitePage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -15,6 +15,13 @@ function Seo({ description, lang, meta, title, defaultImage }) {
             defaultImage
           }
         }
+        allSitePage {
+          edges {
+            node {
+              path
+            }
+          }
+        }
       }
     `
   );
@@ -22,6 +29,14 @@ function Seo({ description, lang, meta, title, defaultImage }) {
   const metaDescription = description !== undefined ? description : site.siteMetadata.description;
   const defaultTitle = title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title;
   const defaultMetaImage = defaultImage !== undefined ? `${site.siteMetadata.baseUrl}${defaultImage}` : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
+
+  const nodeObj = slug && allSitePage.edges.filter(page =>
+    page.node.path.includes(slug)
+      ? page.node.path
+      : null
+    )
+
+  const canonicalURL = nodeObj && `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
 
   return (
     <Helmet
@@ -33,6 +48,10 @@ function Seo({ description, lang, meta, title, defaultImage }) {
         {
           rel: "preconnect",
           href: "https://fonts.gstatic.com",
+        },
+        {
+          rel: "canonical",
+          href: canonicalURL || site.siteMetadata.baseUrl,
         },
         {
           rel: "stylesheet",
@@ -72,7 +91,7 @@ function Seo({ description, lang, meta, title, defaultImage }) {
         },
         {
           name: `og:url`,
-          content: site.siteMetadata.baseUrl
+          content: canonicalURL || site.siteMetadata.baseUrl
         },
         {
           property: `og:image`,
@@ -88,7 +107,7 @@ function Seo({ description, lang, meta, title, defaultImage }) {
         },
         {
           name: `twitter:site`,
-          content: site.siteMetadata.baseUrl
+          content: canonicalURL || site.siteMetadata.baseUrl
         },
         {
           name: `twitter:creator`,

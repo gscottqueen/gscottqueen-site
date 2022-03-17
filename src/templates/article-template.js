@@ -17,6 +17,7 @@ const ArticleTemplate = ({ path, children }) => {
               year
               image
               description
+              slug
             }
           }
         }
@@ -34,12 +35,12 @@ const ArticleTemplate = ({ path, children }) => {
 
   if (!findFrontMatter) return null;
   let { node: { frontmatter } = {} } = findFrontMatter;
-  const { title, description } = frontmatter;
+  const { title, description, slug } = frontmatter;
 
 
   return (
   <Layout nonav>
-    <Seo title={title} description={description}/>
+    <Seo title={title} description={description} slug={slug}/>
     <article id={`${title}`}>{children}</article>
   </Layout>
 )};

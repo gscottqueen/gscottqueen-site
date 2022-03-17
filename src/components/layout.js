@@ -5,18 +5,16 @@ import Header from "./header";
 import "./layout.css";
 
 const Layout = ({ children, bgImage = null, nonav }) => {
-
-  const ImageURL =
-    bgImage !== null ? bgImage.childImageSharp.fluid.src : bgImage;
   return (
     <>
       {!nonav && <Header />}
       <div>
         <main
-          style={{
-            backgroundImage: `url(${ImageURL})`,
-          }}
-        >
+          style={
+            bgImage !== null ?
+              { backgroundImage: `url(${bgImage.childImageSharp.fluid.src})`}
+              : {}
+            }>
           {children}
         </main>
         <footer></footer>
