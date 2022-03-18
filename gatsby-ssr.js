@@ -15,6 +15,7 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
   const headComponents = getHeadComponents()
 
   headComponents.sort((a, b) => {
+  console.log(a.props)
     if (a.props && a.props['data-react-helmet']) {
       return 0
     }
