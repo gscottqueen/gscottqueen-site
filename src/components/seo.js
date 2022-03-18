@@ -48,6 +48,11 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
 
   return (
     <Helmet
+      defer={false}
+      htmlAttributes={{
+        lang,
+      }}
+      title={defaultTitle}
       meta={[
         {
           name: `description`,
@@ -115,10 +120,6 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
           content: 'width=device-width,user-scalable=yes,initial-scale=1',
         },
       ].concat(meta)}
-      htmlAttributes={{
-        lang,
-      }}
-      title={defaultTitle}
       link={[
         {
           rel: 'canonical',
@@ -142,7 +143,6 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     />
   )
 }
-
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
