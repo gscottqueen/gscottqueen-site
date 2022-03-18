@@ -11,22 +11,23 @@ module.exports = {
     defaultImage: `/images/gscottqueen.png`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-image',
     'gatsby-plugin-mdx-frontmatter',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: [`.mdx`, `.md`],
+        extensions: ['.mdx', '.md'],
       },
       defaultLayouts: {
         writing: require.resolve(
@@ -35,16 +36,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
+        name: 'pages',
         path: `${__dirname}/src/pages/`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `writing`,
+        name: 'writing',
         path: `${__dirname}/src/pages/writing/`,
       },
     },
