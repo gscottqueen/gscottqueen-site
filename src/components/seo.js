@@ -48,30 +48,6 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={defaultTitle}
-      link={[
-        {
-          rel: 'canonical',
-          href: canonicalURL || site.siteMetadata.baseUrl,
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-        },
-        {
-          rel: 'stylesheet',
-          href:
-            'https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap',
-        },
-        {
-          rel: 'stylesheet',
-          href:
-            'https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap',
-        },
-      ]}
       meta={[
         {
           name: `description`,
@@ -139,6 +115,30 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
           content: 'width=device-width,user-scalable=yes,initial-scale=1',
         },
       ].concat(meta)}
+      htmlAttributes={{
+        lang,
+      }}
+      title={defaultTitle}
+      link={[
+        {
+          rel: 'canonical',
+          href: canonicalURL || site.siteMetadata.baseUrl,
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap',
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap',
+        },
+      ]}
     />
   )
 }
