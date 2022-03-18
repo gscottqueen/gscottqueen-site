@@ -6,11 +6,11 @@
   width: 100%;
   transform: rotate(-2deg);
   opacity: 0.8;
-  background-image: url("../images/tape.gif");
+  background-image: url('/images/tape.gif');
 }
 
 h1 {
-  font-family: "Rock Salt", cursive;
+  font-family: 'Rock Salt', cursive;
   margin: 0;
   line-height: 1.6;
 }
