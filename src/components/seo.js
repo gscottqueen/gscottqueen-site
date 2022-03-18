@@ -54,12 +54,12 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       title={defaultTitle}
       link={[
         {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-        },
-        {
           rel: 'canonical',
           href: canonicalURL || site.siteMetadata.baseUrl,
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
         },
         {
           rel: 'stylesheet',
@@ -151,8 +151,7 @@ Seo.defaultProps = {
 
 Seo.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
 }
 export default Seo
