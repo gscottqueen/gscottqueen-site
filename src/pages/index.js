@@ -9,9 +9,7 @@ const IndexPage = () => {
     query {
       placeholderImage: file(relativePath: { eq: "gscottqueen.png" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
