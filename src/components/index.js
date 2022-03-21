@@ -1,3 +1,4 @@
+export { default as GithubFooter } from './github-footer'
 export { default as Header } from './header'
 export { default as Image } from './image'
 export { default as Layout } from './layout'
