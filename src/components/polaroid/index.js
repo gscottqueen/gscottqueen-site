@@ -33,7 +33,8 @@ const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
     <div className="polaroid-wrapper">
       <Link
         to={`/art/${year}/${slug}/`}
-        onClick={() => window.refLocation = window.prevLocation}>
+        onClick={() => (window.refLocation = window.prevLocation)}
+      >
         <div className="polaroid-overlay" />
         <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
         <div className="polaroid-title">{title}</div>
