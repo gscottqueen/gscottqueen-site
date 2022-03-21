@@ -4,7 +4,7 @@ const url =
     : `https://www.gscottqueen.com`
 
 module.exports = {
-  trailingSlash: "never",
+  trailingSlash: 'never',
   siteMetadata: {
     title: `G. Scott Queen | Artist`,
     description: `Conceptual artist combining technology and design for one of a kind installations in unique spaces.`,
