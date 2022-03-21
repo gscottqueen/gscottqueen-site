@@ -6,14 +6,12 @@ import './index.css'
 const BackNavLink = ({ location }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation =
-   w?.refLocation === undefined
+    w?.refLocation === undefined
       ? `/${location}`
       : `${w?.refLocation?.pathname}`
 
   const linkTitle =
-    w?.refLocation === undefined
-      ? `⇠ Back to ${location}`
-      : `x Close`
+    w?.refLocation === undefined ? `⇠ Back to ${location}` : `x Close`
 
   return (
     <div className="back-nav-link--wrapper">
