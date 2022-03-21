@@ -14,6 +14,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           frontmatter {
             description
             title
+            image
           }
         }
       }

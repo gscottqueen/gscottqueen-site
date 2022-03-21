@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function Seo({ description, lang, meta, title, defaultImage, slug }) {
-  const { site, allSitePage } = useStaticQuery(
+  const { site, allSitePage, allFile } = useStaticQuery(
     graphql`
       query {
         site {
@@ -13,6 +13,12 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
             description
             baseUrl
             defaultImage
+          }
+        }
+        allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+          nodes {
+            publicURL
+            base
           }
         }
         allSitePage {
@@ -32,9 +38,14 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
   const defaultTitle =
     title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title
 
+  const findDefaultImage =
+    defaultImage && allFile.nodes.find(({ base }) => base === defaultImage)
+
+  const { publicURL } = findDefaultImage
+
   const defaultMetaImage =
     defaultImage !== undefined
-      ? `${site.siteMetadata.baseUrl}${defaultImage}`
+      ? `${site.siteMetadata.baseUrl}${publicURL}`
       : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
 
   const nodeObj =
