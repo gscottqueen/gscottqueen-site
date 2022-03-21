@@ -1,14 +1,6 @@
 import React, { useMemo } from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
-import './polaroid.css'
-
-//  <Polaroid
-//     slug={slug}
-//     title={title}
-//     src={image}
-//     style={{
-//       clipPath: `polygon(15% 13%, 85% 13%, 85% 85%, 15% 85%)`}}
-//       />
+import './index.css'
 
 const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
   const data = useStaticQuery(graphql`

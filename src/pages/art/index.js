@@ -1,10 +1,9 @@
 import React from 'react'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 
-import { graphql, useStaticQuery } from 'gatsby'
-import Layout from '../../components/layout'
-import Seo from '../../components/seo'
-import ListingTemplate from '../../templates/listing-template'
-import { Link } from 'gatsby'
+import { Layout, Seo } from '../../components'
+import { ListingTemplate } from '../../templates'
+
 
 const ArchiveListing = ({ groupValue }) => {
   const data = useStaticQuery(graphql`

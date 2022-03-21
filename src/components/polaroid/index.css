@@ -12,7 +12,7 @@
 }
 
 .polaroid-overlay {
-  background-image: url('../images/polaroid-4.png');
+  background-image: url('./images/polaroid-4.png');
   height: 100%;
   width: 100%;
   background-size: contain;

@@ -32,7 +32,13 @@ module.exports = {
       },
       defaultLayouts: {
         writing: require.resolve(
-          `${__dirname}/src/templates/article-template.js`
+          `${__dirname}/src/templates/article-template`
+        ),
+        gallery: require.resolve(
+          `${__dirname}/src/templates/gallery-template`
+        ),
+        listing: require.resolve(
+          `${__dirname}/src/templates/listing-template`
         ),
       },
     },

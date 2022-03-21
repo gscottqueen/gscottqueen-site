@@ -1,10 +1,8 @@
 import React, { useMemo } from 'react'
-
 import { graphql, useStaticQuery } from 'gatsby'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
-import Image from '../components/image.js'
-import './gallery-template.css'
+
+import { Layout, Seo, Image } from '../../components'
+import './index.css'
 
 const GalleryTemplate = ({ path, children }) => {
   const data = useStaticQuery(graphql`

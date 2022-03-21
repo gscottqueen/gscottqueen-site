@@ -1,9 +1,9 @@
 import React from 'react'
-
-import Layout from '../../components/layout'
-import Seo from '../../components/seo'
-import ListingTemplate from '../../templates/listing-template'
 import { Link } from 'gatsby'
+
+import { Layout, Seo } from '../../components'
+import { ListingTemplate } from '../../templates'
+
 
 const IndexPage = () => (
   <Layout>

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import './listing-template.css'
+import { Layout } from '../../components'
+import './index.css'
 
 const ListingTemplate = ({ title, children }) => (
   <Layout nonav>
