@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import { Layout, Seo, Image } from '../../components'
+import { Layout, Seo, Image, BackNavLink } from '../../components'
 import './index.css'
 
 const GalleryTemplate = ({ path, children }) => {
@@ -57,6 +57,7 @@ const GalleryTemplate = ({ path, children }) => {
         defaultImage={publicURL}
         slug={slug}
       />
+      <BackNavLink location="art/archives" />
       <section id={title} className="gallery-template">
         <Image src={image} alt={alt}></Image>
         <div className="citation">
