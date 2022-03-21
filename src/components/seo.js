@@ -44,7 +44,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     )
 
   const canonicalURL =
-    nodeObj && `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
+    nodeObj && `${site.siteMetadata.baseUrl}${nodeObj[0].node.path.slice(0, -1)}`
 
   return (
     <Helmet
