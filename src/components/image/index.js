@@ -4,7 +4,6 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 
 const Image = ({ src, thumbnail, ...imgAttr }) => {
-  // sourceInstanceName defined in gatsby-config
   const data = useStaticQuery(graphql`
     query {
       images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
@@ -31,8 +30,6 @@ const Image = ({ src, thumbnail, ...imgAttr }) => {
   if (!findImage) return null
 
   let { node: { childImageSharp } = {} } = findImage
-
-  // const img = !thumbnail ? childImageSharp.gatsbyImageData : childImageSharp.resize.src
 
   return <GatsbyImage image={childImageSharp.gatsbyImageData} {...imgAttr} />
 }
