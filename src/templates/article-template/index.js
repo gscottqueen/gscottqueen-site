@@ -5,7 +5,6 @@ import { Seo, Layout, GithubFooter, BackNavLink } from '../../components'
 import './index.css'
 
 const ArticleTemplate = ({ pageContext }) => {
-  console.log(pageContext)
   const { frontmatter, slug, body } = pageContext
 
   return (
