@@ -31,15 +31,9 @@ module.exports = {
         extensions: ['.mdx', '.md'],
       },
       defaultLayouts: {
-        writing: require.resolve(
-          `${__dirname}/src/templates/article-template`
-        ),
-        gallery: require.resolve(
-          `${__dirname}/src/templates/gallery-template`
-        ),
-        listing: require.resolve(
-          `${__dirname}/src/templates/listing-template`
-        ),
+        writing: require.resolve(`${__dirname}/src/templates/article-template`),
+        gallery: require.resolve(`${__dirname}/src/templates/gallery-template`),
+        listing: require.resolve(`${__dirname}/src/templates/listing-template`),
       },
     },
     {
