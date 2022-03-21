@@ -12,7 +12,7 @@ const GithubFooter = ({ slug }) => (
       >
         the remote origin
       </a>{' '}
-      to propose changes in a version controlled env.
+      to propose changes in a version controlled platform.
     </p>
   </>
 )
