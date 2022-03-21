@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import { Layout, Seo } from '../../components'
 import { ListingTemplate } from '../../templates'
 
-
 const IndexPage = () => (
   <Layout>
     <Seo title="Writing" slug="writing" />
