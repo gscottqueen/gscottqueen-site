@@ -41,11 +41,9 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
   const findDefaultImage =
     defaultImage && allFile.nodes.find(({ base }) => base === defaultImage)
 
-  const { publicURL } = findDefaultImage
-
   const defaultMetaImage =
     defaultImage !== undefined
-      ? `${site.siteMetadata.baseUrl}${publicURL}`
+      ? `${site.siteMetadata.baseUrl}${findDefaultImage.publicURL}`
       : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
 
   const nodeObj =
