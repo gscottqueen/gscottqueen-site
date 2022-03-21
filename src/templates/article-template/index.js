@@ -1,12 +1,12 @@
 import React from 'react'
 // import { graphql, useStaticQuery } from 'gatsby'
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 import { Seo, Layout } from '../../components'
 import './index.css'
 
 const ArticleTemplate = ({ pageContext }) => {
-  const { title, description, slug, body } = pageContext;
+  const { title, description, slug, body } = pageContext
 
   return (
     <Layout nonav>
