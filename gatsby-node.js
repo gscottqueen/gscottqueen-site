@@ -3,3 +3,38 @@
  *
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
+
+ exports.createPages = async ({ actions, graphql, reporter }) => {
+  const result = await graphql(`
+    query {
+      allMdx(filter: {fileAbsolutePath: {regex: "/writing/"}}) {
+        nodes {
+          body
+          id
+          slug
+          frontmatter {
+            description
+            title
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) {
+    reporter.panic("failed to create posts ", result.errors);
+  }
+
+  const pages = result.data.allMdx.nodes;
+
+  pages.forEach((page) => {
+    actions.createPage({
+      path: `/writing/${page.slug}`,
+      component: require.resolve("./src/templates/article-template"),
+      context: {
+        id: page.slug,
+        body: page.body,
+      },
+    });
+  });
+};

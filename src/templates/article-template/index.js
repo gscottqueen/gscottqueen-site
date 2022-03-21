@@ -1,45 +1,19 @@
-import React, { useMemo } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
+// import { graphql, useStaticQuery } from 'gatsby'
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import { Seo, Layout } from '../../components'
 import './index.css'
 
-const ArticleTemplate = ({ path, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMdx {
-        edges {
-          node {
-            slug
-            frontmatter {
-              title
-              year
-              image
-              description
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const findFrontMatter = useMemo(
-    () =>
-      data.allMdx.edges.find(
-        ({ node }) => node.slug === path.replace(/^\/|\/$/g, '')
-      ),
-    [data, path]
-  )
-
-  if (!findFrontMatter) return null
-  let { node: { frontmatter } = {} } = findFrontMatter
-  const { title, description, slug } = frontmatter
+const ArticleTemplate = ({ pageContext }) => {
+  const { title, description, slug, body } = pageContext;
 
   return (
     <Layout nonav>
       <Seo title={title} description={description} slug={slug} />
-      <article id={`${title}`}>{children}</article>
+      <article id={`${title}`}>
+        <MDXRenderer>{body}</MDXRenderer>
+      </article>
     </Layout>
   )
 }
