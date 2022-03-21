@@ -10,7 +10,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMdx(filter: { fileAbsolutePath: { regex: "/writing/" } }) {
         nodes {
           body
-          id
           slug
           frontmatter {
             description
@@ -28,12 +27,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const pages = result.data.allMdx.nodes
 
   pages.forEach((page) => {
+  console.log(page)
     actions.createPage({
       path: `/writing/${page.slug}`,
       component: require.resolve('./src/templates/article-template'),
       context: {
-        id: page.slug,
+        slug: page.slug,
         body: page.body,
+        frontmatter: page.frontmatter
       },
     })
   })
