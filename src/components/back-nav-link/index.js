@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import './index.css'
 
-const BackNavLink = ({ location }) => {
+const BackNavLink = ({ location, close }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation =
     w?.refLocation === undefined
@@ -11,7 +11,9 @@ const BackNavLink = ({ location }) => {
       : `${w?.refLocation?.pathname}`
 
   const linkTitle =
-    w?.refLocation === undefined ? `⇠ Back to ${location}` : `x Close`
+    close
+      ? `x`
+      : `⇠ Back to ${location}`
 
   return (
     <div className="back-nav-link--wrapper">

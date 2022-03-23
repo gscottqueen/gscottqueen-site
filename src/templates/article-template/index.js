@@ -15,7 +15,6 @@ const ArticleTemplate = ({ pageContext }) => {
         slug={slug}
         defaultImage={frontmatter.image}
       />
-      <BackNavLink location="writing" top />
       <article id={slug}>
         <MDXRenderer>{body}</MDXRenderer>
         <GithubFooter slug={slug} />
