@@ -52,6 +52,14 @@ module.exports = {
         domain: 'gscottqueen.com'
       }
     },
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.gscottqueen.com',
+        sitemap: 'https://www.gscottqueen.com/sitemap/sitemap-index.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    }
   ]
 }
