@@ -9,7 +9,8 @@ module.exports = {
     title: 'G. Scott Queen | Artist',
     description: 'Conceptual artist combining technology and design for one of a kind installations in unique spaces.',
     baseUrl: url,
-    defaultImage: '/images/gscottqueen.png'
+    defaultImage: '/images/gscottqueen.png',
+    siteUrl: 'https://gscottqueen.com'
   },
   plugins: [
     'gatsby-plugin-netlify',
@@ -50,6 +51,7 @@ module.exports = {
       options: {
         domain: 'gscottqueen.com'
       }
-    }
+    },
+    'gatsby-plugin-sitemap'
   ]
 }
