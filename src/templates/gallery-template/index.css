@@ -15,13 +15,13 @@ section.gallery-template img {
 section.gallery-template .citation {
   text-align: center;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 600px) {
   section.gallery-template {
     height: 100vh;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   section.gallery-template .citation {
