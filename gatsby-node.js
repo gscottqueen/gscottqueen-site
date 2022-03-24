@@ -34,8 +34,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         slug: page.slug,
         body: page.body,
-        frontmatter: page.frontmatter,
-      },
+        frontmatter: page.frontmatter
+      }
     })
   })
 }

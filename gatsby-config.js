@@ -1,15 +1,15 @@
 const url =
   process.env.NODE_ENV === 'development'
     ? 'localhost:8000'
-    : `https://www.gscottqueen.com`
+    : 'https://www.gscottqueen.com'
 
 module.exports = {
   trailingSlash: 'never',
   siteMetadata: {
-    title: `G. Scott Queen | Artist`,
-    description: `Conceptual artist combining technology and design for one of a kind installations in unique spaces.`,
+    title: 'G. Scott Queen | Artist',
+    description: 'Conceptual artist combining technology and design for one of a kind installations in unique spaces.',
     baseUrl: url,
-    defaultImage: `/images/gscottqueen.png`,
+    defaultImage: '/images/gscottqueen.png'
   },
   plugins: [
     'gatsby-plugin-netlify',
@@ -18,32 +18,38 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     'gatsby-plugin-mdx-frontmatter',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: ['.mdx', '.md'],
-      },
+        extensions: ['.mdx', '.md']
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: `${__dirname}/src/pages`,
-      },
+        path: `${__dirname}/src/pages`
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'writing',
-        path: `${__dirname}/src/content/writing`,
-      },
+        path: `${__dirname}/src/content/writing`
+      }
     },
-  ],
+    {
+      resolve: 'gatsby-plugin-plausible',
+      options: {
+        domain: 'gscottqueen.com'
+      }
+    }
+  ]
 }
