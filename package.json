@@ -7,7 +7,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
+    "eslint-plugin-react": "^7.29.4",
     "gatsby": "^4.9.2",
     "gatsby-plugin-gatsby-cloud": "^1.0.2",
     "gatsby-plugin-image": "^2.9.0",
@@ -49,15 +51,15 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "npx prettier --write",
       "npx eslint"
     ],
-    "*.css": [
+    "src/**/*.css": [
       "npx prettier --write",
       "npx stylelint"
     ],
-    "*.[md,json]": [
+    "src/**/*.[md,json]": [
       "npx prettier --write"
     ]
   },
