@@ -57,7 +57,7 @@ const GalleryTemplate = ({ path }) => {
         defaultImage={publicURL}
         slug={slug}
       />
-      <BackNavLink location="art/archives" close />
+      <BackNavLink location="art/archives" close type="gallery" />
       <section id={title} className="gallery-template">
         <Image src={image} alt={alt}></Image>
         <div className="citation">

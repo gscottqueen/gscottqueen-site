@@ -2,4 +2,11 @@
   padding: 20px;
   width: calc(100% - 40px);
   text-align: left;
+  position: static;
+}
+
+@media only screen and (min-width: 600px) {
+  .back-nav-link-wrapper.gallery {
+    position: absolute;
+  }
 }

@@ -1,9 +1,9 @@
 section.gallery-template {
   display: grid;
   place-items: center;
-  height: 80vh;
-  margin-top: 5%;
-  padding: 10px;
+  height: 90vh;
+  margin-top: 0;
+  padding: 0 10px;
 }
 
 section.gallery-template img {
@@ -21,7 +21,6 @@ section.gallery-template .citation {
 @media only screen and (min-width: 600px) {
   section.gallery-template {
     height: 100vh;
-    margin-top: 0;
   }
 
   section.gallery-template .citation {
