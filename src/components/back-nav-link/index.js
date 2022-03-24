@@ -6,9 +6,9 @@ import './index.css'
 const BackNavLink = ({ location, close }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation =
-    w?.refLocation === undefined
+    !w?.refLocation
       ? `/${location}`
-      : `${w?.refLocation?.pathname}`
+      : `${w?.refLocation}`
 
   const linkTitle = close ? `x` : `⇠ Back to ${location}`
 
