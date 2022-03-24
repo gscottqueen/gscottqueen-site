@@ -7,6 +7,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "eslint": "^8.11.0",
     "gatsby": "^4.9.2",
     "gatsby-plugin-gatsby-cloud": "^1.0.2",
     "gatsby-plugin-image": "^2.9.0",
@@ -22,7 +23,10 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "stylelint": "^14.6.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
   },
   "devDependencies": {
     "husky": "^7.0.0",
@@ -45,8 +49,16 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "./src/**/*.[js,css]": [
-      "npm run format"
+    "*.js": [
+      "npx prettier --write",
+      "npx eslint"
+    ],
+    "*.css": [
+      "npx prettier --write",
+      "npx stylelint"
+    ],
+    "*.[md,json]": [
+      "npx prettier --write"
     ]
   },
   "repository": {
