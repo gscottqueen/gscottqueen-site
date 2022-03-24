@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Layout, Seo, Image, BackNavLink } from '../../components'
 import './index.css'
 
-const GalleryTemplate = ({ path, children }) => {
+const GalleryTemplate = ({ path }) => {
   const data = useStaticQuery(graphql`
     query {
       allMdx {
@@ -62,7 +62,7 @@ const GalleryTemplate = ({ path, children }) => {
         <Image src={image} alt={alt}></Image>
         <div className="citation">
           <cite>
-            "{title}", {year}
+            &quot;{title}&quot;, {year}
           </cite>{' '}
           - {medium}
         </div>

@@ -13,7 +13,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
           style={
             bgImage !== null
               ? {
-                  backgroundImage: `url(${bgImage?.childImageSharp.gatsbyImageData.images.fallback.src})`,
+                  backgroundImage: `url(${bgImage?.childImageSharp.gatsbyImageData.images.fallback.src})`
                 }
               : {}
           }
@@ -27,7 +27,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

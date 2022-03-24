@@ -7,10 +7,10 @@ const BackNavLink = ({ location, close }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation = !w?.refLocation ? `/${location}` : `${w?.refLocation}`
 
-  const linkTitle = close ? `x` : `⇠ Back to ${location}`
+  const linkTitle = close ? 'x' : `⇠ Back to ${location}`
 
   return (
-    <div className="back-nav-link--wrapper">
+    <div className="back-nav-link-wrapper">
       <Link
         to={refLocation}
         className="back-nav-link"
