@@ -9,7 +9,8 @@ const IndexArchives = () => (
     <Seo title="Art" slug="art" />
     <ListingTemplate title="Art">
       {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
-      New concepts are in the works, in the meantime visit the{' '}
+      New concepts are in the works, in the meantime follow progress on{' '}
+      <Link to={'/experiments'}>experiments</Link>, or visit the{' '}
       <Link to={'archives'}>archives</Link> to see previous years work.
     </ListingTemplate>
   </Layout>

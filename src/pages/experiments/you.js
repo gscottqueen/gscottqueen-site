@@ -143,11 +143,42 @@ const You = () => {
     </div>
   )
 
+  const GithubLink = () => (
+    <p>
+      All code is opensourced for peer review and contributions. Visit{' '}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={'https://github.com/gscottqueen/you'}
+      >
+        the remote origin
+      </a>{' '}
+      to propose changes in a version controlled platform.
+    </p>
+  )
+
+  const Description = () => (
+    <div
+      style={{
+        position: 'absolute',
+        width: '400px',
+        padding: '20px'
+      }}
+    >
+      <p>
+        Holistically rendering facemesh tesselations, pose, and hand connection
+        tracking from initialized face detection of streaming video.
+      </p>
+      <GithubLink />
+    </div>
+  )
+
   console.log(loading)
 
   return (
     <div className="container">
       <LoadingOverlay />
+      <Description />
       <video className="input_video" hidden ref={videoElement}></video>
       <canvas
         className="output_canvas"
