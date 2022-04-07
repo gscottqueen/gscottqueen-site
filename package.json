@@ -7,6 +7,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@mediapipe/camera_utils": "^0.3.1640029074",
+    "@mediapipe/drawing_utils": "^0.3.1620248257",
+    "@mediapipe/holistic": "^0.5.1635989137",
     "eslint": "^8.11.0",
     "eslint-plugin-react": "^7.29.4",
     "gatsby": "^4.9.2",
