@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import {
   Holistic,
   POSE_CONNECTIONS,
@@ -11,6 +11,7 @@ import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils'
 const You = () => {
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const video = videoElement.current
@@ -34,7 +35,7 @@ const You = () => {
 
     function onResults(results, canvasCtx = context) {
       if (results.ea) {
-        console.log('in component', results, canvasCtx)
+        setLoading(true)
         canvasCtx.clearRect(0, 0, canvas.width, canvas.height)
         canvasCtx.save()
         canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height)
@@ -122,12 +123,31 @@ const You = () => {
       width: 1080,
       height: 1080
     })
-
     camera.start()
   })
 
+  const LoadingOverlay = () => (
+    <div
+      style={{
+        position: 'absolute',
+        width: '100vw',
+        height: '100vh',
+        zIndex: '99999',
+        background: 'white',
+        textAlign: 'center',
+        paddingTop: '300px'
+      }}
+      hidden={loading}
+    >
+      loading...
+    </div>
+  )
+
+  console.log(loading)
+
   return (
     <div className="container">
+      <LoadingOverlay />
       <video className="input_video" hidden ref={videoElement}></video>
       <canvas
         className="output_canvas"
