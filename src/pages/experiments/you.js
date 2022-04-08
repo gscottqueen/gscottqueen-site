@@ -150,7 +150,7 @@ const You = () => {
           title="You"
           description="Holistically rendering facemesh tesselations, pose, and hand connection
           tracking from initialized face detection of streaming video."
-          githubLink="https://github.com/gscottqueen/you"
+          githubLink="https://github.com/gscottqueen/you/blob/main/src/Holistic.js"
         />
         <video className="input_video" hidden ref={videoElement}></video>
         <canvas
