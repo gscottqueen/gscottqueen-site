@@ -1,0 +1,65 @@
+.loading-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  padding-top: calc(100vh / 2);
+}
+
+/**
+ * ==============================================
+ * Experiment-Gooey Effect
+ * Dot Gathering
+ * ==============================================
+ */
+.dot-gathering {
+  position: relative;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: black;
+  color: transparent;
+  margin: -1px 0;
+  filter: blur(2px);
+}
+
+.dot-gathering::before,
+.dot-gathering::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: black;
+  color: transparent;
+  opacity: 0;
+  filter: blur(2px);
+  animation: dot-gathering 2s infinite ease-in;
+}
+
+.dot-gathering::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes dot-gathering {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}

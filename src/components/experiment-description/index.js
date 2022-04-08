@@ -1,14 +1,11 @@
 import React from 'react'
 import { GithubLink } from '../index'
 
-const ExperimentDescription = ({ githubLink, description }) => (
-  <div
-    style={{
-      position: 'absolute',
-      width: '400px',
-      padding: '20px'
-    }}
-  >
+import './index.css'
+
+const ExperimentDescription = ({ githubLink, description, title }) => (
+  <div className="description-group">
+    {title ? <h1>{title}</h1> : null}
     <p>{description}</p>
     <GithubLink githubLink={githubLink} />
   </div>

@@ -1,20 +1,14 @@
 import React from 'react'
+import './index.css'
 
 const LoadingOverlay = ({ loading }) => (
-  <div
-    style={{
-      position: 'absolute',
-      width: '100vw',
-      height: '100vh',
-      zIndex: '99999',
-      background: 'white',
-      textAlign: 'center',
-      paddingTop: '300px'
-    }}
-    hidden={loading}
-  >
-    loading...
-  </div>
+  <>
+    <div className="loading-overlay" hidden={loading}>
+      <div className="loading-content">
+        <div className="dot-gathering"></div>
+      </div>
+    </div>
+  </>
 )
 
 export default LoadingOverlay

@@ -9,7 +9,13 @@ import { Camera } from '@mediapipe/camera_utils'
 import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils'
 import TestSupport from '../../utils/mobile-detection'
 
-import { ExperimentDescription, LoadingOverlay } from '../../components'
+import {
+  ExperimentDescription,
+  LoadingOverlay,
+  BackNavLink,
+  Layout,
+  Seo
+} from '../../components'
 
 const You = () => {
   TestSupport()
@@ -131,22 +137,31 @@ const You = () => {
   })
 
   return (
-    <div className="container">
-      <LoadingOverlay loading={loading} />
-      <ExperimentDescription
+    <Layout nonav>
+      <Seo
+        title="You"
         description="Holistically rendering facemesh tesselations, pose, and hand connection
         tracking from initialized face detection of streaming video."
-        githubLink="https://github.com/gscottqueen/you"
       />
-      <video className="input_video" hidden ref={videoElement}></video>
-      <canvas
-        className="output_canvas"
-        width="1080px"
-        height="1080px"
-        style={{ width: '100vw', height: '100vh' }}
-        ref={canvasElement}
-      ></canvas>
-    </div>
+      <BackNavLink location="experiments" />
+      <div className="holistic-container">
+        <LoadingOverlay loading={loading} />
+        <ExperimentDescription
+          title="You"
+          description="Holistically rendering facemesh tesselations, pose, and hand connection
+          tracking from initialized face detection of streaming video."
+          githubLink="https://github.com/gscottqueen/you"
+        />
+        <video className="input_video" hidden ref={videoElement}></video>
+        <canvas
+          className="output_canvas"
+          width="1080px"
+          height="1080px"
+          style={{ width: '100vw', height: '100vh' }}
+          ref={canvasElement}
+        ></canvas>
+      </div>
+    </Layout>
   )
 }
 

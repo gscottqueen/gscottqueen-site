@@ -6,7 +6,7 @@ import { ListingTemplate } from '../../templates'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Writing" slug="writing" />
+    <Seo title="Experiments" slug="experiments" />
     <ListingTemplate title="Experiments">
       <ul>
         <h2>Generative Programing</h2>
