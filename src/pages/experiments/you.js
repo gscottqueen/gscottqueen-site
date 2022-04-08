@@ -7,8 +7,10 @@ import {
 } from '@mediapipe/holistic'
 import { Camera } from '@mediapipe/camera_utils'
 import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils'
+import TestSupport from '../../utils/mobile-detection'
 
 const You = () => {
+  TestSupport()
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
   const [loading, setLoading] = useState(false)
