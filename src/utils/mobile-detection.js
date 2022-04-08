@@ -1,7 +1,8 @@
 import MobileDetect from 'mobile-detect'
 
 const TestSupport = () => {
-  const md = new MobileDetect(window.navigator.userAgent)
+  const w = typeof window !== 'undefined' && window
+  const md = new MobileDetect(w?.navigator?.userAgent)
 
   if (process.env.NODE_ENV === 'development') {
     return
