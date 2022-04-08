@@ -1,11 +1,7 @@
 .description-group {
   text-align: left;
   position: absolute;
-  width: 400px;
+  max-width: 320px;
   padding: 20px;
   z-index: 2;
-}
-
-.description-group h1 {
-  font-family: 'Rock Salt', cursive;
 }
