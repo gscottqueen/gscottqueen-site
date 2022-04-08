@@ -9,6 +9,8 @@ import { Camera } from '@mediapipe/camera_utils'
 import { drawConnectors, drawLandmarks } from '@mediapipe/drawing_utils'
 import TestSupport from '../../utils/mobile-detection'
 
+import { ExperimentDescription, LoadingOverlay } from '../../components'
+
 const You = () => {
   TestSupport()
   const videoElement = useRef(null)
@@ -128,59 +130,14 @@ const You = () => {
     camera.start()
   })
 
-  const LoadingOverlay = () => (
-    <div
-      style={{
-        position: 'absolute',
-        width: '100vw',
-        height: '100vh',
-        zIndex: '99999',
-        background: 'white',
-        textAlign: 'center',
-        paddingTop: '300px'
-      }}
-      hidden={loading}
-    >
-      loading...
-    </div>
-  )
-
-  const GithubLink = () => (
-    <p>
-      All code is opensourced for peer review and contributions. Visit{' '}
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href={'https://github.com/gscottqueen/you'}
-      >
-        the remote origin
-      </a>{' '}
-      to propose changes in a version controlled platform.
-    </p>
-  )
-
-  const Description = () => (
-    <div
-      style={{
-        position: 'absolute',
-        width: '400px',
-        padding: '20px'
-      }}
-    >
-      <p>
-        Holistically rendering facemesh tesselations, pose, and hand connection
-        tracking from initialized face detection of streaming video.
-      </p>
-      <GithubLink />
-    </div>
-  )
-
-  console.log(loading)
-
   return (
     <div className="container">
-      <LoadingOverlay />
-      <Description />
+      <LoadingOverlay loading={loading} />
+      <ExperimentDescription
+        description="Holistically rendering facemesh tesselations, pose, and hand connection
+        tracking from initialized face detection of streaming video."
+        githubLink="https://github.com/gscottqueen/you"
+      />
       <video className="input_video" hidden ref={videoElement}></video>
       <canvas
         className="output_canvas"
