@@ -145,7 +145,7 @@ const You = () => {
       />
       <BackNavLink location="experiments" />
       <div className="holistic-container">
-        <LoadingOverlay loading={loading} />
+        <LoadingOverlay hidden={loading} />
         <ExperimentDescription
           title="You"
           description="Holistically rendering facemesh tesselations, pose, and hand connection
