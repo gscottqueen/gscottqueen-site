@@ -11,6 +11,8 @@ import {
 } from '../../components'
 import { Camera } from '@mediapipe/camera_utils'
 
+const w = typeof window !== 'undefined' && window
+
 const Echo = () => {
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
@@ -107,14 +109,14 @@ const Echo = () => {
           id="preview"
           hidden={recordingTimeMS < 11000}
           videoRef={previewElement}
-          width={`${window.innerWidth}px`}
-          height={`${window.innerHeight}px`}
+          width={`${w.innerWidth}px`}
+          height={`${w.innerHeight}px`}
         />
         <Video
           id="recording"
           videoRef={recordingElement}
-          width={`${window.innerWidth}px`}
-          height={`${window.innerHeight}px`}
+          width={`${w.innerWidth}px`}
+          height={`${w.innerHeight}px`}
         />
       </div>
     </Layout>
