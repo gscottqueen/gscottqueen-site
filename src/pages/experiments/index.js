@@ -4,16 +4,24 @@ import { Link } from 'gatsby'
 import { Layout, Seo } from '../../components'
 import { ListingTemplate } from '../../templates'
 
+import './index.css'
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Experiments" slug="experiments" />
     <ListingTemplate title="Experiments">
       <ul>
-        <h2>Generative Programing</h2>
+        <h2>Cybernetic Programing</h2>
         <li>
           <Link to="/experiments/you">
-            Manipulating the image of self as presented through Machine Learning
-            APIs
+            Socialized rendering of the observer, using trained models from the
+            media pipe machine learning API
+          </Link>
+        </li>
+        <li>
+          <Link to="/experiments/self">
+            Presenting the observer to themself occupying the same space at
+            different times, using the web media API
           </Link>
         </li>
       </ul>
