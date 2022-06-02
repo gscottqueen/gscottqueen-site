@@ -1,14 +1,13 @@
 import React from 'react'
 import './index.css'
 
-const LoadingOverlay = ({ loading }) => (
-  <>
-    <div className="loading-overlay" hidden={loading}>
-      <div className="loading-content">
-        <div className="dot-gathering"></div>
-      </div>
-    </div>
-  </>
+const LoadingOverlay = ({ hidden, ...props }) => (
+  <div className="loading-overlay" hidden={hidden} {...props}>
+    loading
+    <span>.</span>
+    <span>.</span>
+    <span>.</span>
+  </div>
 )
 
 export default LoadingOverlay
