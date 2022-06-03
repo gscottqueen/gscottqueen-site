@@ -18,7 +18,8 @@ import {
 } from '../../components'
 
 const You = () => {
-  TestSupport()
+  const redirectPath = '/experiments'
+  TestSupport(redirectPath)
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
   const [loading, setLoading] = useState(false)

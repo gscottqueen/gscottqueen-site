@@ -1,6 +1,6 @@
 import MobileDetect from 'mobile-detect'
 
-const TestSupport = () => {
+const TestSupport = (path) => {
   const w = typeof window !== 'undefined' && window
   const md = new MobileDetect(w?.navigator?.userAgent)
 
@@ -8,7 +8,10 @@ const TestSupport = () => {
     return
   } else {
     if (md.mobile()) {
-      alert('This experiment would be better expereinced on desktop.')
+      alert(
+        'This experiment would be better expereinced on desktop. redirecting you to'`${path}`
+      )
+      window.location = `${path}`
     }
   }
 }

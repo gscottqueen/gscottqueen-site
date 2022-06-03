@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { userMediaConfig } from '../../config/user-media-config'
 import { domReady } from '../../utils/dom-ready'
+import TestSupport from '../../utils/mobile-detection'
 import {
   Video,
   LoadingOverlay,
@@ -10,10 +11,11 @@ import {
   Seo
 } from '../../components'
 import { Camera } from '@mediapipe/camera_utils'
-
-const w = typeof window !== 'undefined' && window
+import { w } from '../../const'
 
 const Echo = () => {
+  const redirectPath = '/experiments'
+  TestSupport(redirectPath)
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
   const [recordingTimeMS, setRecordingTimeMS] = useState(10000)
