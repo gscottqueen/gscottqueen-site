@@ -7,7 +7,7 @@ const TestSupport = (path) => {
   if (process.env.NODE_ENV === 'development') {
     return
   } else {
-    if (!md.mobile()) {
+    if (md.mobile()) {
       if (
         confirm(
           `This experiment would be better expereinced on desktop. Redirecting you back to ${path}`
