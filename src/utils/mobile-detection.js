@@ -10,7 +10,7 @@ const TestSupport = (path) => {
     if (!md.mobile()) {
       if (
         confirm(
-          `This experiment would be better expereinced on desktop. redirecting you back to ${path}`
+          `This experiment would be better expereinced on desktop. Redirecting you back to ${path}`
         )
       ) {
         w.location = `${path}`
