@@ -7,13 +7,13 @@ const TestSupport = (path) => {
   if (process.env.NODE_ENV === 'development') {
     return
   } else {
-    if (md.mobile()) {
+    if (!md.mobile()) {
       if (
         confirm(
-          'This experiment would be better expereinced on desktop. redirecting you to'`${path}`
+          `This experiment would be better expereinced on desktop. redirecting you back to ${path}`
         )
       ) {
-        window.location = `${path}`
+        w.location = `${path}`
       }
     }
   }
