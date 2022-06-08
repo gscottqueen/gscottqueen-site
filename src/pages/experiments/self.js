@@ -109,6 +109,7 @@ const Echo = () => {
         />
         <Video
           id="preview"
+          className="self"
           hidden={recordingTimeMS < 11000}
           videoRef={previewElement}
           width={`${w.innerWidth}px`}
@@ -116,6 +117,7 @@ const Echo = () => {
         />
         <Video
           id="recording"
+          className="self"
           videoRef={recordingElement}
           width={`${w.innerWidth}px`}
           height={`${w.innerHeight}px`}

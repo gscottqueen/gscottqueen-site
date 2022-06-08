@@ -7,7 +7,7 @@ const ExperimentDescription = ({ githubLink, description, title }) => (
   <div className="description-group">
     {title ? <h1>{title}</h1> : null}
     <p>{description}</p>
-    <GithubLink githubLink={githubLink} />
+    {githubLink && <GithubLink githubLink={githubLink} />}
   </div>
 )
 

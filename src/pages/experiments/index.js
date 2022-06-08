@@ -25,6 +25,14 @@ const IndexPage = () => (
           </Link>
         </li>
       </ul>
+      <ul>
+        <h2>Generative Programing</h2>
+        <li>
+          <Link to="/experiments/eclipse">
+            Simplex 4D noise, using TD graphic network
+          </Link>
+        </li>
+      </ul>
     </ListingTemplate>
   </Layout>
 )
