@@ -29,7 +29,7 @@ const IndexPage = () => (
         <h2>Generative Programing</h2>
         <li>
           <Link to="/experiments/eclipse">
-            Simplex 4D noise, using TD graphic network
+            Simplex 4D noise, using graphic network.
           </Link>
         </li>
       </ul>

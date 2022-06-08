@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import './index.css'
 
-const BackNavLink = ({ location, close, type }) => {
+const BackNavLink = ({ location, close, type, inverse }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation = !w?.refLocation ? `/${location}` : `${w?.refLocation}`
 
@@ -19,6 +19,7 @@ const BackNavLink = ({ location, close, type }) => {
         to={refLocation}
         className="back-nav-link"
         onClick={() => (w.refLocation = undefined)}
+        style={inverse ? { color: 'white' } : ''}
       >
         {linkTitle}
       </Link>
