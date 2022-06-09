@@ -5,3 +5,7 @@
   padding: 20px;
   z-index: 2;
 }
+
+.description-group.inverse {
+  color: white;
+}

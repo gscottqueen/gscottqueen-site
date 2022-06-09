@@ -3,15 +3,18 @@ import { Link } from 'gatsby'
 
 import './index.css'
 
-const BackNavLink = ({ location, close, type }) => {
+const BackNavLink = ({ location, close, type, inverse }) => {
   const w = typeof window !== 'undefined' && window
   const refLocation = !w?.refLocation ? `/${location}` : `${w?.refLocation}`
 
   const linkTitle = close ? '⇠' : `⇠ Back to ${location}`
 
-  const handleClass = type
-    ? `back-nav-link-wrapper ${type}`
-    : 'back-nav-link-wrapper'
+  const handleClass =
+    type || inverse
+      ? `back-nav-link-wrapper ${type && type !== undefined ? type : ''} ${
+          inverse && 'inverse'
+        }`
+      : 'back-nav-link-wrapper'
 
   return (
     <div className={handleClass}>

@@ -5,6 +5,10 @@
   position: static;
 }
 
+.back-nav-link-wrapper.inverse a {
+  color: white;
+}
+
 @media only screen and (min-width: 600px) {
   .back-nav-link-wrapper.gallery {
     position: absolute;
