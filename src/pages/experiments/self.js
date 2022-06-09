@@ -98,13 +98,16 @@ const Echo = () => {
 
   return (
     <Layout nonav>
-      <Seo title="Self" description="Presenting the observer to themself." />
+      <Seo
+        title="Self"
+        description="Presenting the observer to themselves occupying the same space at different times."
+      />
       <BackNavLink location="experiments" />
       <div className="self-container">
         <LoadingOverlay hidden={recordingTimeMS > 10000} />
         <ExperimentDescription
           title="Self"
-          description="Presenting the observer to themself occupying the same space at different times."
+          description="Presenting the observer to themselves occupying the same space at different times, using the web media API."
           githubLink="https://github.com/gscottqueen/multiverse/blob/main/src/echo.js"
         />
         <Video

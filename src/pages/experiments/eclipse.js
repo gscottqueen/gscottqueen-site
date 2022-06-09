@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   Video,
-  // LoadingOverlay,
   ExperimentDescription,
   BackNavLink,
   Layout,
@@ -13,12 +12,16 @@ import EclipseVideo from '../../video/eclipse-video.mp4'
 const Eclipse = () => {
   return (
     <Layout nonav>
-      <Seo title="Self" description="Presenting the observer to themself." />
-      <BackNavLink location="experiments" />
-      <div className="self-container">
+      <Seo
+        title="Eclipse"
+        description="Simplex 4D noise, using a node based graphics network."
+      />
+      <BackNavLink location="experiments" inverse />
+      <div className="eclipse-container">
         <ExperimentDescription
           title="Eclipse"
-          description="Simplex 4D noise, using TD graphic network."
+          description="Simplex 4D noise, using a node basd graphics network."
+          inverse
         />
         <Video
           id="video"
