@@ -8,21 +8,35 @@ import {
 } from '../../components'
 import { w } from '../../const'
 import EclipseVideo from '../../video/eclipse-video.mp4'
+import data from './data.json'
+
+// get data
+const item = [data[1].items[0]]
+// map data to seo
+const handlSEO = (item) =>
+  item.map((detail, i) => (
+    <Seo
+      title={detail.title}
+      description={detail.description}
+      key={`${detail.title}-${i}`}
+    />
+  ))
 
 const Eclipse = () => {
   return (
     <Layout nonav>
-      <Seo
-        title="Eclipse"
-        description="Simplex 4D noise, using a node based graphics network."
-      />
+      {handlSEO(item)}
       <BackNavLink location="experiments" inverse />
       <div className="eclipse-container">
-        <ExperimentDescription
-          title="Eclipse"
-          description="Simplex 4D noise, using a node basd graphics network."
-          inverse
-        />
+        {/* map data to description */}
+        {item.map((detail, i) => (
+          <ExperimentDescription
+            title={detail.title}
+            description={detail.description}
+            key={`${detail.title}--${i}`}
+            inverse
+          />
+        ))}
         <Video
           id="video"
           loop

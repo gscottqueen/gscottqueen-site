@@ -17,9 +17,22 @@ import {
   Seo
 } from '../../components'
 
+import data from './data.json'
+
+// get data
+const item = [data[0].items[0]]
+// map data to seo
+const handlSEO = (item) =>
+  item.map((detail, i) => (
+    <Seo
+      title={detail.title}
+      description={detail.description}
+      key={`${detail.title}-${i}`}
+    />
+  ))
+
 const You = () => {
-  const redirectPath = '/experiments'
-  TestSupport(redirectPath)
+  TestSupport()
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
   const [loading, setLoading] = useState(false)
@@ -139,20 +152,20 @@ const You = () => {
 
   return (
     <Layout nonav>
-      <Seo
-        title="You"
-        description="Holistically rendering facemesh tesselations, pose, and hand connection
-        tracking from initialized face detection of streaming video."
-      />
+      {handlSEO(item)}
+
       <BackNavLink location="experiments" />
       <div className="holistic-container">
         <LoadingOverlay hidden={loading} />
-        <ExperimentDescription
-          title="You"
-          description="Holistically rendering facemesh tesselations, pose, and hand connection
-          tracking from initialized face detection of streaming video."
-          githubLink="https://github.com/gscottqueen/you/blob/main/src/Holistic.js"
-        />
+        {/* map data to description */}
+        {item.map((detail, i) => (
+          <ExperimentDescription
+            title={detail.title}
+            description={detail.description}
+            key={`${detail.title}--${i}`}
+            githubLink={detail.extlink}
+          />
+        ))}
         <video className="input_video" hidden ref={videoElement}></video>
         <canvas
           className="output_canvas"

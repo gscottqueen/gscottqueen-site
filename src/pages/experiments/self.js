@@ -12,13 +12,26 @@ import {
 } from '../../components'
 import { Camera } from '@mediapipe/camera_utils'
 import { w } from '../../const'
+import data from './data.json'
+
+// get data
+const item = [data[0].items[1]]
+// map data to seo
+const handlSEO = (item) =>
+  item.map((detail, i) => (
+    <Seo
+      title={detail.title}
+      description={detail.description}
+      key={`${detail.title}-${i}`}
+    />
+  ))
 
 const Echo = () => {
-  const redirectPath = '/experiments'
-  TestSupport(redirectPath)
+  TestSupport()
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
-  const [recordingTimeMS, setRecordingTimeMS] = useState(10000)
+  const ms = 8000
+  const [recordingTimeMS, setRecordingTimeMS] = useState(ms)
 
   useEffect(() => {
     const preview = previewElement.current
@@ -98,22 +111,23 @@ const Echo = () => {
 
   return (
     <Layout nonav>
-      <Seo
-        title="Self"
-        description="Presenting the observer to themselves occupying the same space at different times."
-      />
+      {handlSEO(item)}
       <BackNavLink location="experiments" />
       <div className="self-container">
-        <LoadingOverlay hidden={recordingTimeMS > 10000} />
-        <ExperimentDescription
-          title="Self"
-          description="Presenting the observer to themselves occupying the same space at different times, using the web media API."
-          githubLink="https://github.com/gscottqueen/multiverse/blob/main/src/echo.js"
-        />
+        <LoadingOverlay hidden={recordingTimeMS > ms} />
+        {/* map data to description */}
+        {item.map((detail, i) => (
+          <ExperimentDescription
+            title={detail.title}
+            description={detail.description}
+            key={`${detail.title}--${i}`}
+            githubLink={detail.extlink}
+          />
+        ))}
         <Video
           id="preview"
           className="self"
-          hidden={recordingTimeMS < 11000}
+          hidden={recordingTimeMS < ms + 1000}
           videoRef={previewElement}
           width={`${w.innerWidth}px`}
           height={`${w.innerHeight}px`}

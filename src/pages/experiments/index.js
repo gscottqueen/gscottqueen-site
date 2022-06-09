@@ -9,17 +9,14 @@ import data from './data.json'
 import './index.css'
 
 const ListGroup = ({ data }) => (
-  console.log(data),
-  (
-    <ul>
-      <h2>{data.title}</h2>
-      {data.items.map((item, i) => (
-        <li key={i}>
-          <Link to={`/experiments/${item.link}`}>{item.description}</Link>
-        </li>
-      ))}
-    </ul>
-  )
+  <ul>
+    <h2>{data.title}</h2>
+    {data.items.map((item, i) => (
+      <li key={i}>
+        <Link to={`/experiments/${item.link}`}>{item.description}</Link>
+      </li>
+    ))}
+  </ul>
 )
 
 const IndexPage = () => (
