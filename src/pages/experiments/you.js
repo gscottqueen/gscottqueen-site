@@ -32,10 +32,15 @@ const handlSEO = (item) =>
   ))
 
 const You = () => {
-  TestSupport()
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
   const [loading, setLoading] = useState(false)
+  const [count, setCount] = useState(0)
+
+  if (count < 1) {
+    setCount(1)
+    TestSupport()
+  }
 
   useEffect(() => {
     const video = videoElement.current

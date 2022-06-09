@@ -27,11 +27,16 @@ const handlSEO = (item) =>
   ))
 
 const Echo = () => {
-  TestSupport()
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
   const ms = 8000
   const [recordingTimeMS, setRecordingTimeMS] = useState(ms)
+  const [count, setCount] = useState(0)
+
+  if (count < 1) {
+    setCount(1)
+    TestSupport()
+  }
 
   useEffect(() => {
     const preview = previewElement.current
