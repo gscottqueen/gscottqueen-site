@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { userMediaConfig } from '../../config/user-media-config'
 import { domReady } from '../../utils/dom-ready'
-import TestSupport from '../../utils/mobile-detection'
 import {
   Video,
   LoadingOverlay,
@@ -31,12 +30,6 @@ const Echo = () => {
   const recordingElement = useRef(null)
   const ms = 8000
   const [recordingTimeMS, setRecordingTimeMS] = useState(ms)
-  const [count, setCount] = useState(0)
-
-  if (count < 1) {
-    setCount(1)
-    TestSupport()
-  }
 
   useEffect(() => {
     const preview = previewElement.current
