@@ -11,6 +11,7 @@ import {
 } from '../../components'
 import { Camera } from '@mediapipe/camera_utils'
 import { w } from '../../const'
+import TestSupport from '../../utils/mobile-detection.js'
 import data from './data.json'
 
 // get data
@@ -26,6 +27,7 @@ const handlSEO = (item) =>
   ))
 
 const Echo = () => {
+  TestSupport('/experiments')
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
   const ms = 8000
