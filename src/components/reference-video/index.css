@@ -1,0 +1,24 @@
+.reference-video.offset {
+  width: 100%;
+}
+
+.reference-video video {
+  display: inline;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: initial;
+  margin: 40px 0;
+}
+
+cite {
+  font-size: 11px;
+}
+
+@media screen and (min-device-width: 720px) {
+  .reference-video.offset {
+    width: 50%;
+    float: right;
+    margin-left: 40px;
+  }
+}
