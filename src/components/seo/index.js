@@ -43,8 +43,8 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
 
   const defaultMetaImage =
     findDefaultImage !== undefined
-      ? `${site.siteMetadata.baseUrl}${findDefaultImage.publicURL}`
-      : `${site.siteMetadata.baseUrl}${site.siteMetadata.defaultImage}`
+      ? `${site.siteMetadata.baseUrl}${findDefaultImage?.publicURL}`
+      : `${site.siteMetadata.baseUrl}${site.siteMetadata?.defaultImage}`
 
   const nodeObj =
     slug &&
