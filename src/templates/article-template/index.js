@@ -1,7 +1,13 @@
 import React from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import { Seo, Layout, GithubFooter, BackNavLink } from '../../components'
+import {
+  Seo,
+  Layout,
+  GithubFooter,
+  BackNavLink,
+  RelatedWorks
+} from '../../components'
 import './index.css'
 
 const ArticleTemplate = ({ pageContext }) => {
@@ -19,6 +25,7 @@ const ArticleTemplate = ({ pageContext }) => {
       <article id={slug}>
         <MDXRenderer>{body}</MDXRenderer>
         <GithubFooter slug={slug} />
+        {frontmatter.related && <RelatedWorks related={frontmatter.related} />}
       </article>
       <BackNavLink location="writing" />
     </Layout>
