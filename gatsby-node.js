@@ -15,6 +15,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             description
             title
             image
+            related {
+              title
+              path
+              experiment
+            }
           }
         }
       }
