@@ -45,3 +45,7 @@ article ol {
   margin-bottom: 40px;
   font-size: 14px;
 }
+
+article a {
+  word-wrap: break-word;
+}
