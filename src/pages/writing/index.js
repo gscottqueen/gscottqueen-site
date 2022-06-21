@@ -11,6 +11,11 @@ const IndexPage = () => (
       <ul>
         <h2>Philosophy</h2>
         <li>
+          <Link to="/writing/the-observers-role-in-new-media-art-work">
+            The Observer&apos;s Role in New Media Art Work
+          </Link>
+        </li>
+        <li>
           <Link to="/writing/logos-equals-mc2">
             Logos = mc<sup>2</sup>
           </Link>
