@@ -62,9 +62,8 @@ const GalleryTemplate = ({ path }) => {
         <Image src={image} alt={alt}></Image>
         <div className="citation">
           <cite>
-            &quot;{title}&quot;, {year}
-          </cite>{' '}
-          - {medium}
+            &quot;{title}&quot;, {year} - {medium}
+          </cite>
         </div>
       </section>
     </Layout>
