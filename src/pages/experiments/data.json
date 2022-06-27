@@ -26,6 +26,12 @@
         "link": "eclipse",
         "description": "Simplex 4D noise, using a node based graphics network.",
         "extlink" : ""
+      },
+      {
+        "title": "Singularity",
+        "link": "singularity",
+        "description": "Processing WEBGL with particle and sound environment",
+        "extlink" : ""
       }
     ]
   }
