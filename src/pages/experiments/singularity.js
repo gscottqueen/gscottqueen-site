@@ -5,53 +5,17 @@ import Sound from '../../sound/sleep-walk.mp3'
 // this drawing includes an audio aspect, sound on!!
 // this works best on desktop
 
-// class Particle {
-//   constructor(position) {
-//     this.name = 'Ball'
-//     this.position = position
-//     this.size = 1
-//     this.color = 255
-//   }
-
-//   handleParticleDetails(particles, particle, i, vector, size) {
-//     // set particle positions x, y, and z
-//     particle.position = vector
-//     // generate particle size
-//     particle.sz = size
-//     // add particle to array
-//     if (i) {
-// 			// if there is an index, it is likely part of an array so we just place it back in at that index
-//       particles[i] = particle
-//     } else {
-// 			// if there is no index, we just need to append it to the particles array
-//       particles.push(particle)
-//     }
-//   }
-
-//   handleGravity(mobile,position) {
-// 		// Math.sign helps check if the number is negative
-//     if (Math.sign(position) === -1) {
-// 			// if number is neg, add 1
-//       position += mobile ? 0.1 : 0.5
-//     } else {
-// 			// otherwise the number is positive so we remove one
-//       position += mobile ? -0.1 : -0.5
-//     }
-//     return position
-//   }
-// }
-
 const Singulartiy = () => {
-  const particles = []
+  let particles = []
   let particle, mobile, song
   let angle = 10
+  let size = 1
 
   class Particle {
-    constructor(position) {
+    constructor(position, size) {
       this.name = 'Ball'
       this.position = position
-      this.size = 1
-      this.color = 255
+      this.size = size
     }
   }
 
@@ -73,6 +37,7 @@ const Singulartiy = () => {
 
     cnv.mouseClicked(() => {
       if (song.isPlaying() === false) {
+        song.setVolume(0.4)
         song.play()
         song.loop()
         const particle = new Particle()
@@ -83,7 +48,7 @@ const Singulartiy = () => {
         )
         const size = mobile ? p5.random(10, 15) : p5.random(30, 50)
         particle.position = vector
-        particle.sz = size
+        particle.size = size
         particles.push(particle)
       }
     })
@@ -101,9 +66,21 @@ const Singulartiy = () => {
   }
 
   const draw = (p5) => {
-    console.log(particles)
+    if (p5.getAudioContext().currentTime === song.duration() - 30) {
+      console.log('played for 3 seconds', p5.getAudioContext().currentTime)
+      // p5.ambientLight('white')
+      p5.push()
+      p5.translate(0, 0, 0)
+      p5.ambientLight('white')
+      p5.sphere(size)
+      p5.pop()
+      size += 10
+    }
+    if (p5.getAudioContext().currentTime === song.duration()) {
+      console.log('equal')
+      particles = []
+    }
     if (song && song.isPlaying() && p5.frameCount % 200 === 0) {
-      console.log('add new particle')
       // form a new Particle object
       const particle = new Particle()
       // include it's details
@@ -114,7 +91,7 @@ const Singulartiy = () => {
       )
       const size = mobile ? p5.random(10, 15) : p5.random(30, 50)
       particle.position = vector
-      particle.sz = size
+      particle.size = size
       particles.push(particle)
     }
     // set up mutable location coordinate variables
@@ -147,7 +124,7 @@ const Singulartiy = () => {
       // set up where our light source for these particles comes from, center origin
       p5.pointLight(255, 255, 255, 0, 0, 0)
       // create sphere
-      p5.sphere(particle.sz)
+      p5.sphere(particle.size)
       // update position adding gravity each time
       // this will pull the particles to the center allong our axis
       particle.position.x =
@@ -162,6 +139,10 @@ const Singulartiy = () => {
         Math.sign(locZ) === -1
           ? (locZ += mobile ? 0.1 : 0.5)
           : (locZ += mobile ? -0.1 : -0.5)
+      if (locX <= 0.5 && locY <= 0.5 && locZ <= 0.5) {
+        particle.size =
+          particle.size >= 0 ? (particle.size += -0.1) : particle.size
+      }
       p5.pop()
     }
     // create our inner hypercube square
