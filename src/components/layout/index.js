@@ -5,6 +5,12 @@ import { Header } from '../'
 import './index.css'
 
 const Layout = ({ children, bgImage = null, nonav }) => {
+  function getRandomInt(min, max) {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
+  }
+
   return (
     <>
       {!nonav && <Header />}
@@ -13,7 +19,8 @@ const Layout = ({ children, bgImage = null, nonav }) => {
           style={
             bgImage !== null
               ? {
-                  backgroundImage: `url(${bgImage?.childImageSharp.gatsbyImageData.images.fallback.src})`
+                  backgroundImage: `url(${bgImage?.childImageSharp.gatsbyImageData.images.fallback.src})`,
+                  backgroundSize: `${getRandomInt(10, 3000)}px`
                 }
               : {}
           }
