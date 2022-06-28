@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import { Header } from '../'
 import './index.css'
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
+}
+
 const Layout = ({ children, bgImage = null, nonav }) => {
-  function getRandomInt(min, max) {
-    min = Math.ceil(min)
-    max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min) + min) //The maximum is exclusive and the minimum is inclusive
-  }
+  const [bgSize, setBgSize] = useState(10)
+
+  useEffect(() => {
+    setBgSize(getRandomInt(10, 3000))
+  }, [setBgSize])
 
   return (
     <>
@@ -20,7 +26,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
             bgImage !== null
               ? {
                   backgroundImage: `url(${bgImage?.childImageSharp.gatsbyImageData.images.fallback.src})`,
-                  backgroundSize: `${getRandomInt(10, 3000)}px`
+                  backgroundSize: `${bgSize}px`
                 }
               : {}
           }
