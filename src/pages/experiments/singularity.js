@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   ExperimentDescription,
   BackNavLink,
   Layout,
-  LoadingOverlay,
   Seo
 } from '../../components'
 import { w } from '../../const'
 import data from './data.json'
 // this drawing includes an audio aspect, sound on!!
-// this works best on desktop
 
 // get data
 const item = [data[1].items[1]]
@@ -28,8 +26,6 @@ const SingularityP5 = React.lazy(() =>
 )
 
 const Singulartiy = () => {
-  const [loading, setLoading] = useState(false)
-
   return (
     <Layout nonav>
       {handlSEO(item)}
@@ -42,7 +38,7 @@ const Singulartiy = () => {
         }}
       />
       <div className="singularity-container">
-        <LoadingOverlay hidden={loading} />
+        {/* <LoadingOverlay hidden={loading} /> */}
         {/* map data to description */}
         {item.map((detail, i) => (
           <ExperimentDescription
@@ -56,7 +52,7 @@ const Singulartiy = () => {
         ))}
         {w && (
           <React.Suspense fallback={<div />}>
-            <SingularityP5 setLoading={setLoading} />
+            <SingularityP5 />
           </React.Suspense>
         )}
       </div>
