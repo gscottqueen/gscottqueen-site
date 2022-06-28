@@ -11,7 +11,7 @@ function getRandomInt(min, max) {
 }
 
 const Layout = ({ children, bgImage = null, nonav }) => {
-  const [bgSize, setBgSize] = useState(10)
+  const [bgSize, setBgSize] = useState(0)
 
   useEffect(() => {
     setBgSize(getRandomInt(10, 3000))
