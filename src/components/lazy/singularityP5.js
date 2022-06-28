@@ -4,7 +4,7 @@ import 'p5/lib/addons/p5.sound'
 import { w } from '../../const'
 import Sound from '../../sound/sleep-walk.mp3'
 
-const SingulartiyP5 = () => {
+const SingulartiyP5 = ({ setLoading }) => {
   let particles = []
   let particle, mobile, song, button
   let angle = 10
@@ -25,6 +25,7 @@ const SingulartiyP5 = () => {
   }
 
   const setup = (p5, canvasParentRef) => {
+    setLoading(true) // toggle off LoadingOverlay
     button = p5.createButton('sound on...')
     button.size(p5.windowWidth, p5.windowHeight)
     button.position(0, 0)

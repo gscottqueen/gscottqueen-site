@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   ExperimentDescription,
   BackNavLink,
   Layout,
+  LoadingOverlay,
   Seo
 } from '../../components'
 import { w } from '../../const'
@@ -27,6 +28,8 @@ const SingularityP5 = React.lazy(() =>
 )
 
 const Singulartiy = () => {
+  const [loading, setLoading] = useState(false)
+
   return (
     <Layout nonav>
       {handlSEO(item)}
@@ -39,6 +42,7 @@ const Singulartiy = () => {
         }}
       />
       <div className="singularity-container">
+        <LoadingOverlay hidden={loading} />
         {/* map data to description */}
         {item.map((detail, i) => (
           <ExperimentDescription
@@ -52,7 +56,7 @@ const Singulartiy = () => {
         ))}
         {w && (
           <React.Suspense fallback={<div />}>
-            <SingularityP5 />
+            <SingularityP5 setLoading={setLoading} />
           </React.Suspense>
         )}
       </div>
