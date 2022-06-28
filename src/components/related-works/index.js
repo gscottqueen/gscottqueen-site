@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import './index.css'
 
 const RelatedWorks = ({ related }) => {
-  console.log(related)
   return (
     <>
       <h3>Related Works</h3>

@@ -4,10 +4,6 @@ import 'p5/lib/addons/p5.sound'
 import { w } from '../../const'
 import Sound from '../../sound/sleep-walk.mp3'
 
-// const Sketch = React.lazy(() =>
-//   import('react-p5')
-// )
-
 const SingulartiyP5 = () => {
   let particles = []
   let particle, mobile, song, button
@@ -33,7 +29,7 @@ const SingulartiyP5 = () => {
     button.size(p5.windowWidth, p5.windowHeight)
     button.position(0, 0)
     button.style('font-family', 'monospace')
-    button.style('font-size', '16px')
+    button.style('font-size', '18px')
     button.style('background', 'black')
     button.style('opacity', '.8')
     button.style('border', 'none')
@@ -182,7 +178,12 @@ const SingulartiyP5 = () => {
   return (
     w && (
       <React.Suspense fallback={<div />}>
-        <Sketch setup={setup} draw={draw} preload={preload} />
+        <Sketch
+          className="sketch-singularity"
+          setup={setup}
+          draw={draw}
+          preload={preload}
+        />
       </React.Suspense>
     )
   )

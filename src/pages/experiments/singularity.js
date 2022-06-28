@@ -45,6 +45,7 @@ const Singulartiy = () => {
             title={detail.title}
             description={detail.description}
             key={`${detail.title}--${i}`}
+            githubLink={detail.extlink}
             inverse
             style={{ marginTop: '50px' }}
           />

@@ -3,7 +3,6 @@ import { w } from '../const'
 
 const TestSupport = () => {
   const md = new MobileDetect(w?.navigator?.userAgent)
-  console.log(md.mobile())
   if (md.mobile()) {
     confirm('This experiment would be better expereinced on desktop.')
   }

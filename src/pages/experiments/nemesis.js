@@ -22,7 +22,7 @@ const handlSEO = (item) =>
     />
   ))
 
-const Eclipse = () => {
+const Nemesis = () => {
   return (
     <Layout nonav>
       {handlSEO(item)}
@@ -49,4 +49,4 @@ const Eclipse = () => {
   )
 }
 
-export default Eclipse
+export default Nemesis
