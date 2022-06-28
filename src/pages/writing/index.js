@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Seo title="Writing" slug="writing" />
     <ListingTemplate title="Writing">
       <ul>
-        <h2>Philosophy</h2>
+        <h2>Art and Philosophy</h2>
         <li>
           <Link to="/writing/the-observers-role-in-new-media-art-work">
             The Observer&apos;s Role in New Media Art Work
