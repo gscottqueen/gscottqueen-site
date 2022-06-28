@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { w } from '../../const'
 
 import './index.css'
 
-const BackNavLink = ({ location, close, type, inverse }) => {
-  const w = typeof window !== 'undefined' && window
+const BackNavLink = ({ location, close, type, inverse, style }) => {
   const refLocation = !w?.refLocation ? `/${location}` : `${w?.refLocation}`
 
   const linkTitle = close ? '⇠' : `⇠ Back to ${location}`
@@ -17,7 +17,7 @@ const BackNavLink = ({ location, close, type, inverse }) => {
       : 'back-nav-link-wrapper'
 
   return (
-    <div className={handleClass}>
+    <div className={handleClass} style={style}>
       <Link
         to={refLocation}
         className="back-nav-link"

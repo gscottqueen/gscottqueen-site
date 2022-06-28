@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
+import { w } from '../../const'
 import './index.css'
 
 const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
@@ -33,7 +34,7 @@ const Polaroid = ({ src, alt, slug, title, year, ...imgAttr }) => {
     <div className="polaroid-wrapper">
       <Link
         to={`/art/${year}/${slug}/`}
-        onClick={() => (window.refLocation = window.location.pathname)}
+        onClick={() => (w.refLocation = w.location.pathname)}
       >
         <div className="polaroid-overlay" />
         <img src={childImageSharp.resize.src} alt={alt} {...imgAttr} />
