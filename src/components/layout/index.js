@@ -14,7 +14,7 @@ const Layout = ({ children, bgImage = null, nonav }) => {
   const [bgSize, setBgSize] = useState(0)
 
   useEffect(() => {
-    setBgSize(getRandomInt(10, 3000))
+    setBgSize(getRandomInt(10, 600))
   }, [setBgSize])
 
   return (
