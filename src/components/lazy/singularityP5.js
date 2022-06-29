@@ -3,6 +3,7 @@ import Sketch from 'react-p5'
 import 'p5/lib/addons/p5.sound'
 import { LoadingOverlay } from '../index'
 import { w } from '../../const'
+import { iOS } from '../../utils/iOS'
 import Sound from '../../sound/sleep-walk.mp3'
 
 const SingulartiyP5 = () => {
@@ -26,11 +27,15 @@ const SingulartiyP5 = () => {
   }
 
   const setup = (p5, canvasParentRef) => {
-    button = p5.createButton('sound on...')
+    const message =
+      iOS() === true
+        ? 'sound on ... if iOS, toggle off silent mode'
+        : 'sound on...'
+    button = p5.createButton(message)
     button.size(p5.windowWidth, p5.windowHeight)
     button.position(0, 0)
     button.style('font-family', 'monospace')
-    button.style('font-size', '18px')
+    button.style('font-size', '16px')
     button.style('background', 'black')
     button.style('opacity', '.8')
     button.style('border', 'none')
