@@ -1,6 +1,7 @@
 import React from 'react'
 import Sketch from 'react-p5'
 import 'p5/lib/addons/p5.sound'
+import { LoadingOverlay } from '../index'
 import { w } from '../../const'
 import Sound from '../../sound/sleep-walk.mp3'
 
@@ -46,7 +47,6 @@ const SingulartiyP5 = () => {
     button.mouseClicked(() => {
       button.hide()
       if (song && song.isPlaying() === false) {
-        console.log(song)
         song.setVolume(0.4)
         song.play()
         song.loop()
@@ -178,14 +178,19 @@ const SingulartiyP5 = () => {
 
   return (
     w && (
-      <React.Suspense fallback={<div />}>
-        <Sketch
-          className="sketch-singularity"
-          setup={setup}
-          draw={draw}
-          preload={preload}
-        />
-      </React.Suspense>
+      <>
+        <div id="p5_loading">
+          <LoadingOverlay />
+        </div>
+        <React.Suspense fallback={<div />}>
+          <Sketch
+            className="sketch-singularity"
+            setup={setup}
+            draw={draw}
+            preload={preload}
+          />
+        </React.Suspense>
+      </>
     )
   )
 }

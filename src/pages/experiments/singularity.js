@@ -38,7 +38,6 @@ const Singulartiy = () => {
         }}
       />
       <div className="singularity-container">
-        {/* <LoadingOverlay hidden={loading} /> */}
         {/* map data to description */}
         {item.map((detail, i) => (
           <ExperimentDescription
