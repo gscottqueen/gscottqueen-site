@@ -6,7 +6,7 @@ import { ListingTemplate } from '../../templates'
 
 const IndexArchives = () => (
   <Layout>
-    <Seo title="Art" slug="art" />
+    <Seo title="Art" slug="/art" />
     <ListingTemplate title="Art">
       {/* <ul>{ groups.map(group => <ArchiveListing groupValue={group} />) }</ul> */}
       New concepts are in the works, in the meantime follow progress on{' '}

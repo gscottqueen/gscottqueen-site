@@ -33,7 +33,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
   )
 
   const metaDescription =
-    description !== undefined ? description : site.siteMetadata.description
+    description.length > 0 ? description : site.siteMetadata.description
 
   const defaultTitle =
     title !== undefined ? `G. Scott Queen | ${title}` : site.siteMetadata?.title
@@ -46,6 +46,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       ? `${site.siteMetadata.baseUrl}${findDefaultImage?.publicURL}`
       : `${site.siteMetadata.baseUrl}${site.siteMetadata?.defaultImage}`
 
+  // TODO: metadata for these node pages are terrible
   const nodeObj =
     slug &&
     allSitePage.edges.filter((page) =>
@@ -54,7 +55,10 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
 
   const canonicalURL =
     nodeObj &&
-    `${site.siteMetadata.baseUrl}${nodeObj[0].node.path.slice(0, -1)}`
+    nodeObj.length > 0 &&
+    `${site.siteMetadata.baseUrl}${nodeObj[nodeObj.length - 1].node.path}`
+
+  console.log(nodeObj && nodeObj)
 
   return (
     <Helmet

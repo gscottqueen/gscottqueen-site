@@ -31,6 +31,7 @@
         "title": "Singularity",
         "link": "singularity",
         "description": "Processing WEBGL with particle and sound environment.",
+        "ogImage": "Simplex 4D noise, using a node based graphics network.",
         "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js"
       }
     ]

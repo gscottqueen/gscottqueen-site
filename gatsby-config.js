@@ -7,7 +7,7 @@ module.exports = {
   trailingSlash: 'never',
   siteMetadata: {
     title: 'G. Scott Queen | Artist',
-    description: 'Conceptual artist combining technology and design for one of a kind installations in unique spaces.',
+    description: 'Research and Conceptual Art.',
     baseUrl: url,
     defaultImage: '/images/gscottqueen.png',
     siteUrl: 'https://gscottqueen.com'

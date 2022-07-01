@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
+async function makeWritingPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
       allMdx(filter: { fileAbsolutePath: { regex: "/writing/" } }) {
@@ -43,4 +43,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     })
   })
+}
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  await Promise.all([
+    makeWritingPages({ actions, graphql, reporter })
+  ])
 }
