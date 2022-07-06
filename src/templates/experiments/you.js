@@ -135,8 +135,6 @@ const You = ({ pageContext }) => {
     camera.start()
   })
 
-  console.log(data)
-
   return (
     <Layout nonav>
       <Seo title={data.title} description={data.description} slug={data.link} />

@@ -24,7 +24,7 @@
     "title": "Generative Programing",
     "items": [
       {
-        "title": "nemesis",
+        "title": "Nemesis",
         "link": "nemesis",
         "description": "Simplex 4D noise, using a node based graphics network.",
         "extlink" : "",

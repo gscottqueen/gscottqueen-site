@@ -46,8 +46,6 @@ const GalleryTemplate = ({ path }) => {
   const findDefaultImage =
     image && data.allFile.nodes.find(({ base }) => base === image)
 
-  console.log(findDefaultImage)
-
   if (!findFrontMatter) return null
   const { publicURL } = findDefaultImage
 
