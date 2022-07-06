@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'writing',
-        path: `${__dirname}/src/content/writing`
+        name: 'content',
+        path: `${__dirname}/src/content/`
       }
     },
     'gatsby-transformer-json',

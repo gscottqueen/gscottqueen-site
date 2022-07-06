@@ -44,7 +44,6 @@ const ArchiveListing = ({ groupValue }) => {
   )
 }
 
-// TODO: build all archive pages with gatsby node
 const IndexArchive = () => (
   <Layout>
     <Seo title="Art" slug="archives" />
