@@ -137,7 +137,12 @@ const You = ({ pageContext }) => {
 
   return (
     <Layout nonav>
-      <Seo title={data.title} description={data.description} slug={data.link} />
+      <Seo
+        title={data.title}
+        description={data.description}
+        slug={data.link}
+        defaultImage={data.ogImage}
+      />
       <BackNavLink location="experiments" />
       <div className="holistic-container">
         <LoadingOverlay hidden={loading} />
