@@ -7,7 +7,7 @@
 async function makeWritingPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
-      allMdx(filter: { fileAbsolutePath: { regex: "/writing/" } }) {
+      allMdx(filter: { fileAbsolutePath: { regex: "/content/writing/" } }) {
         nodes {
           body
           slug
@@ -34,7 +34,7 @@ async function makeWritingPages({ actions, graphql, reporter }) {
 
   pages.forEach((page) => {
     actions.createPage({
-      path: `/writing/${page.slug}`,
+      path: `/${page.slug}`,
       component: require.resolve('./src/templates/article-template'),
       context: {
         slug: page.slug,
