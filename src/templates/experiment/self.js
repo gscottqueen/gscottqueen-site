@@ -12,22 +12,9 @@ import {
 import { Camera } from '@mediapipe/camera_utils'
 import { w } from '../../const'
 import TestSupport from '../../utils/mobile-detection.js'
-import data from './data.json'
 
-// get data
-const item = [data[0].items[1]]
-// map data to seo
-const handlSEO = (item) =>
-  item.map((detail, i) => (
-    <Seo
-      title={detail.title}
-      description={detail.description}
-      key={`${detail.title}-${i}`}
-      slug={`${detail.link}`}
-    />
-  ))
-
-const Echo = () => {
+const Echo = ({ pageContext }) => {
+  const { data } = pageContext
   TestSupport('/experiments')
   const previewElement = useRef(null)
   const recordingElement = useRef(null)
@@ -112,19 +99,19 @@ const Echo = () => {
 
   return (
     <Layout nonav>
-      {handlSEO(item)}
+      <Seo
+        title={data.title}
+        description={data.description}
+        slug={`${data.link}`}
+      />
       <BackNavLink location="experiments" />
       <div className="self-container">
         <LoadingOverlay hidden={recordingTimeMS > ms} />
-        {/* map data to description */}
-        {item.map((detail, i) => (
-          <ExperimentDescription
-            title={detail.title}
-            description={detail.description}
-            key={`${detail.title}--${i}`}
-            githubLink={detail.extlink}
-          />
-        ))}
+        <ExperimentDescription
+          title={data.title}
+          description={data.description}
+          githubLink={data.extlink}
+        />
         <Video
           id="preview"
           className="self"

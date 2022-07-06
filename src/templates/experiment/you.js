@@ -16,22 +16,8 @@ import {
   Seo
 } from '../../components'
 
-import data from './data.json'
-
-// get data
-const item = [data[0].items[0]]
-// map data to seo
-const handlSEO = (item) =>
-  item.map((detail, i) => (
-    <Seo
-      title={detail.title}
-      description={detail.description}
-      key={`${detail.title}-${i}`}
-      slug={`${detail.link}`}
-    />
-  ))
-
-const You = () => {
+const You = ({ pageContext }) => {
+  const { data } = pageContext
   const videoElement = useRef(null)
   const canvasElement = useRef(null)
   const [loading, setLoading] = useState(false)
@@ -149,22 +135,19 @@ const You = () => {
     camera.start()
   })
 
+  console.log(data)
+
   return (
     <Layout nonav>
-      {handlSEO(item)}
-
+      <Seo title={data.title} description={data.description} slug={data.link} />
       <BackNavLink location="experiments" />
       <div className="holistic-container">
         <LoadingOverlay hidden={loading} />
-        {/* map data to description */}
-        {item.map((detail, i) => (
-          <ExperimentDescription
-            title={detail.title}
-            description={detail.description}
-            key={`${detail.title}--${i}`}
-            githubLink={detail.extlink}
-          />
-        ))}
+        <ExperimentDescription
+          title={data.title}
+          description={data.description}
+          githubLink={data.extlink}
+        />
         <video className="input_video" hidden ref={videoElement}></video>
         <canvas
           className="output_canvas"

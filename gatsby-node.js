@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
+// writings under /writing
 async function makeWritingPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
@@ -45,8 +46,50 @@ async function makeWritingPages({ actions, graphql, reporter }) {
   })
 }
 
+// applications under /experiments
+async function makeExperimentsPages({ actions, graphql, reporter }) {
+  const result = await graphql(`
+    query {
+      allDataJson {
+        edges {
+          node {
+            title
+            items {
+              description
+              extlink
+              link
+              ogImage
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panic('failed to create posts ', result.errors)
+  }
+
+  const groups = result.data.allDataJson.edges
+
+  groups.forEach((group) => {
+    group.node.items.forEach((item => {
+      actions.createPage({
+        path: `/experiments/${item.link}`,
+        component: require.resolve(`./src/templates/experiment/${item.link}`),
+        context: {
+          data: item
+        }
+      })
+    }
+    ))
+  })
+}
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   await Promise.all([
-    makeWritingPages({ actions, graphql, reporter })
+    makeWritingPages({ actions, graphql, reporter }),
+    makeExperimentsPages({ actions, graphql, reporter })
   ])
 }

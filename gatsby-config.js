@@ -46,6 +46,13 @@ module.exports = {
         path: `${__dirname}/src/content/writing`
       }
     },
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages/experiments/data.json`
+      }
+    },
     {
       resolve: 'gatsby-plugin-plausible',
       options: {

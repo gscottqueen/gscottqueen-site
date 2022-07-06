@@ -6,30 +6,21 @@ import {
   Seo
 } from '../../components'
 import { w } from '../../const'
-import data from './data.json'
 // this drawing includes an audio aspect, sound on!!
-
-// get data
-const item = [data[1].items[1]]
-
-const handlSEO = (item) =>
-  item.map((detail, i) => (
-    <Seo
-      title={detail.title}
-      description={detail.description}
-      key={`${detail.title}-${i}`}
-      slug={`${detail.link}`}
-    />
-  ))
 
 const SingularityP5 = React.lazy(() =>
   import('../../components/lazy/singularityP5')
 )
 
-const Singulartiy = () => {
+const Singulartiy = ({ pageContext }) => {
+  const { data } = pageContext
   return (
     <Layout nonav>
-      {handlSEO(item)}
+      <Seo
+        title={data.title}
+        description={data.description}
+        slug={`${data.link}`}
+      />
       <BackNavLink
         location="experiments"
         inverse
@@ -39,17 +30,13 @@ const Singulartiy = () => {
         }}
       />
       <div className="singularity-container">
-        {/* map data to description */}
-        {item.map((detail, i) => (
-          <ExperimentDescription
-            title={detail.title}
-            description={detail.description}
-            key={`${detail.title}--${i}`}
-            githubLink={detail.extlink}
-            inverse
-            style={{ marginTop: '50px' }}
-          />
-        ))}
+        <ExperimentDescription
+          title={data.title}
+          description={data.description}
+          githubLink={data.extlink}
+          inverse
+          style={{ marginTop: '50px' }}
+        />
         {w && (
           <React.Suspense fallback={<div />}>
             <SingularityP5 />
