@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout bgImage={data?.placeholderImage}>
-      <Seo />
+      <Seo slug={'/'} />
     </Layout>
   )
 }

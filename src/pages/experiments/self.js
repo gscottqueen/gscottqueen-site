@@ -23,6 +23,7 @@ const handlSEO = (item) =>
       title={detail.title}
       description={detail.description}
       key={`${detail.title}-${i}`}
+      slug={`${detail.link}`}
     />
   ))
 

@@ -47,18 +47,18 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       : `${site.siteMetadata.baseUrl}${site.siteMetadata?.defaultImage}`
 
   // TODO: metadata for these node pages are terrible
+  let regexPattern = new RegExp(`${slug}$`)
+
   const nodeObj =
     slug &&
     allSitePage.edges.filter((page) =>
-      page.node.path.includes(slug) ? page.node.path : null
+      page.node.path.match(regexPattern) ? page.node.path : null
     )
 
   const canonicalURL =
     nodeObj &&
     nodeObj.length > 0 &&
-    `${site.siteMetadata.baseUrl}${nodeObj[nodeObj.length - 1].node.path}`
-
-  console.log(nodeObj && nodeObj)
+    `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
 
   return (
     <Helmet

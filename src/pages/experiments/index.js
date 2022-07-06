@@ -19,6 +19,7 @@ const ListGroup = ({ data }) => (
   </ul>
 )
 
+// TODO: create experiments with gatsby node
 const IndexPage = () => (
   <Layout>
     <Seo title="Experiments" slug="experiments" />
