@@ -147,6 +147,7 @@ const You = ({ pageContext }) => {
           title={data.title}
           description={data.description}
           githubLink={data.extlink}
+          defaultImage={data.ogImage}
         />
         <video className="input_video" hidden ref={videoElement}></video>
         <canvas

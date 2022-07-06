@@ -77,7 +77,7 @@ async function makeExperimentsPages({ actions, graphql, reporter }) {
     group.node.items.forEach((item => {
       actions.createPage({
         path: `/experiments/${item.link}`,
-        component: require.resolve(`./src/templates/experiment/${item.link}`),
+        component: require.resolve(`./src/templates/experiments/${item.link}`),
         context: {
           data: item
         }

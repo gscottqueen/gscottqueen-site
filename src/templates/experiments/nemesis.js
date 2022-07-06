@@ -17,7 +17,8 @@ const Nemesis = ({ pageContext }) => {
       <Seo
         title={data.title}
         description={data.description}
-        slug={`${data.link}`}
+        slug={data.link}
+        defaultImage={data.ogImage}
       />
       <BackNavLink location="experiments" inverse />
       <div className="eclipse-container">

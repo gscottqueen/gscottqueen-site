@@ -19,7 +19,8 @@ const Singulartiy = ({ pageContext }) => {
       <Seo
         title={data.title}
         description={data.description}
-        slug={`${data.link}`}
+        slug={data.link}
+        defaultImage={data.ogImage}
       />
       <BackNavLink
         location="experiments"
