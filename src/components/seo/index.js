@@ -46,7 +46,6 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       ? `${site.siteMetadata.baseUrl}${findDefaultImage?.publicURL}`
       : `${site.siteMetadata.baseUrl}${site.siteMetadata?.defaultImage}`
 
-  // TODO: metadata for these node pages are terrible
   let regexPattern = new RegExp(`${slug}$`)
 
   const nodeObj =

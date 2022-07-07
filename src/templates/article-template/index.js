@@ -19,7 +19,7 @@ const ArticleTemplate = ({ pageContext }) => {
         title={frontmatter.title}
         description={frontmatter.description}
         slug={slug}
-        defaultImage={frontmatter.image}
+        defaultImage={(frontmatter.image && frontmatter.image) || undefined}
       />
       <BackNavLink location="writing" />
       <article id={slug}>
