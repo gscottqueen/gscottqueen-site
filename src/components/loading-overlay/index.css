@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
-  margin-top: calc(100vh / 2);
+  margin-top: calc((100vh / 2) - 60px);
 }
 
 .loading-overlay :nth-child(1) {

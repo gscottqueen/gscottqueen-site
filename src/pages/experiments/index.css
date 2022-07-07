@@ -1,8 +1,14 @@
 ul li {
-  max-width: 600px;
+  max-width: 320px;
   margin: 0 auto 50px;
 }
 
 .inverse a {
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  ul li {
+    max-width: 600px;
+  }
 }
