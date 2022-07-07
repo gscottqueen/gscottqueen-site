@@ -5,9 +5,9 @@ import {
   BackNavLink,
   Layout,
   Seo
-} from '../../components'
-import { w } from '../../const'
-import EclipseVideo from '../../video/eclipse-video.mp4'
+} from '../components'
+import { w } from '../const'
+import EclipseVideo from '../video/eclipse-video.mp4'
 
 const Nemesis = ({ pageContext }) => {
   const { data } = pageContext

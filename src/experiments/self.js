@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { userMediaConfig } from '../../config/user-media-config'
-import { domReady } from '../../utils/dom-ready'
+import { userMediaConfig } from '../config/user-media-config'
+import { domReady } from '../utils/dom-ready'
 import {
   Video,
   LoadingOverlay,
@@ -8,10 +8,10 @@ import {
   BackNavLink,
   Layout,
   Seo
-} from '../../components'
+} from '../components'
 import { Camera } from '@mediapipe/camera_utils'
-import { w } from '../../const'
-import TestSupport from '../../utils/mobile-detection.js'
+import { w } from '../const'
+import TestSupport from '../utils/mobile-detection.js'
 
 const Echo = ({ pageContext }) => {
   const { data } = pageContext

@@ -14,7 +14,7 @@ import {
   BackNavLink,
   Layout,
   Seo
-} from '../../components'
+} from '../components'
 
 const You = ({ pageContext }) => {
   const { data } = pageContext

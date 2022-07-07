@@ -1,15 +1,10 @@
 import React from 'react'
-import {
-  ExperimentDescription,
-  BackNavLink,
-  Layout,
-  Seo
-} from '../../components'
-import { w } from '../../const'
+import { ExperimentDescription, BackNavLink, Layout, Seo } from '../components'
+import { w } from '../const'
 // this drawing includes an audio aspect, sound on!!
 
 const SingularityP5 = React.lazy(() =>
-  import('../../components/lazy/singularityP5')
+  import('../components/lazy/singularityP5')
 )
 
 const Singulartiy = ({ pageContext }) => {
