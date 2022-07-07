@@ -18,6 +18,10 @@ section.gallery-template .citation {
   background-color: #fff;
 }
 
+section.gallery-template cite {
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 600px) {
   section.gallery-template {
     height: 100vh;
