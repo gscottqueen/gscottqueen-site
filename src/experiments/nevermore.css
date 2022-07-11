@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: monospace;
+}
+
+pre {
+  margin: 0;
+}
+
+video {
+  display: none;
+}
+
+button {
+  position: absolute;
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+  border: none;
+  font-family: monospace;
+}
+
+.poem {
+  position: absolute;
+  font-size: 60px;
+  width: 100vw;
+  height: 100vh;
+  margin-top: calc((100vh / 2) - 60px);
+  top: 0;
+  text-align: center;
+}
+
+.resdiv {
+  position: absolute;
+  top: 0;
+}

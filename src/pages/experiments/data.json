@@ -24,11 +24,11 @@
     "title": "Generative Programing",
     "items": [
       {
-        "title": "Nemesis",
-        "link": "nemesis",
-        "description": "Simplex 4D noise, using a node based graphics network.",
-        "extlink" : "",
-        "ogImage": "nemesis-social.png"
+        "title": "Nevermore",
+        "link": "nevermore",
+        "description": "Generative natural language.",
+        "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js",
+        "ogImage": "singularity-social.png"
       },
       {
         "title": "Singularity",
@@ -36,6 +36,13 @@
         "description": "Processing WEBGL with particle and sound environment.",
         "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js",
         "ogImage": "singularity-social.png"
+      },
+      {
+        "title": "Nemesis",
+        "link": "nemesis",
+        "description": "Simplex 4D noise, using a node based graphics network.",
+        "extlink" : "",
+        "ogImage": ""
       }
     ]
   }
