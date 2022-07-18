@@ -24,13 +24,6 @@
     "title": "Generative Programing",
     "items": [
       {
-        "title": "Nevermore",
-        "link": "nevermore",
-        "description": "Observational tracking of the observers digital location.",
-        "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/nevermoreP5.js",
-        "ogImage": "singularity-social.png"
-      },
-      {
         "title": "Singularity",
         "link": "singularity",
         "description": "Processing WEBGL with particle and sound environment.",

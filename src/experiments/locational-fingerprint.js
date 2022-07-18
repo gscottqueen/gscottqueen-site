@@ -3,7 +3,9 @@ import { ExperimentDescription, BackNavLink, Layout, Seo } from '../components'
 import { w } from '../const'
 // this drawing includes an audio aspect, sound on!!
 
-const NevermoreP5 = React.lazy(() => import('../components/lazy/nevermoreP5'))
+const LocationalFingerprintP5 = React.lazy(() =>
+  import('../components/lazy/locational-fingerprintP5')
+)
 
 const Singulartiy = ({ pageContext }) => {
   const { data } = pageContext
@@ -24,7 +26,10 @@ const Singulartiy = ({ pageContext }) => {
           backgroundColor: 'black'
         }}
       />
-      <div className="nevermore-container" style={{ postion: 'absolute' }}>
+      <div
+        className="locational-fingerprint-container"
+        style={{ postion: 'absolute' }}
+      >
         <ExperimentDescription
           title={data.title}
           description={data.description}
@@ -34,7 +39,7 @@ const Singulartiy = ({ pageContext }) => {
         />
         {w && (
           <React.Suspense fallback={<div />}>
-            <NevermoreP5 data={data} />
+            <LocationalFingerprintP5 data={data} />
           </React.Suspense>
         )}
       </div>

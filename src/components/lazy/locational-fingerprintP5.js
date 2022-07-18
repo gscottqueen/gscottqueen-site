@@ -4,6 +4,7 @@ import RiTa from 'rita'
 import { LoadingOverlay } from '../index'
 import { w } from '../../const'
 import { iOS } from '../../utils/iOS'
+import { dbip } from 'dbip'
 
 import RavensVideo from '../../video/raven-flight.mp4'
 import RavensTrimmed from '../../video/ravens-trimmed.mp4'
@@ -17,6 +18,7 @@ INFO.previous_requests =
     ? `you are being tracked through your last ${history.length} request`
     : null
 
+const IP_API_KEY = 'f3e96aab2a2df08cba467144eade1253'
 const API_KEY = 'd29394918b24428581709b373f7ddb29'
 
 let words = [],
@@ -30,7 +32,6 @@ let words = [],
   count = 0
 
 const drawTypographicVideo = (p5, w, vid) => {
-  console.log('words', w)
   p5.textFont('monospace')
   // set dimensions of our captured graphic
   vid.image(ravensVideo, 0, -40, 210, 180)
@@ -86,8 +87,18 @@ const toggleVid = () => {
   }
 }
 
-const NevermoreP5 = () => {
+const LocationalFingerprintP5 = () => {
   const preload = () => {
+    try {
+      fetch(`http://api.ipstack.com/?access_key=${IP_API_KEY}`)
+        .then((response) => response)
+        .then((ok) => {
+          ok && dbip.getVisitor().then((data) => console.log(data))
+        })
+    } catch (error) {
+      console.log(error)
+    }
+
     try {
       fetch('http://ip-api.com/json')
         .then((response) => {
@@ -215,7 +226,7 @@ const NevermoreP5 = () => {
         </div>
         <React.Suspense fallback={<div />}>
           <Sketch
-            className="sketch-nevermore"
+            className="sketch-locational-fingerprint"
             setup={setup}
             draw={draw}
             preload={preload}
@@ -226,4 +237,4 @@ const NevermoreP5 = () => {
   )
 }
 
-export default NevermoreP5
+export default LocationalFingerprintP5
