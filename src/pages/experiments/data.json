@@ -26,8 +26,8 @@
       {
         "title": "Nevermore",
         "link": "nevermore",
-        "description": "Generative natural language.",
-        "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js",
+        "description": "Observational tracking of the observers digital location.",
+        "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/nevermoreP5.js",
         "ogImage": "singularity-social.png"
       },
       {
