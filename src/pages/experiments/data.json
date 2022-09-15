@@ -24,6 +24,13 @@
     "title": "Generative Programing",
     "items": [
       {
+        "title": "Supra",
+        "link": "supra",
+        "description": "Experimenting with generative work inspired by nostalgic synth-wave.",
+        "extlink" : "",
+        "ogImage": "supra.jpg"
+      },
+      {
         "title": "Singularity",
         "link": "singularity",
         "description": "Processing WEBGL with particle and sound environment.",
