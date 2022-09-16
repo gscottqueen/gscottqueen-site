@@ -1,0 +1,12 @@
+.about-wrapper {
+  max-width: 85%;
+  margin: 150px auto;
+  text-align: initial;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-wrapper {
+    max-width: 45%;
+  }
+}
