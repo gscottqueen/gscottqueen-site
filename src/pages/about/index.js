@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Layout, Seo } from '../../components'
+import { Layout, Seo, SocialIcons } from '../../components'
 
 import './index.css'
 
@@ -34,7 +34,8 @@ const IndexAbout = () => (
         solving. If we engage with technology collaboratively we can unlock the
         full potential of our societies and future generations.
       </p>
-      <p>Front page image credit: Alex Gibbs</p>
+      <SocialIcons />
+      <cite>Front page image credit: Alex Gibbs</cite>
     </div>
   </Layout>
 )
