@@ -66,6 +66,21 @@ const SocialIcons = () => {
           </a>
         </button>
       </li>
+      <li>
+        <button>
+          <a
+            href="mailto:geoffreysqueen@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              className="social-icon email"
+              src="social_email_envelope_mail_send_icon.png"
+              alt="social icon email"
+            />
+          </a>
+        </button>
+      </li>
     </ul>
   )
 }

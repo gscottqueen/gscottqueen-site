@@ -22,10 +22,6 @@ const Header = () => (
             /{' '}
             <span>
               <Link to="/about">About</Link>
-            </span>{' '}
-            /{' '}
-            <span>
-              <a href="mailto:geoffreysqueen@gmail.com">Contact</a>
             </span>
           </span>
         </nav>

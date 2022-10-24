@@ -7,8 +7,33 @@ ul li {
   color: white;
 }
 
+.experiments-listing-block {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 80px 20px;
+  text-align: left;
+}
+
+.experiments-listing-description {
+  line-height: 1.9;
+}
+
+h1.experiments-listing-title {
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
 @media only screen and (min-width: 600px) {
   ul li {
     max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1.experiments-listing-title {
+    text-align: center;
+    position: absolute;
+    right: 60px;
+    top: 60px;
   }
 }
