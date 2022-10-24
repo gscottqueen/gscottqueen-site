@@ -6,36 +6,52 @@ import { ListingTemplate } from '../../templates'
 
 import './index.css'
 
-const IndexArchives = () => (
-  <Layout>
-    <Seo title="Art" slug="art" />
-    <ListingTemplate title="Art">
+const IndexArchives = ({ pageContext }) => {
+  const { data } = pageContext
+
+  const IndexListingComponent = (data) => {
+    return (
       <div>
         <h1 className="listing-heading">New Works</h1>
-        <div className="latest-block">
-          <div className="latest-block-description">
-            <h2>&quot;Moment&quot;</h2>
-            <p>New Media Public Sculpture [concept]</p>
-            <p>
-              Commision by Charlotte Center City Partners for display @ I Heart
-              Rail Trail: Lights, comming Feb. 2023.
-            </p>
-            <p>
-              Building on the influence of a historical internet diagram,
-              coupling AI with iterative design inputs that seek to provide a
-              moment of clarity and reflection in an urban setting.
-            </p>
-          </div>
-          <Image src="gscottqueen_meditation_computer_tower_machine_sculpture_ultra_h_52bcd96a-11dd-4c34-adfb-8294f1ec605b.png"></Image>
+
+        {data.data.map((item, i) => {
+          return (
+            <div className="latest-block" key={`${item.title}-${i}`}>
+              <div className="latest-block-description">
+                <h2>&quot;{item.title}&quot;</h2>
+                <p dangerouslySetInnerHTML={{ __html: item.description }} />
+              </div>
+              <Image
+                src={`${item.ogImage}`}
+                alt="computer tower machine sculpture ultra hd lighting"
+              ></Image>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
+  const { ogImage, ogDescription, title } = data && data[0]
+
+  return (
+    <Layout>
+      <Seo
+        title="Art"
+        slug="art"
+        defaultImage={ogImage}
+        description={`Queen's latest work "${title}" explores ${ogDescription}`}
+      />
+      <ListingTemplate title="Art">
+        <IndexListingComponent data={data} />
+        <div className="art-listing-links">
+          Follow progress on <Link to={'/experiments'}>experiments</Link>, or
+          visit the <Link to={'archives'}>archives</Link> to see previous years
+          work.
         </div>
-      </div>
-      <div className="art-listing-links">
-        Follow progress on <Link to={'/experiments'}>experiments</Link>, or
-        visit the <Link to={'archives'}>archives</Link> to see previous years
-        work.
-      </div>
-    </ListingTemplate>
-  </Layout>
-)
+      </ListingTemplate>
+    </Layout>
+  )
+}
 
 export default IndexArchives
