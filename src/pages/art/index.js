@@ -30,9 +30,9 @@ const IndexArchives = () => (
         </div>
       </div>
       <div className="art-listing-links">
-        New concepts are in the works, in the meantime follow progress on{' '}
-        <Link to={'/experiments'}>experiments</Link>, or visit the{' '}
-        <Link to={'archives'}>archives</Link> to see previous years work.
+        Follow progress on <Link to={'/experiments'}>experiments</Link>, or
+        visit the <Link to={'archives'}>archives</Link> to see previous years
+        work.
       </div>
     </ListingTemplate>
   </Layout>
