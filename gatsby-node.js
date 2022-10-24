@@ -113,7 +113,7 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
 
   actions.createPage({
     path: '/art',
-    component: require.resolve('./src/pages/art'),
+    component: require.resolve('./src/pages/art/art-listing'),
     context: {
       data: groups[0].node.items
     }
