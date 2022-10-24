@@ -7,6 +7,10 @@ ul li {
   color: white;
 }
 
+.listing-group {
+  padding-bottom: 80px;
+}
+
 .experiments-listing-block {
   max-width: 720px;
   margin: 80px auto;

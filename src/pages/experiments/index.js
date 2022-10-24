@@ -34,9 +34,11 @@ const IndexPage = () => (
           there is something here that you can use or remix yourself, please do.
         </p>
       </div>
-      {data.map((group) => (
-        <ListGroup data={group} key={group.title} />
-      ))}
+      <div className="listing-group">
+        {data.map((group) => (
+          <ListGroup data={group} key={group.title} />
+        ))}
+      </div>
     </ListingTemplate>
   </Layout>
 )
