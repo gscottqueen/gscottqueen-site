@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/experiments/data.json`
+        path: `${__dirname}/src/pages/`
       }
     },
     {
