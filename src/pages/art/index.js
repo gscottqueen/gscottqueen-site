@@ -17,7 +17,7 @@ const IndexArchives = () => (
             <h2>&quot;Moment&quot;</h2>
             <p>New Media Public Sculpture [concept]</p>
             <p>
-              Commision by Charlotte City Center Partners for display @ I Heart
+              Commision by Charlotte Center City Partners for display @ I Heart
               Rail Trail: Lights, comming Feb. 2023.
             </p>
             <p>
