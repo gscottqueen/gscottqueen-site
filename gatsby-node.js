@@ -48,7 +48,7 @@ async function makeWritingPages({ actions, graphql, reporter }) {
 async function makeExperimentsPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
-      allDataJson {
+      allDataJson(filter: {dir: {eq: "experiments"}}) {
         edges {
           node {
             title
@@ -82,6 +82,41 @@ async function makeExperimentsPages({ actions, graphql, reporter }) {
       })
     }
     ))
+  })
+}
+
+async function makeArtListingPage({ actions, graphql, reporter }) {
+  const result = await graphql(`
+    query {
+      allDataJson(filter: {dir: {eq: "art"}}) {
+        edges {
+          node {
+            title
+            items {
+              description
+              link
+              ogImage
+              title
+              ogDescription
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panic('failed to create posts ', result.errors)
+  }
+
+  const groups = result.data.allDataJson.edges
+
+  actions.createPage({
+    path: '/art',
+    component: require.resolve('./src/pages/art'),
+    context: {
+      data: groups[0].node.items
+    }
   })
 }
 
@@ -136,6 +171,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   await Promise.all([
     makeWritingPages({ actions, graphql, reporter }),
     makeExperimentsPages({ actions, graphql, reporter }),
+    makeArtListingPage({ actions, graphql, reporter }),
     makeGalleryPages({ actions, graphql, reporter })
   ])
 }
