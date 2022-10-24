@@ -1,0 +1,16 @@
+[
+  {
+    "dir": "art",
+    "title": "New Works",
+    "items": [
+      {
+        "title": "Moment",
+        "link": "moment",
+        "description":
+          "New Media Public Sculpture [concept]<p>Commission by Charlotte Center City Partners for display @ I Heart Rail Trail: Lights, coming Feb. 2023.<p>Building on the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
+        "ogDescription": "the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
+        "ogImage": "gscottqueen_meditation_computer_tower_machine_sculpture_ultra_h_52bcd96a-11dd-4c34-adfb-8294f1ec605b.png"
+      }
+    ]
+  }
+]
