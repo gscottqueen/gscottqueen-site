@@ -9,8 +9,6 @@ import './index.css'
 const IndexArchives = ({ pageContext }) => {
   const { data } = pageContext
 
-  console.log(pageContext)
-
   const IndexListingComponent = (data) => {
     return (
       <div>
