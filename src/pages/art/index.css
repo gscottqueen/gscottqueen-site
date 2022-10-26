@@ -12,14 +12,6 @@
   height: auto;
 }
 
-/* .latest-image-block :nth-child(1) {
-  order: 1
-}
-
-.latest-image-block :nth-child(2) {
-  order: 0
-} */
-
 .latest-block:nth-of-type(odd) :nth-child(1) {
   order: 1;
 }
@@ -56,7 +48,6 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    max-height: 90vh;
   }
 
   .latest-block-description {
