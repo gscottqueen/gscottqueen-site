@@ -95,6 +95,7 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
             items {
               description
               link
+              theme
               ogImage
               title
               ogDescription
