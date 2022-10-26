@@ -1,36 +1,25 @@
-ul li {
-  max-width: 320px;
-  margin: 0 auto 50px;
+h1.experiments-listing-title {
+  text-align: center;
+  margin: 0 auto 80px;
 }
 
 .inverse a {
   color: white;
 }
 
-.listing-group {
-  padding-bottom: 80px;
-}
-
 .experiments-listing-block {
-  max-width: 720px;
-  margin: 80px auto;
-  padding: 80px 20px;
   text-align: left;
 }
 
 .experiments-listing-description {
   line-height: 1.9;
+  margin: 40px;
 }
 
-h1.experiments-listing-title {
-  text-align: center;
-  margin: 0 auto 80px;
-}
-
-@media only screen and (min-width: 600px) {
-  ul li {
-    max-width: 600px;
-  }
+.listing-group {
+  text-align: left;
+  margin: 40px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -39,5 +28,20 @@ h1.experiments-listing-title {
     position: absolute;
     right: 60px;
     top: 60px;
+  }
+
+  ul li {
+    max-width: 600px;
+    margin: 0 auto 50px;
+  }
+
+  .experiments-listing-block {
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 80px 20px 20px;
+  }
+
+  .listing-group {
+    text-align: center;
   }
 }
