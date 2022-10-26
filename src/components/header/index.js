@@ -17,6 +17,10 @@ const Header = () => (
             </span>{' '}
             /{' '}
             <span>
+              <Link to="/experiments">Experiments</Link>
+            </span>{' '}
+            /{' '}
+            <span>
               <Link to="/writing">Writing</Link>
             </span>{' '}
             /{' '}
