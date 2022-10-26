@@ -18,8 +18,11 @@ const IndexArchives = ({ pageContext }) => {
 
         {data.data.map((item, i) => {
           return (
-            <div className="latest-block" key={`${item.title}-${i}`}>
-              <div className="latest-block-description">
+            <div
+              className={`latest-block ${item.theme}`}
+              key={`${item.title}-${i}`}
+            >
+              <div className={`latest-block-description ${item.theme}`}>
                 <h2>&quot;{item.title}&quot;</h2>
                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
