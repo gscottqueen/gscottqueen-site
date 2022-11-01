@@ -97,8 +97,12 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
               link
               theme
               ogImage
+              images
               title
               ogDescription
+              ogAlt
+              qrCode
+              qrCodeLink
             }
           }
         }

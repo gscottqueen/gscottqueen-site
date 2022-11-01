@@ -10,15 +10,26 @@
         "description":
           "New Media Public Sculpture [concept]<br><br>Building on the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
         "ogDescription": "the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
-        "ogImage": "gscottqueen_meditation_computer_tower_machine_sculpture_ultra_h_52bcd96a-11dd-4c34-adfb-8294f1ec605b.png"
+        "ogImage": "gscottqueen_meditation_computer_tower_machine_sculpture_ultra_h_52bcd96a-11dd-4c34-adfb-8294f1ec605b.png",
+        "ogAlt": "Large glowing computer tower, with sunset clouds behind it.",
+        "qrCode" : "",
+        "qrCodeLink": "",
+        "images": []
       },
       {
         "title": "Generative Fossils",
         "link": "generative-fossils",
         "theme": "",
         "description":
-          "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.",
-        "ogImage": "2022.09.12-22.56.39-0.jpg"
+          "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.<br><br>A few lines of code, become vector points, xy plotter drawings, 3D prints, and augmented reality creatures. These each act as a container for the previous to dissolve the veil of reality.",
+        "ogImage": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_psuedo-fossil.jpg",
+        "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
+        "qrCode": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_digital-fossil.jpeg",
+        "qrCodeLink": "https://bit.ly/3SSXcTJ",
+        "images": [
+          "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_psuedo-fossil.jpg",
+          "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_trace-fossil.jpg"
+        ]
       }
     ]
   }
