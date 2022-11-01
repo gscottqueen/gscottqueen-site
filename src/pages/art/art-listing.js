@@ -33,7 +33,7 @@ const IndexArchives = ({ pageContext }) => {
                 <h2>&quot;{item.title}&quot;</h2>
                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
-              <Image src={`${item.ogImage}`} alt=""></Image>
+              <Image src={`${item.ogImage}`} alt={`${item.ogAlt}`}></Image>
             </div>
           )
         })}
