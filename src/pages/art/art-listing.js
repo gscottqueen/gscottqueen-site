@@ -21,13 +21,19 @@ const IndexArchives = ({ pageContext }) => {
               key={`${item.title}-${i}`}
             >
               <div className={`latest-block-description ${item.theme}`}>
+                {item.qrCode && (
+                  <a href={item.qrCodeLink}>
+                    <Image
+                      className="qr-code"
+                      src={`${item.qrCode}`}
+                      alt=""
+                    ></Image>
+                  </a>
+                )}
                 <h2>&quot;{item.title}&quot;</h2>
                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
-              <Image
-                src={`${item.ogImage}`}
-                alt="computer tower machine sculpture ultra hd lighting"
-              ></Image>
+              <Image src={`${item.ogImage}`} alt=""></Image>
             </div>
           )
         })}
