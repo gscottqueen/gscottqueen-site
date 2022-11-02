@@ -7,7 +7,7 @@ const SocialIcons = () => {
   return (
     <ul className="social-icon-wrapper">
       <li>
-        <button>
+        <button title="Instagram">
           <a
             href="https://www.instagram.com/gscottqueen/"
             target="_blank"
@@ -22,7 +22,7 @@ const SocialIcons = () => {
         </button>
       </li>
       <li>
-        <button>
+        <button title="Youtube">
           <a
             href="https://www.youtube.com/channel/UCYOcrfGJw1upv59yQXTH3gg"
             target="_blank"
@@ -37,7 +37,7 @@ const SocialIcons = () => {
         </button>
       </li>
       <li>
-        <button>
+        <button title="Github">
           <a
             href="https://github.com/gscottqueen"
             target="_blank"
@@ -52,7 +52,7 @@ const SocialIcons = () => {
         </button>
       </li>
       <li>
-        <button>
+        <button title="Reddit">
           <a
             href="https://www.reddit.com/user/gscottqueen"
             target="_blank"
@@ -67,7 +67,7 @@ const SocialIcons = () => {
         </button>
       </li>
       <li>
-        <button>
+        <button title="Contact By Email">
           <a
             href="mailto:geoffreysqueen@gmail.com"
             target="_blank"
