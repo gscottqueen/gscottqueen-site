@@ -1,6 +1,7 @@
 .about-wrapper {
   max-width: 85%;
   margin: 150px auto;
+  padding-bottom: 80px;
   text-align: initial;
   line-height: 2;
 }
@@ -8,5 +9,10 @@
 @media only screen and (min-width: 600px) {
   .about-wrapper {
     max-width: 45%;
+  }
+
+  ul.about-list li {
+    margin: 0 0 10px 40px;
+    list-style-type: square;
   }
 }
