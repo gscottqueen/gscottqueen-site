@@ -32,6 +32,11 @@ const IndexArchives = ({ pageContext }) => {
                 )}
                 <h2>&quot;{item.title}&quot;</h2>
                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
+                {item.link && (
+                  <div className={`latest-block-link ${item.theme}`}>
+                    <Link to={item.link}>Visit work page</Link>
+                  </div>
+                )}
               </div>
               <Image src={`${item.ogImage}`} alt={`${item.ogAlt}`}></Image>
             </div>

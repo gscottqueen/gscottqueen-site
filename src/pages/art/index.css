@@ -34,8 +34,13 @@
   text-align: left;
 }
 
-.latest-block-description.dark {
+.latest-block-description.dark,
+.latest-block-link.dark a {
   color: white;
+}
+
+.latest-block-link {
+  margin-top: 60px;
 }
 
 .latest-block-description .qr-code {
