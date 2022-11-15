@@ -27,7 +27,7 @@ const Moment = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <MailChimpDrop cta="Be the first to know when the pygital NFT drops!" />
+      <MailChimpDrop cta="Be the first to know when the phygital NFT drops!" />
     </Layout>
   )
 }
