@@ -1,5 +1,5 @@
 import React from 'react'
-import { BackNavLink, Layout, Seo } from '../../../components'
+import { BackNavLink, Layout, Seo, MailChimpDrop } from '../../../components'
 
 const Moment = () => {
   return (
@@ -27,6 +27,7 @@ const Moment = () => {
           allowFullScreen
         ></iframe>
       </div>
+      <MailChimpDrop cta="Be the first to know when they pygital NFT drops!" />
     </Layout>
   )
 }
