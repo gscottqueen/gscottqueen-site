@@ -34,7 +34,7 @@ const IndexArchives = ({ pageContext }) => {
                 <p dangerouslySetInnerHTML={{ __html: item.description }} />
                 {item.link && (
                   <div className={`latest-block-link ${item.theme}`}>
-                    <Link to={item.link}>Visit work page</Link>
+                    <Link to={item.link}>Visit project page</Link>
                   </div>
                 )}
               </div>
