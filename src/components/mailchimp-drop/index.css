@@ -8,6 +8,33 @@
   padding: 20px 0;
 }
 
+.mailchimp-drop-wrapper input[type='email' i] {
+  background: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.mailchimp-drop-wrapper input::placeholder,
+.mailchimp-drop-wrapper input:focus,
+.mailchimp-drop-wrapper input[value] {
+  font-family: 'Courier New', Courier, monospace;
+  color: #efefef;
+  outline: none;
+}
+
+.mailchimp-drop-wrapper button {
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mailchimp-drop-wrapper button:disabled {
+  border: 1px solid grey;
+  background-color: grey;
+  color: #555454;
+}
 @media screen and (max-device-width: 1080px) {
   .mailchimp-drop-wrapper {
     flex-direction: column;
