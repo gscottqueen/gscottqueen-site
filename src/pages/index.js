@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import { RegenButton } from '../components'
 
 import { Layout, Seo } from '../components'
 
@@ -17,6 +18,7 @@ const IndexPage = () => {
   return (
     <Layout bgImage={data?.placeholderImage}>
       <Seo slug={'/'} />
+      <RegenButton anchor />
     </Layout>
   )
 }
