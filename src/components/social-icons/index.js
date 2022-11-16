@@ -24,7 +24,7 @@ const SocialIcons = () => {
       <li>
         <button title="Youtube">
           <a
-            href="https://www.youtube.com/channel/UCYOcrfGJw1upv59yQXTH3gg"
+            href="https://www.youtube.com/@gscottqueen"
             target="_blank"
             rel="noreferrer"
           >
