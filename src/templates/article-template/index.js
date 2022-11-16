@@ -6,7 +6,8 @@ import {
   Layout,
   GithubFooter,
   BackNavLink,
-  RelatedWorks
+  RelatedWorks,
+  SocialIcons
 } from '../../components'
 import './index.css'
 
@@ -27,6 +28,7 @@ const ArticleTemplate = ({ pageContext }) => {
         <GithubFooter slug={slug} />
         {frontmatter.related && <RelatedWorks related={frontmatter.related} />}
       </article>
+      <SocialIcons />
       <BackNavLink location="writing" />
     </Layout>
   )

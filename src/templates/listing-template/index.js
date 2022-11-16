@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Layout } from '../../components'
+import { Layout, SocialIcons } from '../../components'
 import './index.css'
 
 const ListingTemplate = ({ title, children }) => (
@@ -8,6 +8,7 @@ const ListingTemplate = ({ title, children }) => (
     <section id={`${title}`} className="listing-template">
       <ul className="listing-wrapper">{children}</ul>
     </section>
+    <SocialIcons />
   </Layout>
 )
 
