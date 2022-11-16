@@ -3,9 +3,16 @@
   justify-content: space-evenly;
   align-items: baseline;
   flex-direction: row;
-  color: white;
-  background-color: black;
-  padding: 20px 0;
+  padding: 40px 0;
+  background-color: white;
+  background-size: 4px 4px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #000 0,
+    #000 0.4px,
+    #fff 0,
+    #fff 50%
+  );
 }
 
 .mailchimp-drop-wrapper input[type='email' i] {
@@ -30,11 +37,22 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.mailchimp-drop-wrapper button:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
 .mailchimp-drop-wrapper button:disabled {
   border: 1px solid grey;
   background-color: grey;
   color: #555454;
 }
+
+.mailchimp-drop-wrapper .msg-alert {
+  background: white;
+}
+
 @media screen and (max-device-width: 1080px) {
   .mailchimp-drop-wrapper {
     flex-direction: column;

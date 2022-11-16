@@ -1,5 +1,7 @@
 .social-icon-wrapper {
   display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .social-icon-wrapper li {

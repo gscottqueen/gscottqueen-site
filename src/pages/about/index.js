@@ -18,8 +18,6 @@ const IndexAbout = () => (
           experiences.
         </p>
       </div>
-      <SocialIcons />
-      <cite>Front page image credit: Alex Gibbs</cite>
       <div>
         <h2>About</h2>
         <p>
@@ -165,6 +163,8 @@ const IndexAbout = () => (
         </li>
       </ul>
     </div>
+    <cite>Front page image credit: Alex Gibbs</cite>
+    <SocialIcons />
   </Layout>
 )
 

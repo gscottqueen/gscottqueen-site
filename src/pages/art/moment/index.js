@@ -1,5 +1,11 @@
 import React from 'react'
-import { BackNavLink, Layout, Seo, MailChimpDrop } from '../../../components'
+import {
+  BackNavLink,
+  Layout,
+  Seo,
+  MailChimpDrop,
+  SocialIcons
+} from '../../../components'
 
 const Moment = () => {
   return (
@@ -11,7 +17,6 @@ const Moment = () => {
         // defaultImage={data.ogImage} prebuild for SEO
       />
       <BackNavLink location="art" />
-      <MailChimpDrop cta="Be the first to know when the phygital NFT drops!" />
       <div
         className="moment"
         style={{
@@ -28,6 +33,8 @@ const Moment = () => {
           allowFullScreen
         ></iframe>
       </div>
+      <MailChimpDrop cta="Be the first to know when the phygital NFT drops!" />
+      <SocialIcons />
     </Layout>
   )
 }
