@@ -38,7 +38,13 @@ const IndexArchives = ({ pageContext }) => {
                   </div>
                 )}
               </div>
-              <Image src={`${item.ogImage}`} alt={`${item.ogAlt}`}></Image>
+              {item.link ? (
+                <Link to={item.link}>
+                  <Image src={`${item.ogImage}`} alt={`${item.ogAlt}`}></Image>
+                </Link>
+              ) : (
+                <Image src={`${item.ogImage}`} alt={`${item.ogAlt}`}></Image>
+              )}
             </div>
           )
         })}
