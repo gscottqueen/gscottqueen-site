@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Layout, Seo, SocialIcons } from '../../components'
+import { Layout, Seo, SocialIcons, Image } from '../../components'
 
 import './index.css'
 
@@ -18,6 +18,10 @@ const IndexAbout = () => (
           traditional art experiences.
         </p>
       </div>
+      <Image
+        src="gscottqueen_headshot_2022.jpg"
+        alt="artist standing in front of work in studio"
+      />
       <div>
         <h2>About</h2>
         <p>
