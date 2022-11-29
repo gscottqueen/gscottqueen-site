@@ -11,38 +11,34 @@ const IndexAbout = () => (
       <div>
         <h2>Artist Statement</h2>
         <p>
-          Queen believes that in this age of computerization, machine-human
-          collaboration can unlock the full potential of our societies and
-          future generations. In this way, public works with technologies create
-          a deeper level of engagement and spark unique conversations from these
-          experiences.
+          In the age of computerization, machine-human collaboration can unlock
+          the full potential of our societies and future generations. It is in
+          this way that artistic works with technologies create a deeper level
+          of engagement and unique conversations beyond the vestige of
+          traditional experiences.
         </p>
       </div>
       <div>
         <h2>About</h2>
         <p>
-          G. Scott Queen is a research and conceptual artist. He takes a
-          technologist approach to create innovative site specific art, engaging
-          with new media and public interaction for expressive purposes. His
-          installations leverage generative and cybernetic programming,
-          interactive audio, video, and lighting, AI, custom computers, and
-          extended reality (AR, VR, Omniverse) technology.
+          G. Scott Queen is an emerging research and conceptual artist who takes
+          a technologist approach to creating physical and virtual works of art,
+          engaging with new media and observer interaction for expressive
+          purposes. His installations leverage generative and cybernetic
+          programming, AI, custom computers, extended reality (AR, VR,
+          Omniverse), interactive audio, video, and lighting.
         </p>
       </div>
       <div>
         <ul className="about-list">
           <h2>Honors and Public Arts Awards</h2>
           <li>
-            <b>Rail Trail Lights Award</b>, Public works placed in the heart of
-            Charlotte, NC, 2023
+            Rail Trail Lights Award, Public works displayed in uptown Charlotte,
+            NC, 2023
           </li>
           <li>
-            <b>Pedestrian Public Art Award</b>, Public works placed in the heart
-            of Wilmington, NC, 2012
-          </li>
-          <li>
-            <b>First Place, Painting</b>, Central Piedmont Community College
-            Student Exhibition, Wilmington, NC, 2010
+            Pedestrian Public Art Award, Public works placed in the heart of
+            Wilmington, NC, 2012
           </li>
         </ul>
       </div>
@@ -73,94 +69,69 @@ const IndexAbout = () => (
       <ul className="about-list">
         <h2>Exhibitions</h2>
         <li>
-          <b>Rail Trail Lights presented by US Bank</b>, Public Exhibition, US
-          Bank Center City Partners
+          Rail Trail Lights presented by US Bank, Public Exhibition, US Bank
+          Center City Partners, Comming 2023
         </li>
         <li>
-          <b>Augmented Reality</b>, Charlotte Art League, Group Exhibition, 2022
+          Nature & Technology, Honerable Mention, Virtual Exhibition, Visionary
+          Art Collective, 2022
         </li>
+        <li>Augmented Reality, Charlotte Art League, Group Exhibition, 2022</li>
         <li>
-          <b>No Boundaries International Art Colony</b>, Resident Exhibition,
-          2013
+          No Boundaries International Art Colony, Resident Exhibition, 2013
         </li>
+        <li>NODA Studio Tours, North Davidson Art Association, 2013</li>
         <li>
-          <b>NODA Studio Tours</b>, North Davidson Art Association, 2013
+          No Boundaries International Art Colony, Resident Exhibition, 2012
         </li>
+        <li>State of the Art, Cameron Museum of Art, Group Exhibition, 2012</li>
+        <li>Pedestrian Public Art Exhibition, City of Wilmington, 2012</li>
         <li>
-          <b>No Boundaries International Art Colony</b>, Resident Exhibition,
+          Undergraduate Exhibition, University of North Carolina at Charlotte,
           2012
         </li>
+        <li>Larger than Life, Thrive Studios, 2011</li>
+        <li>Define Surrealism, Thrive Studios, 2011</li>
+        <li>Miniatures Show, Thrive Studios, 2011</li>
+        <li>Live Painting, Multiple Installations, 2011-2012</li>
         <li>
-          <b>State of the Art</b>, Cameron Museum of Art, Group Exhibition, 2012
+          Electro Sensory Stimulus (ESS) Multimedia Installation, Multiple
+          installations, 2011-2012
         </li>
         <li>
-          <b>Pedestrian Public Art Exhibition</b>, City of Wilmington, 2012
+          No Boundaries International Art Colony, Resident Exhibition, 2011
         </li>
         <li>
-          <b>Undergraduate Exhibition</b>, University of North Carolina at
-          Charlotte, 2012
-        </li>
-        <li>
-          <b>Larger than Life</b>, Thrive Studios, 2011
-        </li>
-        <li>
-          <b>Define Surrealism</b>, Thrive Studios, 2011
-        </li>
-        <li>
-          <b>Miniatures Show</b>, Thrive Studios, 2011
-        </li>
-        <li>
-          <b>Live Painting</b>, Multiple Installations, 2011-2012
-        </li>
-        <li>
-          <b>Electro Sensory Stimulus (ESS) Multimedia Installation</b>,
-          Multiple installations, 2011-2012
-        </li>
-        <li>
-          <b>No Boundaries International Art Colony</b>, Resident Exhibition,
-          2011
-        </li>
-        <li>
-          <b>Student Art Exhibition</b>, Cape Fear Community College, First
-          Place Painting, 2010
+          Student Art Exhibition, Cape Fear Community College, First Place
+          Painting, 2010
         </li>
       </ul>
       <ul className="about-list">
         <h2>Education</h2>
         <li>
-          <b>Post-Bachelor&#39;s Studies</b>, MicroMaster - Integrated Digital
-          Media, New York University, Current
+          Post-Bachelor&#39;s Studies, MicroMaster - Integrated Digital Media,
+          New York University, Current
         </li>
         <li>
-          <b>Post-Bachelor&#39;s Studies</b>, Aesthetics and Applied Ethics,
-          University of North Carolina at Charlotte, 2014
+          Post-Bachelor&#39;s Studies, Aesthetics and Applied Ethics, University
+          of North Carolina at Charlotte, 2014
         </li>
         <li>
-          <b>Bachelor&#39;s</b>, Studio Art and Design, University of North
-          Carolina Wilmington, 2012
+          Bachelor&#39;s, Studio Art and Design, University of North Carolina
+          Wilmington, 2012
         </li>
       </ul>
       <ul className="about-list">
         <h2>Certifications</h2>
         <li>
-          <b>AR/VR Development and 3D graphics</b>, New York University Tandon
-          School of Engineering, 2022-Current
+          AR/VR Development and 3D graphics, New York University Tandon School
+          of Engineering, 2022-Current
         </li>
-        <li>
-          <b>Creative Code, New York University</b>, 2022
-        </li>
-        <li>
-          <b>SCRUM Master, Scrum Alliance</b>, 2016
-        </li>
-        <li>
-          <b>Project Management Professional (PMP)</b>, TIA, 2016
-        </li>
-        <li>
-          <b>Project Management Certification</b>, Wake Forest University, 2015
-        </li>
-        <li>
-          <b>Business Essentials Certification</b>, Wake Forest University, 2015
-        </li>
+        <li>Creative Code, New York University, 2022</li>
+        <li>SCRUM Master, Scrum Alliance, 2016</li>
+        <li>Project Management Professional (PMP), TIA, 2016</li>
+        <li>Project Management Certification, Wake Forest University, 2015</li>
+        <li>Business Essentials Certification, Wake Forest University, 2015</li>
       </ul>
     </div>
     <cite>Front page image credit: Alex Gibbs</cite>
