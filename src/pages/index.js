@@ -1,8 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { RegenButton } from '../components'
-
-import { Layout, Seo } from '../components'
+import { Layout, Seo, RegenButton } from '../components'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
