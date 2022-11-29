@@ -15,7 +15,7 @@ const IndexAbout = () => (
           the full potential of our societies and future generations. It is in
           this way that artistic works with technologies create a deeper level
           of engagement and unique conversations beyond the vestige of
-          traditional experiences.
+          traditional art experiences.
         </p>
       </div>
       <div>
@@ -73,7 +73,7 @@ const IndexAbout = () => (
           Center City Partners, Comming 2023
         </li>
         <li>
-          Nature & Technology, Honerable Mention, Virtual Exhibition, Visionary
+          Nature & Technology, Honorable Mention, Virtual Exhibition, Visionary
           Art Collective, 2022
         </li>
         <li>Augmented Reality, Charlotte Art League, Group Exhibition, 2022</li>

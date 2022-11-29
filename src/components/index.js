@@ -1,3 +1,4 @@
+export { default as ArtPageBlock } from './art-page-block'
 export { default as BackNavLink } from './back-nav-link'
 export { default as ExperimentDescription } from './experiment-description'
 export { default as GithubLink } from './github-link'
