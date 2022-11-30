@@ -30,6 +30,20 @@
           "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_pseudo-fossil.jpg",
           "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_trace-fossil.jpg"
         ]
+      },
+      {
+        "title": "New Media Generative Works",
+        "link": "new-media-generative-works",
+        "theme": "dark",
+        "description":
+          "A collection of new media generative works that explore storytelling through the computational display of visual data and sound.",
+        "ogImage": "new-media-generative-works.jpg",
+        "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
+        "qrCode": "",
+        "qrCodeLink": "",
+        "images": [
+          "new-media-generative-works.jpg"
+        ]
       }
     ]
   }
