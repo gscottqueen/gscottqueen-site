@@ -33,7 +33,7 @@ const Moment = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/g5BsdVcQuwQ"
+          src="https://www.youtube.com/embed/videoseries?list=PLzS1mIBFtkc9J9f818w5ctf8iprQZrs6b"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -43,7 +43,7 @@ const Moment = () => {
       <ArtPageBlock type="intro">
         <p>{content.description}</p>
       </ArtPageBlock>
-      <MailChimpDrop cta="Be the first to know when the phygital NFT drops!" />
+      <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">
         <p>
           Moment has been Awarded for installation in 2023&#39;s Rail Trail
