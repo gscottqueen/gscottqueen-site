@@ -46,8 +46,7 @@ const Moment = () => {
       <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">
         <p>
-          Moment has been Awarded for installation in 2023&#39;s Rail Trail
-          Lights presented by US Bank in Charlotte NC.
+          Charlotte City Center Partners commissioned “Moment” as part of the temporary public exhibition, Rail Trail Lights presented by US Bank.
         </p>
       </ArtPageBlock>
       <SocialIcons />
