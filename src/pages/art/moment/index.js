@@ -11,7 +11,7 @@ import {
 const content = {
   title: 'Moment',
   description:
-    'What is a moment? The word itself stands to be a nebulous description of everything and nothing at all, an indefinite interval of time. Moments can be fleeting, passing us by without notice. A moment can be recorded in history and celebrated for thousands of years. However, with all of its paradoxical descriptors, a moment will always be a precursor to what comes next.<br><br>This work “Moment”, is a new media public sculpture that primarily leverages the use of light to both explore the fluid meaning of a moment and to define it through utility. The dimensional nature of sculptural work is leveraged to present observers with a spectrum of experiences. Light is displaced and refracted as it passes through the sculptures&#39; prismed materials. From corner to corner it phases between its natural state and an infinite reflection of itself, redefined each time as a different color form. In opposition, light is taken under full control by the artist through computation and displayed in a specific sequence to provide the observer with a visually-guided-micro-meditation.'
+    '<p>What is a moment? The word itself stands to be a nebulous description of everything and nothing at all, an indefinite interval of time. Moments can be fleeting, passing us by without notice. A moment can be recorded in history and celebrated for thousands of years. However, with all of its paradoxical descriptors, a moment will always be a precursor to what comes next.</p><p>This work “Moment”, is a new media public sculpture that primarily leverages the use of light to both explore the fluid meaning of a moment and to define it through utility. The dimensional nature of sculptural work is leveraged to present observers with a spectrum of experiences. Light is displaced and refracted as it passes through the sculptures&#39; prismed materials. From corner to corner it phases between its natural state and an infinite reflection of itself, redefined each time as a different color form. In opposition, light is taken under full control by the artist through computation and displayed in a specific sequence to provide the observer with a visually-guided-micro-meditation.</p>'
 }
 
 const Moment = () => {
@@ -41,7 +41,7 @@ const Moment = () => {
         ></iframe>
       </ArtPageBlock>
       <ArtPageBlock type="intro">
-        <p>{content.description}</p>
+        <div dangerouslySetInnerHTML={{__html: content.description}} />
       </ArtPageBlock>
       <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">
