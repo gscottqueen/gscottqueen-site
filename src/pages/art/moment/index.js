@@ -41,12 +41,13 @@ const Moment = () => {
         ></iframe>
       </ArtPageBlock>
       <ArtPageBlock type="intro">
-        <div dangerouslySetInnerHTML={{__html: content.description}} />
+        <div dangerouslySetInnerHTML={{ __html: content.description }} />
       </ArtPageBlock>
       <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">
         <p>
-          Charlotte City Center Partners commissioned “Moment” as part of the temporary public exhibition, Rail Trail Lights presented by US Bank.
+          Charlotte City Center Partners commissioned “Moment” as part of the
+          2023 public exhibition, Rail Trail Lights presented by US Bank.
         </p>
       </ArtPageBlock>
       <SocialIcons />
