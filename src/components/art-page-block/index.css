@@ -18,6 +18,35 @@
   margin-bottom: 40px;
 }
 
+/* .art-block.hero {
+  display: flex;
+  margin-top: 200px;
+}
+
+.art-block.hero .hero-image {
+  margin-right: 20px;
+}
+
+.art-block.hero .hero-description {
+  width: 600px;
+  margin: 40px;
+  text-align: initial;
+} */
+
+.art-block.hero {
+  max-width: 85%;
+  margin: 80px auto 0;
+}
+
+.art-block.hero .hero-image {
+  margin-bottom: 20px;
+}
+
+.art-block.hero .hero-description {
+  text-align: initial;
+  line-height: 2;
+}
+
 .art-block.intro p,
 .art-block.standard p {
   margin: 20px 30px 0;
@@ -43,6 +72,17 @@
   .art-block.intro p,
   .art-block.standard p {
     margin: 20px auto 0;
+  }
+
+  .art-block.hero {
+    display: flex;
+    margin-top: 200px;
+    max-width: 100%;
+  }
+
+  .art-block.hero .hero-description {
+    width: 600px;
+    margin: 40px;
   }
 }
 

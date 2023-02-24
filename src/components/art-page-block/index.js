@@ -51,6 +51,8 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
       <Standard child={children} />
     ) : type === 'gallery' ? (
       <Gallery child={children} />
+    ) : type === 'hero' ? (
+      <Gallery child={children} />
     ) : (
       ''
     )
