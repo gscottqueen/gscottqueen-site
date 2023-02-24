@@ -36,6 +36,10 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     return <div className={handleClass}>{child}</div>
   }
 
+  const Gallery = ({ child }) => {
+    return <div className={handleClass}>{child}</div>
+  }
+
   const Block = ({ type }) => {
     return type === 'title' ? (
       <Title title={title} />
@@ -45,6 +49,8 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
       <Video child={children} />
     ) : type === 'standard' ? (
       <Standard child={children} />
+    ) : type === 'gallery' ? (
+      <Gallery child={children} />
     ) : (
       ''
     )

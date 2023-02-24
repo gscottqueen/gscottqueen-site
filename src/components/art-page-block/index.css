@@ -1,16 +1,26 @@
 .art-block.intro {
-  max-width: 85%;
   margin: 80px auto 0;
   padding-bottom: 80px;
   text-align: initial;
   line-height: 2;
+  max-width: 900px;
 }
 
-.art-block.standard {
+.art-block.standard,
+.art-block.gallery {
   max-width: 85%;
   margin: 80px auto 0;
   padding-bottom: 20px;
   line-height: 2;
+}
+
+.art-block.gallery .gallery-image {
+  margin-bottom: 40px;
+}
+
+.art-block.intro p,
+.art-block.standard p {
+  margin: 20px 30px 0;
 }
 
 .art-block.title.inverse {
@@ -27,6 +37,13 @@
 .art-block.title h1 {
   padding: 20px 40px;
   position: initial;
+}
+
+@media only screen and (min-width: 900px) {
+  .art-block.intro p,
+  .art-block.standard p {
+    margin: 20px auto 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
