@@ -70,7 +70,7 @@ const Moment = () => {
       <ArtPageBlock type="gallery">
         <h2 className="gallery-heading">Gallery</h2>
         <p className="gallery-descritption">
-                  Images captured by <a href="https://www.collinscamera.com/" nofollow target="_blank">Collin Mairena of Collins Camera</a>.
+                  Images captured by <a href="https://www.collinscamera.com/" rel="noreferrer" target="_blank">Collin Mairena of Collins Camera</a>.
         </p>
           {content.images.map((image, i) => (
             i < 4 &&
@@ -84,7 +84,7 @@ const Moment = () => {
           ))}
               <hr />
         <p className="gallery-descritption">
-                  Details from video captured by <a href="http://www.smartlab.tv/" nofollow target="_blank">Ben Premeaux at the smARTlab</a>.
+                  Details from video captured by <a href="http://www.smartlab.tv/" rel="noreferrer" target="_blank">Ben Premeaux at the smARTlab</a>.
         </p>
               {content.images.map((image, i) => (
                   i > 3 &&
