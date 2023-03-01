@@ -15,23 +15,9 @@
 }
 
 .art-block.gallery .gallery-image {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  max-width: 1600px;
 }
-
-/* .art-block.hero {
-  display: flex;
-  margin-top: 200px;
-}
-
-.art-block.hero .hero-image {
-  margin-right: 20px;
-}
-
-.art-block.hero .hero-description {
-  width: 600px;
-  margin: 40px;
-  text-align: initial;
-} */
 
 .art-block.hero {
   max-width: 85%;
@@ -77,7 +63,7 @@
   .art-block.hero {
     display: flex;
     margin-top: 200px;
-    max-width: 100%;
+    max-width: 2400px;
   }
 
   .art-block.hero .hero-description {

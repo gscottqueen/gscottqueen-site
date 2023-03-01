@@ -23,7 +23,11 @@ const content = {
     'moment-detail-4.png',
     'moment-detail-5.png',
     'moment-detail-6.png',
-    'moment-detail-7.png'
+    'moment-detail-7.png',
+    'moment-detail-8.png',
+    'moment-detail-9.png',
+    'moment-detail-10.png',
+    'moment-detail-11.png'
   ]
 }
 
@@ -55,7 +59,10 @@ const Moment = () => {
       </ArtPageBlock>
       <ArtPageBlock type="hero">
         <Image className="hero-image" src={content.hero} alt=""></Image>
-        <div className="hero-description">{content.heroDescription}</div>
+              <div className="hero-description">
+                  {content.heroDescription}
+                  <p><i>Combining the final fabricated sculpture, with staged lighting, smoke machines, and the site specific details of our location, we aimed to recreate the initial concept image prompted by MidJourney.  We then took this image into the DALL-E-2 AI server to extend generative renderings that place “Moment” in an artificial scene built from visual models of our new context.</i></p>
+              </div>
       </ArtPageBlock>
       <ArtPageBlock type="intro">
         <div dangerouslySetInnerHTML={{ __html: content.description }} />
@@ -63,14 +70,30 @@ const Moment = () => {
       <ArtPageBlock type="gallery">
         <h2 className="gallery-heading">Gallery</h2>
         <p className="gallery-descritption">
-          Details from video captured by Ben Premeaux at the smARTlab.
+                  Images captured by <a href="https://www.collinscamera.com/" nofollow target="_blank">Collin Mairena of Collins Camera</a>.
         </p>
-        {content.images.map((image) => (
+          {content.images.map((image, i) => (
+            i < 4 &&
+            <Image
+                className="gallery-image"
+                src={image}
+                alt=""
+                      key={image}
+                      title="Image captured by Collin Mairena of Collins Camera"
+            ></Image>
+          ))}
+              <hr />
+        <p className="gallery-descritption">
+                  Details from video captured by <a href="http://www.smartlab.tv/" nofollow target="_blank">Ben Premeaux at the smARTlab</a>.
+        </p>
+              {content.images.map((image, i) => (
+                  i > 3 &&
           <Image
             className="gallery-image"
             src={image}
             alt=""
-            key={image}
+                          key={image}
+                          title="Details from video captured by Ben Premeaux at the smARTlab"
           ></Image>
         ))}
       </ArtPageBlock>
