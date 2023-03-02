@@ -48,7 +48,7 @@ async function makeWritingPages({ actions, graphql, reporter }) {
 async function makeExperimentsPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
-      allDataJson(filter: {dir: {eq: "experiments"}}) {
+      allDataJson(filter: { dir: { eq: "experiments" } }) {
         edges {
           node {
             title
@@ -72,7 +72,7 @@ async function makeExperimentsPages({ actions, graphql, reporter }) {
   const groups = result.data.allDataJson.edges
 
   groups.forEach((group) => {
-    group.node.items.forEach((item => {
+    group.node.items.forEach((item) => {
       actions.createPage({
         path: `/experiments/${item.link}`,
         component: require.resolve(`./src/experiments/${item.link}`),
@@ -80,15 +80,14 @@ async function makeExperimentsPages({ actions, graphql, reporter }) {
           data: item
         }
       })
-    }
-    ))
+    })
   })
 }
 
 async function makeArtListingPage({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
-      allDataJson(filter: {dir: {eq: "art"}}) {
+      allDataJson(filter: { dir: { eq: "art" } }) {
         edges {
           node {
             title
@@ -128,7 +127,7 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
 async function makeGalleryPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
-      allMdx(filter: {fileAbsolutePath: {regex: "/content/art/"}}) {
+      allMdx(filter: { fileAbsolutePath: { regex: "/content/art/" } }) {
         nodes {
           slug
           frontmatter {

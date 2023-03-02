@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.husky",
     "\\src",
     "\\src\\components",
     "\\src\\components\\art-page-block",
@@ -8,6 +9,5 @@
     "\\src\\pages\\art",
     "\\src\\pages\\art\\moment"
   ],
-  "SelectedNode": "\\src\\pages\\art\\moment\\index.js",
   "PreviewInSolutionExplorer": false
 }

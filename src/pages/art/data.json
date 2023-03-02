@@ -7,12 +7,11 @@
         "title": "Moment",
         "link": "moment",
         "theme": "dark",
-        "description":
-          "New Media Public Sculpture<br><br>Awarded Installation for 2023 Rail Trail Lights presented by US Bank in Charlotte NC.<br><br>Building on the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
+        "description": "New Media Public Sculpture<br><br>Awarded Installation for 2023 Rail Trail Lights presented by US Bank in Charlotte NC.<br><br>Building on the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
         "ogDescription": "the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
         "ogImage": "moment-dall-e.jpeg",
         "ogAlt": "Large glowing computer tower, with sunset clouds behind it.",
-        "qrCode" : "",
+        "qrCode": "",
         "qrCodeLink": "",
         "images": []
       },
@@ -20,8 +19,7 @@
         "title": "Generative Fossils",
         "link": "",
         "theme": "",
-        "description":
-          "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.<br><br>A few lines of code, become vector points, xy plotter drawings, 3D prints, and augmented reality creatures. These each act as a container for the previous to dissolve the veil of reality.",
+        "description": "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.<br><br>A few lines of code, become vector points, xy plotter drawings, 3D prints, and augmented reality creatures. These each act as a container for the previous to dissolve the veil of reality.",
         "ogImage": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_pseudo-fossil.jpg",
         "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
         "qrCode": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_digital-fossil.jpeg",
@@ -35,15 +33,12 @@
         "title": "New Media Generative Works",
         "link": "new-media-generative-works",
         "theme": "dark",
-        "description":
-          "A collection of new media generative works that explore storytelling through the computational display of visual data and sound.",
+        "description": "A collection of new media generative works that explore storytelling through the computational display of visual data and sound.",
         "ogImage": "new-media-generative-works.jpg",
         "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
         "qrCode": "",
         "qrCodeLink": "",
-        "images": [
-          "new-media-generative-works.jpg"
-        ]
+        "images": ["new-media-generative-works.jpg"]
       }
     ]
   }

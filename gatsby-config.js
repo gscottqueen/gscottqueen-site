@@ -65,7 +65,7 @@ module.exports = {
       options: {
         host: 'https://www.gscottqueen.com',
         sitemap: 'https://www.gscottqueen.com/sitemap/sitemap-index.xml',
-        policy: [{userAgent: '*', allow: '/'}]
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
   ]

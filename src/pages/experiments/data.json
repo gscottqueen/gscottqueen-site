@@ -6,16 +6,14 @@
       {
         "title": "You",
         "link": "you",
-        "description":
-          "Socialized rendering of the observer, using trained models from the media pipe machine learning API.",
+        "description": "Socialized rendering of the observer, using trained models from the media pipe machine learning API.",
         "extlink": "https://github.com/gscottqueen/you/blob/main/src/Holistic.js",
         "ogImage": "you-social.png"
       },
       {
         "title": "Self",
         "link": "self",
-        "description":
-          "Presenting the observer to themselves occupying the same space at different times, using the web media API.",
+        "description": "Presenting the observer to themselves occupying the same space at different times, using the web media API.",
         "extlink": "https://github.com/gscottqueen/multiverse/blob/main/src/echo.js",
         "ogImage": "self-social.png"
       }
@@ -29,21 +27,21 @@
         "title": "Supra",
         "link": "supra",
         "description": "A sampling of wave frequencies included in generated bezier curves and written to paper with ink by an axis plotter.",
-        "extlink" : "",
+        "extlink": "",
         "ogImage": "supra.jpg"
       },
       {
         "title": "Singularity",
         "link": "singularity",
         "description": "Processing WEBGL with particle and sound environment.",
-        "extlink" : "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js",
+        "extlink": "https://github.com/gscottqueen/gscottqueen-site/blob/main/src/components/lazy/singularityP5.js",
         "ogImage": "singularity-social.png"
       },
       {
         "title": "Nemesis",
         "link": "nemesis",
         "description": "Simplex 4D noise, using a node based graphics network.",
-        "extlink" : "",
+        "extlink": "",
         "ogImage": ""
       }
     ]
@@ -56,7 +54,7 @@
         "title": "Using MidJourney AI to conceptualize sculptures",
         "link": "midjourney-ai-conceptual-rendering",
         "description": "Using MidJourney AI to conceptualize sculptures.",
-        "extlink" : "",
+        "extlink": "",
         "ogImage": "midjourney-ai-conceptual-rendering.png"
       }
     ]
