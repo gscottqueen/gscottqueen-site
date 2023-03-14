@@ -124,6 +124,56 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
   })
 }
 
+async function makeArtPages({ actions, graphql, reporter }) {
+  const result = await graphql(`
+    query {
+      allDataJson(filter: {dir: {eq: "art"}}) {
+        edges {
+          node {
+            items {
+              title
+              link
+              theme
+              description
+              ogImage
+              ogAlt
+              qrCode
+              qrCodeLink
+              images
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panic('failed to create posts ', result.errors)
+  }
+
+  const pages = result.data.allDataJson.edges
+
+  pages.forEach(page => {
+    const { node } = page
+
+    node.items.forEach(item =>
+    {
+      const component = `./src/pages/art/${item.link}/${item.link}`
+      const data = item
+      const slug = `/art/${item.link}`
+        actions.createPage({
+          path: slug,
+          component: require.resolve(component),
+          context: {
+            slug: { slug },
+            data: { data }
+          }
+        })
+    })
+  }
+    )
+  }
+
 async function makeGalleryPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
@@ -176,6 +226,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     makeWritingPages({ actions, graphql, reporter }),
     makeExperimentsPages({ actions, graphql, reporter }),
     makeArtListingPage({ actions, graphql, reporter }),
+    makeArtPages({ actions, graphql, reporter }),
     makeGalleryPages({ actions, graphql, reporter })
   ])
 }

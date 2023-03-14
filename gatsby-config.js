@@ -54,6 +54,13 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      name:'art-pages',
+      options: {
+        path: `${__dirname}/src/pages/art/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-plausible',
       options: {
         domain: 'gscottqueen.com'

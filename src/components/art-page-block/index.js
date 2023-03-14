@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Image } from '../../components'
 
 import './index.css'
 
@@ -36,11 +37,50 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     return <div className={handleClass}>{child}</div>
   }
 
-  const Gallery = ({ child }) => {
-    return <div className={handleClass}>{child}</div>
+  const Gallery = ({ content }) => {
+    console.log(content)
+
+    return (
+      <p>Gallery Template</p>
+      // content.images.map((i, images) => {
+
+      //   const {
+      //     galleryDescription,
+      //     galleryAffiliateLink,
+      //     galleryImages
+      //   } = images[i]
+
+      //   return (
+      //     <div className={handleClass} key={`gallery-${i}`}>
+      //     <h2 className="gallery-heading">Gallery</h2>
+      //       <p className="gallery-descritption">
+      //         <a
+      //           href={galleryAffiliateLink}
+      //           rel="noreferrer"
+      //           target="_blank"
+      //         >
+      //           {galleryDescription}
+      //         </a>
+      //       </p>
+      //       {galleryImages.map(
+      //         (image, i) =>
+      //           i < 4 && (
+      //             <Image
+      //               className="gallery-image"
+      //               src={image}
+      //               alt=""
+      //               key={image}
+      //               title={galleryDescription}
+      //             ></Image>
+      //           )
+      //       )}
+      //     </div>
+      //   )
+      // })
+    )
   }
 
-  const Block = ({ type }) => {
+  const Block = ({ type, content }) => {
     return type === 'title' ? (
       <Title title={title} />
     ) : type === 'intro' ? (
@@ -50,7 +90,7 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     ) : type === 'standard' ? (
       <Standard child={children} />
     ) : type === 'gallery' ? (
-      <Gallery child={children} />
+      <Gallery content={content} />
     ) : type === 'hero' ? (
       <Gallery child={children} />
     ) : (

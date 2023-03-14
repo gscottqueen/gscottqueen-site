@@ -1,0 +1,35 @@
+{
+    "title": "Moment",
+      "description":
+    "What is a moment? The word itself stands to be a nebulous description of everything and nothing at all, an indefinite interval of time. Moments can be fleeting, passing us by without notice. A moment can be recorded in history and celebrated for thousands of years. However, with all of its paradoxical descriptors, a moment will always be a precursor to what comes next.",
+      "ogImage": "moment-dall-e.jpeg",
+        "slug": "art/moment",
+          "hero": "moment-dall-e.jpeg",
+            "heroDescription":
+    "2023, New media public sculpture custom computer, animated and cast lighting, steel base, acrylic casing, 3D printed PLA, 48” x 48” x 108”.",
+      "images": [
+        {
+          "galleryDescription": "Image captured by Collin Mairena of Collins Camera",
+          "galleryAffiliateLink": "https://www.collinscamera.com/",
+          "galleryImages": [
+            "moment-detail-1.png",
+            "moment-detail-2.png",
+            "moment-detail-3.png",
+            "moment-detail-4.png"
+          ]
+        },
+        {
+          "galleryDescription": "Details from video captured by Ben Premeaux at the smARTlab",
+          "galleryAffiliateLink": "http://www.smartlab.tv/",
+          "galleryImages": [
+            "moment-detail-5.png",
+            "moment-detail-6.png",
+            "moment-detail-7.png",
+            "moment-detail-8.png",
+            "moment-detail-9.png",
+            "moment-detail-10.png",
+            "moment-detail-11.png"
+          ]
+        }
+      ]
+  }
