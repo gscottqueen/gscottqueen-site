@@ -13,7 +13,7 @@ import pageData from './data.json'
 
 const Moment = ({ pageContext }) => {
   const { data, slug } = pageContext
-  console.log(data.data, pageData)
+  // console.log(data.data, pageData)
 
   const { description, ogImage, theme, title } = data.data
 
@@ -40,14 +40,14 @@ const Moment = ({ pageContext }) => {
       <ArtPageBlock type="hero">
         <Image className="hero-image" src={pageData.hero} alt=""></Image>
         <div className="hero-description">
-          <div>
+          <p>
             <i>
               2023, New media public sculpture custom computer, animated and
               cast lighting, steel base, acrylic casing, 3D printed PLA, 48” x
               48” x 108”.
             </i>
-          </div>
-          <div>
+          </p>
+          <p>
             <i>
               Combining the final fabricated sculpture, with staged lighting,
               smoke machines, and the site specific details of our location, we
@@ -56,12 +56,10 @@ const Moment = ({ pageContext }) => {
               extend generative renderings that place “Moment” in an artificial
               scene built from visual models of our new context.
             </i>
-          </div>
+          </p>
         </div>
       </ArtPageBlock>
-      <ArtPageBlock type="intro">
-        <div dangerouslySetInnerHTML={{ __html: description }} />
-      </ArtPageBlock>
+      <ArtPageBlock type="intro" content={description}></ArtPageBlock>
       <ArtPageBlock type="gallery" content={pageData.images} />
       <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">

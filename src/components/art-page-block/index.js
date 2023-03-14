@@ -1,9 +1,9 @@
 import React from 'react'
-// import { Image } from '../../components'
+import { Image } from '../../components'
 
 import './index.css'
 
-const ArtPageBlock = ({ type, inverse, title, children }) => {
+const ArtPageBlock = ({ type, inverse, title, children, content }) => {
   const handleClass = inverse
     ? `art-block ${type} ${inverse && 'inverse'}`
     : `art-block ${type}`
@@ -16,8 +16,12 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     )
   }
 
-  const Intro = ({ child }) => {
-    return <div className={handleClass}>{child}</div>
+  const Intro = ({ description }) => {
+    return (
+      <div className={handleClass}>
+        <div dangerouslySetInnerHTML={{ __html: description }} />
+      </div>
+    )
   }
 
   const Video = ({ child }) => {
@@ -37,54 +41,47 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     return <div className={handleClass}>{child}</div>
   }
 
-  const Gallery = ({ content }) => {
-    console.log(content)
-
-    return (
-      <p>Gallery Template</p>
-      // content.images.map((i, images) => {
-
-      //   const {
-      //     galleryDescription,
-      //     galleryAffiliateLink,
-      //     galleryImages
-      //   } = images[i]
-
-      //   return (
-      //     <div className={handleClass} key={`gallery-${i}`}>
-      //     <h2 className="gallery-heading">Gallery</h2>
-      //       <p className="gallery-descritption">
-      //         <a
-      //           href={galleryAffiliateLink}
-      //           rel="noreferrer"
-      //           target="_blank"
-      //         >
-      //           {galleryDescription}
-      //         </a>
-      //       </p>
-      //       {galleryImages.map(
-      //         (image, i) =>
-      //           i < 4 && (
-      //             <Image
-      //               className="gallery-image"
-      //               src={image}
-      //               alt=""
-      //               key={image}
-      //               title={galleryDescription}
-      //             ></Image>
-      //           )
-      //       )}
-      //     </div>
-      //   )
-      // })
-    )
+  const Hero = ({ child }) => {
+    return <div className={handleClass}>{child}</div>
   }
 
-  const Block = ({ type, content }) => {
+  const Gallery = ({ content }) => {
+    // console.log(content)
+
+    return content.map((images) => {
+      console.log(images)
+      const { galleryDescription, galleryAffiliateLink, galleryImages } = images
+
+      return (
+        <div className={handleClass} key={`gallery-${galleryDescription}`}>
+          <h2 className="gallery-heading">Gallery</h2>
+          <p className="gallery-descritption">
+            <a href={galleryAffiliateLink} rel="noreferrer" target="_blank">
+              {galleryDescription}
+            </a>
+          </p>
+          {galleryImages.map(
+            (image, i) =>
+              i < 4 && (
+                <Image
+                  className="gallery-image"
+                  src={image}
+                  alt=""
+                  key={image}
+                  title={galleryDescription}
+                ></Image>
+              )
+          )}
+        </div>
+      )
+    })
+  }
+
+  const Block = ({ type, title, content }) => {
     return type === 'title' ? (
       <Title title={title} />
     ) : type === 'intro' ? (
-      <Intro child={children} />
+      <Intro content={content} />
     ) : type === 'video' ? (
       <Video child={children} />
     ) : type === 'standard' ? (
@@ -92,13 +89,13 @@ const ArtPageBlock = ({ type, inverse, title, children }) => {
     ) : type === 'gallery' ? (
       <Gallery content={content} />
     ) : type === 'hero' ? (
-      <Gallery child={children} />
+      <Hero child={children} />
     ) : (
       ''
     )
   }
 
-  return <Block type={type} />
+  return <Block type={type} title={title} content={content} />
 }
 
 export default ArtPageBlock
