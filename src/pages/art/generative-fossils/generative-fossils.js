@@ -14,9 +14,8 @@ import { w } from '../../../const'
 
 const GenerativeFossils = ({ pageContext }) => {
   const [isMobile, getDimension] = useState(false)
-
+  const [seoData, setSeoData] = useState({})
   const { data, slug } = pageContext
-  const { description, ogImage, theme, title } = data.data
 
   // TODO: convert this to hook
   const setMobile = () => {
@@ -24,12 +23,15 @@ const GenerativeFossils = ({ pageContext }) => {
   }
 
   useEffect(() => {
-    window.addEventListener('resize', setMobile)
+    w.addEventListener('resize', setMobile)
+    setSeoData(data.data)
 
     return () => {
-      window.removeEventListener('resize', setMobile)
+      w.removeEventListener('resize', setMobile)
     }
-  }, [isMobile])
+  }, [isMobile, seoData])
+
+  const { description, ogImage, theme, title } = seoData
 
   return (
     <Layout nonav>

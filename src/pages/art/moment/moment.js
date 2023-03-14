@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   ArtPageBlock,
   BackNavLink,
@@ -11,8 +11,14 @@ import {
 import pageData from './data.json'
 
 const Moment = ({ pageContext }) => {
+  const [seoData, setSeoData] = useState({})
   const { data, slug } = pageContext
-  const { description, ogImage, theme, title } = data.data
+
+  useEffect(() => {
+    setSeoData(data.data)
+  }, [seoData])
+
+  const { description, ogImage, theme, title } = seoData
 
   return (
     <Layout nonav>
