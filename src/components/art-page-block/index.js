@@ -3,7 +3,14 @@ import { Image } from '../../components'
 
 import './index.css'
 
-const ArtPageBlock = ({ type, inverse, title, children, content }) => {
+const ArtPageBlock = ({
+  type,
+  inverse,
+  title,
+  children,
+  content,
+  ...props
+}) => {
   const handleClass = inverse
     ? `art-block ${type} ${inverse && 'inverse'}`
     : `art-block ${type}`
@@ -37,11 +44,22 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     return <div className={handleClass}>{child}</div>
   }
 
-  const Hero = ({ child, content }) => {
+  const Hero = ({ child, content, ...props }) => {
+    const { alternate } = props
+    console.log(alternate)
     return (
       <div className={handleClass}>
-        <Image className="hero-image" src={content} alt=""></Image>
-        <div className="hero-description">{child}</div>
+        {alternate !== false ? (
+          <>
+            <Image className="hero-image" src={content} alt=""></Image>
+            <div className="hero-description">{child}</div>
+          </>
+        ) : (
+          <>
+            <div className="hero-description">{child}</div>
+            <Image className="hero-image" src={content} alt=""></Image>
+          </>
+        )}
       </div>
     )
   }
@@ -56,8 +74,6 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
             galleryAffiliateLink,
             galleryImages
           } = images
-
-          console.log(galleryImages)
 
           return (
             <>
@@ -82,7 +98,7 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     )
   }
 
-  const Block = ({ type, title, content }) => {
+  const Block = ({ type, title, content, ...props }) => {
     return type === 'title' ? (
       <Title title={title} />
     ) : type === 'intro' ? (
@@ -94,13 +110,13 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     ) : type === 'gallery' ? (
       <Gallery content={content} />
     ) : type === 'hero' ? (
-      <Hero child={children} content={content} />
+      <Hero child={children} content={content} {...props} />
     ) : (
       ''
     )
   }
 
-  return <Block type={type} title={title} content={content} />
+  return <Block type={type} title={title} content={content} {...props} />
 }
 
 export default ArtPageBlock

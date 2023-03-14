@@ -24,10 +24,10 @@ const Moment = ({ pageContext }) => {
       />
       <BackNavLink
         location="art"
-        inverse
+        inverse={theme === 'dark'}
         style={theme === 'dark' ? { backgroundColor: 'black' } : {}}
       />
-      <ArtPageBlock type="title" title={title} inverse />
+      <ArtPageBlock type="title" title={title} inverse={theme === 'dark'} />
       <ArtPageBlock type="video">
         <YoutubePlayer
           videoRef="https://www.youtube.com/embed/videoseries?list=PLzS1mIBFtkc9J9f818w5ctf8iprQZrs6b"
@@ -43,14 +43,12 @@ const Moment = ({ pageContext }) => {
           </i>
         </p>
         <p>
-          <i>
-            Combining the final fabricated sculpture, with staged lighting,
-            smoke machines, and the site specific details of our location, we
-            aimed to recreate the initial concept image prompted by MidJourney.
-            We then took this image into the DALL-E-2 AI server to extend
-            generative renderings that place “Moment” in an artificial scene
-            built from visual models of our new context.
-          </i>
+          Combining the final fabricated sculpture, with staged lighting, smoke
+          machines, and the site specific details of our location, we aimed to
+          recreate the initial concept image prompted by MidJourney. We then
+          took this image into the DALL-E-2 AI server to extend generative
+          renderings that place “Moment” in an artificial scene built from
+          visual models of our new context.
         </p>
       </ArtPageBlock>
       <ArtPageBlock type="intro">

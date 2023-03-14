@@ -1,0 +1,29 @@
+{
+  "qrCode": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_digital-fossil.jpeg",
+  "qrCodeLink": "https://bit.ly/3SSXcTJ",
+  "images": [
+    {
+      "galleryDescription": "Images captured by Collin Mairena of Collins Camera",
+      "galleryAffiliateLink": "https://www.collinscamera.com/",
+      "galleryImages": [
+        "moment-detail-1.png",
+        "moment-detail-2.png",
+        "moment-detail-3.png",
+        "moment-detail-4.png"
+      ]
+    },
+    {
+      "galleryDescription": "Details from video captured by Ben Premeaux at the smARTlab",
+      "galleryAffiliateLink": "http://www.smartlab.tv/",
+      "galleryImages": [
+        "moment-detail-5.png",
+        "moment-detail-6.png",
+        "moment-detail-7.png",
+        "moment-detail-8.png",
+        "moment-detail-9.png",
+        "moment-detail-10.png",
+        "moment-detail-11.png"
+      ]
+    }
+  ]
+}
