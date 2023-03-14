@@ -3,7 +3,6 @@ import {
   ArtPageBlock,
   BackNavLink,
   Layout,
-  Image,
   MailChimpDrop,
   Seo,
   SocialIcons,
@@ -13,8 +12,6 @@ import pageData from './data.json'
 
 const Moment = ({ pageContext }) => {
   const { data, slug } = pageContext
-  // console.log(data.data, pageData)
-
   const { description, ogImage, theme, title } = data.data
 
   return (
@@ -37,29 +34,48 @@ const Moment = ({ pageContext }) => {
           title="Moment Video Playlist"
         />
       </ArtPageBlock>
-      <ArtPageBlock type="hero">
-        <Image className="hero-image" src={pageData.hero} alt=""></Image>
-        <div className="hero-description">
-          <p>
-            <i>
-              2023, New media public sculpture custom computer, animated and
-              cast lighting, steel base, acrylic casing, 3D printed PLA, 48” x
-              48” x 108”.
-            </i>
-          </p>
-          <p>
-            <i>
-              Combining the final fabricated sculpture, with staged lighting,
-              smoke machines, and the site specific details of our location, we
-              aimed to recreate the initial concept image prompted by
-              MidJourney. We then took this image into the DALL-E-2 AI server to
-              extend generative renderings that place “Moment” in an artificial
-              scene built from visual models of our new context.
-            </i>
-          </p>
-        </div>
+      <ArtPageBlock type="hero" content={ogImage}>
+        <p>
+          <i>
+            2023, New media public sculpture custom computer, animated and cast
+            lighting, steel base, acrylic casing, 3D printed PLA, 48” x 48” x
+            108”.
+          </i>
+        </p>
+        <p>
+          <i>
+            Combining the final fabricated sculpture, with staged lighting,
+            smoke machines, and the site specific details of our location, we
+            aimed to recreate the initial concept image prompted by MidJourney.
+            We then took this image into the DALL-E-2 AI server to extend
+            generative renderings that place “Moment” in an artificial scene
+            built from visual models of our new context.
+          </i>
+        </p>
       </ArtPageBlock>
-      <ArtPageBlock type="intro" content={description}></ArtPageBlock>
+      <ArtPageBlock type="intro">
+        <p>
+          What is a moment? The word itself stands to be a nebulous description
+          of everything and nothing at all, an indefinite interval of time.
+          Moments can be fleeting, passing us by without notice. A moment can be
+          recorded in history and celebrated for thousands of years. However,
+          with all of its paradoxical descriptors, a moment will always be a
+          precursor to what comes next.
+        </p>
+        <p>
+          This work “Moment”, is a new media public sculpture that primarily
+          leverages the use of light to both explore the fluid meaning of a
+          moment and to define it through utility. The dimensional nature of
+          sculptural work is leveraged to present observers with a spectrum of
+          experiences. Light is displaced and refracted as it passes through the
+          sculptures&#39; prismed materials. From corner to corner it phases
+          between its natural state and an infinite reflection of itself,
+          redefined each time as a different color form. In opposition, light is
+          taken under full control by the artist through computation and
+          displayed in a specific sequence to provide the observer with a
+          visually-guided-micro-meditation.
+        </p>
+      </ArtPageBlock>
       <ArtPageBlock type="gallery" content={pageData.images} />
       <MailChimpDrop cta="Subscribe to get the drops!" />
       <ArtPageBlock type="standard">

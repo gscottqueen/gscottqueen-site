@@ -16,12 +16,8 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     )
   }
 
-  const Intro = ({ description }) => {
-    return (
-      <div className={handleClass}>
-        <div dangerouslySetInnerHTML={{ __html: description }} />
-      </div>
-    )
+  const Intro = ({ child }) => {
+    return <div className={handleClass}>{child}</div>
   }
 
   const Video = ({ child }) => {
@@ -41,28 +37,36 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     return <div className={handleClass}>{child}</div>
   }
 
-  const Hero = ({ child }) => {
-    return <div className={handleClass}>{child}</div>
+  const Hero = ({ child, content }) => {
+    return (
+      <div className={handleClass}>
+        <Image className="hero-image" src={content} alt=""></Image>
+        <div className="hero-description">{child}</div>
+      </div>
+    )
   }
 
-  const Gallery = ({ content }) => {
-    // console.log(content)
+  const Gallery = ({ i, content }) => {
+    return (
+      <div className={handleClass} key={`gallery-${i}`}>
+        <h2 className="gallery-heading">Gallery</h2>
+        {content.map((images) => {
+          const {
+            galleryDescription,
+            galleryAffiliateLink,
+            galleryImages
+          } = images
 
-    return content.map((images) => {
-      console.log(images)
-      const { galleryDescription, galleryAffiliateLink, galleryImages } = images
+          console.log(galleryImages)
 
-      return (
-        <div className={handleClass} key={`gallery-${galleryDescription}`}>
-          <h2 className="gallery-heading">Gallery</h2>
-          <p className="gallery-descritption">
-            <a href={galleryAffiliateLink} rel="noreferrer" target="_blank">
-              {galleryDescription}
-            </a>
-          </p>
-          {galleryImages.map(
-            (image, i) =>
-              i < 4 && (
+          return (
+            <>
+              <p className="gallery-descritption">
+                <a href={galleryAffiliateLink} rel="noreferrer" target="_blank">
+                  {galleryDescription}
+                </a>
+              </p>
+              {galleryImages.map((image) => (
                 <Image
                   className="gallery-image"
                   src={image}
@@ -70,18 +74,19 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
                   key={image}
                   title={galleryDescription}
                 ></Image>
-              )
-          )}
-        </div>
-      )
-    })
+              ))}
+            </>
+          )
+        })}
+      </div>
+    )
   }
 
   const Block = ({ type, title, content }) => {
     return type === 'title' ? (
       <Title title={title} />
     ) : type === 'intro' ? (
-      <Intro content={content} />
+      <Intro child={children} />
     ) : type === 'video' ? (
       <Video child={children} />
     ) : type === 'standard' ? (
@@ -89,7 +94,7 @@ const ArtPageBlock = ({ type, inverse, title, children, content }) => {
     ) : type === 'gallery' ? (
       <Gallery content={content} />
     ) : type === 'hero' ? (
-      <Hero child={children} />
+      <Hero child={children} content={content} />
     ) : (
       ''
     )

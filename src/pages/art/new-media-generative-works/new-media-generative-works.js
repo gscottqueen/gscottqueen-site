@@ -4,29 +4,33 @@ import {
   BackNavLink,
   Layout,
   Seo,
-  SocialIcons
+  SocialIcons,
+  YoutubePlayer
 } from '../../../components'
 
-const NewMediaGenerativeWorks = () => {
+const NewMediaGenerativeWorks = ({ pageContext }) => {
+  const { data, slug } = pageContext
+  const { description, ogImage, theme, title } = data.data
+
   return (
     <Layout nonav>
       <Seo
-        title="New Media Generative Works"
-        description="A collection of new media generative works that explore storytelling through the computational display of visual data and sound."
-        slug="new-media-generative-works"
-        // defaultImage={data.ogImage}
+        title={title}
+        description={description}
+        slug={slug}
+        defaultImage={ogImage}
       />
-      <BackNavLink location="art" />
+      <BackNavLink
+        location="art"
+        inverse
+        style={theme === 'dark' ? { backgroundColor: 'black' } : {}}
+      />
+      <ArtPageBlock type="title" title={title} inverse />
       <ArtPageBlock type="video">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/videoseries?list=PLzS1mIBFtkc9JAjhlVclUDEP5Q-trak79"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <YoutubePlayer
+          videoRef="https://www.youtube.com/embed/videoseries?list=PLzS1mIBFtkc9JAjhlVclUDEP5Q-trak79"
+          title="Generataive Art Gallery"
+        />
       </ArtPageBlock>
       <SocialIcons />
     </Layout>
