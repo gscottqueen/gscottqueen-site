@@ -96,7 +96,6 @@ async function makeArtListingPage({ actions, graphql, reporter }) {
               link
               theme
               ogImage
-              images
               title
               ogDescription
               ogAlt
@@ -139,7 +138,6 @@ async function makeArtPages({ actions, graphql, reporter }) {
               ogAlt
               qrCode
               qrCodeLink
-              images
             }
           }
         }

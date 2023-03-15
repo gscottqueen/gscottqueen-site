@@ -10,20 +10,15 @@
         "description": "New Media Public Sculpture<br><br>Awarded Installation for 2023 Rail Trail Lights presented by US Bank in Charlotte NC.<br><br>Building on the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
         "ogDescription": "the influence of a historical internet diagram, coupling AI with iterative design inputs that seek to provide a moment of clarity and reflection in an urban setting.",
         "ogImage": "moment-dall-e.jpeg",
-        "ogAlt": "Large glowing computer tower, with sunset clouds behind it.",
-        "images": []
+        "ogAlt": "Large glowing computer tower, with sunset clouds behind it."
       },
       {
         "title": "Generative Fossils",
         "link": "generative-fossils",
         "theme": "light",
         "description": "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.<br><br>A few lines of code, become vector points, xy plotter drawings, 3D prints, and augmented reality creatures. These each act as a container for the previous to dissolve the veil of reality.",
-        "ogImage": "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_pseudo-fossil.jpg",
-        "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
-        "images": [
-          "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_pseudo-fossil.jpg",
-          "generative-fossils/N2022.09.12-22.56.39/N2022.09.12-22.56.39_trace-fossil.jpg"
-        ]
+        "ogImage": "N2022.09.12-22.56.39_pseudo-fossil.jpg",
+        "ogAlt": "Crystal structure with fractured outcrop of 3d model."
       },
       {
         "title": "New Media Generative Works",
@@ -33,8 +28,7 @@
         "ogImage": "new-media-generative-works.jpg",
         "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
         "qrCode": "",
-        "qrCodeLink": "",
-        "images": []
+        "qrCodeLink": ""
       }
     ]
   }
