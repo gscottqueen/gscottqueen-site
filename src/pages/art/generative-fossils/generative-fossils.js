@@ -56,53 +56,49 @@ const GenerativeFossils = ({ pageContext }) => {
       <ArtPageBlock
         type="hero"
         content="generative-fossils-installed-flux-galleries.png"
+        description="View from latest installation of the Generative Fossils series"
       >
         <p>
-          Latest installation of the Generative Fossils series - a fusion of
-          code and art.
-        </p>
-        <p>
-          In a departure from our previous approach, we&#39;ve incorporated
-          stylized wall treatments with vinyl lettering that features snippets
-          of the algorithm used to create each artwork. From a few lines of
-          code, to xy plotter drawings, to 3D prints and AR digital sculptures,
-          this installation showcases the powerful union of art and technology.
-          An exposure to the conversation that explores the impact of
-          algorithmic environments on the human experience.
+          A fusion of code and art, this installation incorporates stylized wall
+          treatments with vinyl lettering that features snippets of the
+          algorithm used to create each artwork. From a few lines of code, to xy
+          plotter drawings, to 3D prints and AR digital sculptures, this
+          installation showcases the powerful union of art and technology. An
+          exposure to the conversation that explores the impact of algorithmic
+          environments on the human experience.
         </p>
       </ArtPageBlock>
       <ArtPageBlock
         type="hero"
         content="artist-with-trace-fossil-drawings.jpeg"
         alternate={isMobile}
+        portrait
+        description="2023, Ink on paper, 42&#34; x 68&#34;, photo of artist holding drawings."
       >
-        <p>
-          <i>2023, Ink on paper, 42&#34; x 68&#34;</i>
-        </p>
         <p>
           The drawings themselves are a sampling of wave frequencies included in
           generated bezier curves and written to paper with ink by an axis
           plotter.
         </p>
       </ArtPageBlock>
-      <ArtPageBlock type="hero" content={ogImage}>
+      <ArtPageBlock
+        type="hero"
+        content={ogImage}
+        description="2023, 3D printed RGB Silk PLA, Pseudo Fossil, 6&#34; x 4&#34; x 8&#34;"
+      >
         <p>
-          <i>2023, 3D printed PLA, Pseudo Fossil, 6” x 4” x 8”</i>
-        </p>
-        <p>
-          The vector points generated from plotter drawings are converted to
-          generative models. These are used to create objects that represent
-          historical artifacts of imaginary creatures from virtual worlds.
+          The vector points generated from the original plotter drawings are
+          converted to generative models inside an open form software. These are
+          used to create objects that represent what the historical artifacts of
+          imaginary creatures from virtual worlds might look like.
         </p>
       </ArtPageBlock>
       <ArtPageBlock
         type="hero"
         content="generative-fossils-as-ar-creature.png"
         alternate={isMobile}
+        description="2023, Digital Sculpture in augmented reality (AR)"
       >
-        <p>
-          <i>2023, Digital Sculpture in augmented reality (AR)</i>
-        </p>
         <p>
           The generative models are brought back to life using code once more to
           animate the sculpture in a kinetic representation of creature like

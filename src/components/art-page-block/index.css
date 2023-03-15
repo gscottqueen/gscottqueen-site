@@ -26,6 +26,25 @@
 
 .art-block.hero .hero-image {
   margin-bottom: 20px;
+  max-height: 800px;
+}
+
+.art-block.hero .hero-image.portrait {
+  max-height: initial;
+}
+
+.art-block.hero .hero-image-wrapper {
+  position: relative;
+}
+
+.art-block.hero .hero-image-description {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  right: -20px;
+  bottom: 0;
 }
 
 .art-block.hero .hero-description {
@@ -62,6 +81,7 @@
 
   .art-block.hero {
     display: flex;
+    justify-content: space-between;
     margin-top: 200px;
     max-width: 2400px;
   }

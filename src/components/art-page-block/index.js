@@ -45,19 +45,32 @@ const ArtPageBlock = ({
   }
 
   const Hero = ({ child, content, ...props }) => {
-    const { alternate } = props
-    console.log(alternate)
+    const { alternate, portrait, description } = props
+    const handleImageClass = portrait
+      ? `hero-image ${type} ${portrait && 'portrait'}`
+      : `hero-image ${type}`
+
     return (
       <div className={handleClass}>
         {alternate !== false ? (
           <>
-            <Image className="hero-image" src={content} alt=""></Image>
+            <div className="hero-image-wrapper">
+              <Image className={handleImageClass} src={content} alt="" />
+              <div className="hero-image-description">
+                <i>{description}</i>
+              </div>
+            </div>
             <div className="hero-description">{child}</div>
           </>
         ) : (
           <>
             <div className="hero-description">{child}</div>
-            <Image className="hero-image" src={content} alt=""></Image>
+            <div className="hero-image-wrapper">
+              <Image className={handleImageClass} src={content} alt="" />
+              <div className="hero-image-description">
+                <i>{description}</i>
+              </div>
+            </div>
           </>
         )}
       </div>
