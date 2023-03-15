@@ -59,6 +59,8 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     nodeObj.length > 0 &&
     `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
 
+  const removeString = (string) => string.replace(/(<([^>]+)>)/ig, '')
+
   return (
     <Helmet
       defer={false}
@@ -69,7 +71,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
       meta={[
         {
           name: 'description',
-          content: metaDescription
+          content: removeString(metaDescription)
         },
         {
           itemprop: 'name',
@@ -77,7 +79,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         },
         {
           itemprop: 'description',
-          content: metaDescription
+          content: removeString(metaDescription)
         },
         {
           itemprop: 'image',
@@ -101,7 +103,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         },
         {
           property: 'og:description',
-          content: metaDescription
+          content: removeString(metaDescription)
         },
         {
           name: 'twitter:card',
@@ -121,7 +123,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
         },
         {
           name: 'twitter:description',
-          content: metaDescription
+          content: removeString(metaDescription)
         },
         {
           name: 'twitter:image',
