@@ -43,7 +43,7 @@
   margin-top: 60px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   h1.listing-heading {
     position: absolute;
     right: 60px;
@@ -52,7 +52,7 @@
 
   .latest-block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
   }
 
