@@ -25,7 +25,7 @@
 }
 
 .art-block.hero .hero-image {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   max-height: 800px;
 }
 
@@ -128,5 +128,14 @@
     position: absolute;
     right: 60px;
     top: 0;
+  }
+
+  .art-block.quote {
+    padding: 20px;
+    border: 20px solid red;
+  }
+
+  .art-block.hero .hero-image {
+    margin-bottom: 20px;
   }
 }
