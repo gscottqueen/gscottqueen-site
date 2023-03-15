@@ -40,14 +40,11 @@ const Moment = ({ pageContext }) => {
           title="Moment Video Playlist"
         />
       </ArtPageBlock>
-      <ArtPageBlock type="hero" content={ogImage}>
-        <p>
-          <i>
-            2023, New media public sculpture custom computer, animated and cast
-            lighting, steel base, acrylic casing, 3D printed PLA, 48” x 48” x
-            108”.
-          </i>
-        </p>
+      <ArtPageBlock
+        type="hero"
+        content={ogImage}
+        description="2023, New media public sculpture custom computer, animated and cast lighting, steel base, acrylic casing, 3D printed PLA, 48&#34; x 48&#34; x 108&#34;"
+      >
         <p>
           Combining the final fabricated sculpture, with staged lighting, smoke
           machines, and the site specific details of our location, we aimed to
