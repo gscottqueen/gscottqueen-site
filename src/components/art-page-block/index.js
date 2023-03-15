@@ -44,19 +44,35 @@ const ArtPageBlock = ({
     return <div className={handleClass}>{child}</div>
   }
 
+  const Quote = ({ content }) => {
+    return (
+      <div className={handleClass}>
+        <p dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
+    )
+  }
+
   const Hero = ({ child, content, ...props }) => {
-    const { alternate, portrait, description } = props
+    const { alternate, portrait, description, gif } = props
     const handleImageClass = portrait
       ? `hero-image ${type} ${portrait && 'portrait'}`
       : `hero-image ${type}`
+    const handleImageDescriptionClass =
+      alternate === false
+        ? 'hero-image-description alternate'
+        : 'hero-image-description'
 
     return (
       <div className={handleClass}>
         {alternate !== false ? (
           <>
             <div className="hero-image-wrapper">
-              <Image className={handleImageClass} src={content} alt="" />
-              <div className="hero-image-description">
+              {gif === undefined ? (
+                <Image className={handleImageClass} src={content} alt="" />
+              ) : (
+                <img className={handleImageClass} src={gif} alt="" />
+              )}
+              <div className={handleImageDescriptionClass}>
                 <i>{description}</i>
               </div>
             </div>
@@ -66,8 +82,12 @@ const ArtPageBlock = ({
           <>
             <div className="hero-description">{child}</div>
             <div className="hero-image-wrapper">
-              <Image className={handleImageClass} src={content} alt="" />
-              <div className="hero-image-description">
+              {gif === undefined ? (
+                <Image className={handleImageClass} src={content} alt="" />
+              ) : (
+                <img className={handleImageClass} src={gif} alt="" />
+              )}
+              <div className={handleImageDescriptionClass}>
                 <i>{description}</i>
               </div>
             </div>
@@ -124,6 +144,8 @@ const ArtPageBlock = ({
       <Gallery content={content} />
     ) : type === 'hero' ? (
       <Hero child={children} content={content} {...props} />
+    ) : type === 'quote' ? (
+      <Quote content={content} {...props} />
     ) : (
       ''
     )

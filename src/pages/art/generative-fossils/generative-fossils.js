@@ -11,6 +11,7 @@ import {
 } from '../../../components'
 import pageData from './data.json'
 import { w } from '../../../const'
+import GIF from '../../../gifs/generativeFossil.gif'
 
 const GenerativeFossils = ({ pageContext }) => {
   const [isMobile, getDimension] = useState(false)
@@ -53,6 +54,7 @@ const GenerativeFossils = ({ pageContext }) => {
           title="Generataive Fossils Process"
         />
       </ArtPageBlock>
+      <ArtPageBlock type="quote" content={description} inverse />
       <ArtPageBlock
         type="hero"
         content="generative-fossils-installed-flux-galleries.png"
@@ -61,11 +63,10 @@ const GenerativeFossils = ({ pageContext }) => {
         <p>
           A fusion of code and art, this installation incorporates stylized wall
           treatments with vinyl lettering that features snippets of the
-          algorithm used to create each artwork. From a few lines of code, to xy
-          plotter drawings, to 3D prints and AR digital sculptures, this
-          installation showcases the powerful union of art and technology. An
-          exposure to the conversation that explores the impact of algorithmic
-          environments on the human experience.
+          algorithm used to create each artwork. This display presents the
+          powerful union of art and technology. An exposure to the conversation
+          that explores the impact of algorithmic environments on the human
+          experience.
         </p>
       </ArtPageBlock>
       <ArtPageBlock
@@ -95,8 +96,9 @@ const GenerativeFossils = ({ pageContext }) => {
       </ArtPageBlock>
       <ArtPageBlock
         type="hero"
-        content="generative-fossils-as-ar-creature.png"
+        gif={GIF}
         alternate={isMobile}
+        portrait
         description="2023, Digital Sculpture in augmented reality (AR)"
       >
         <p>

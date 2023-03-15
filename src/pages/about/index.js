@@ -72,9 +72,10 @@ const IndexAbout = () => (
       </ul>
       <ul className="about-list">
         <h2>Exhibitions</h2>
+        <li>V-Art, Flux Galleries, Group Exhibition, 2023</li>
         <li>
           Rail Trail Lights presented by US Bank, Public Exhibition, US Bank
-          Center City Partners, Comming 2023
+          Center City Partners, 2023
         </li>
         <li>
           Nature & Technology, Honorable Mention, Virtual Exhibition, Visionary
