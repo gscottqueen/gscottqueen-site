@@ -153,20 +153,20 @@ async function makeArtPages({ actions, graphql, reporter }) {
 
   const pages = result.data.allDataJson.edges
 
-  pages.forEach(page => {
-    const { node } = page
+  pages.forEach(pg => {
+    const { node } = pg
 
     node.items.forEach(item =>
     {
-      const component = `./src/pages/art/${item.link}/${item.link}`
+      const component = `./src/art-pages/${item.link}/${item.link}`
       const data = item
       const slug = `/art/${item.link}`
-        actions.createPage({
+      actions.createPage({
           path: slug,
           component: require.resolve(component),
           context: {
-            slug: { slug },
-            data: { data }
+            slug: slug,
+            data: data
           }
         })
     })

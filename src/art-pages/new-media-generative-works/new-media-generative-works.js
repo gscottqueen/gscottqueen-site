@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
   ArtPageBlock,
   BackNavLink,
@@ -6,17 +6,11 @@ import {
   Seo,
   SocialIcons,
   YoutubePlayer
-} from '../../../components'
+} from '../../components'
 
 const NewMediaGenerativeWorks = ({ pageContext }) => {
-  const [seoData, setSeoData] = useState({})
   const { data, slug } = pageContext
-
-  useEffect(() => {
-    setSeoData(data.data)
-  }, [seoData])
-
-  const { description, ogImage, theme, title } = seoData
+  const { description, ogImage, theme, title } = data
 
   return (
     <Layout nonav>

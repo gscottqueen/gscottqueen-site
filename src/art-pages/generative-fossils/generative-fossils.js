@@ -8,15 +8,15 @@ import {
   Seo,
   SocialIcons,
   YoutubePlayer
-} from '../../../components'
+} from '../../components'
 import pageData from './data.json'
-import { w } from '../../../const'
-import GIF from '../../../gifs/generativeFossil.gif'
+import { w } from '../../const'
+import GIF from '../../gifs/generativeFossil.gif'
 
 const GenerativeFossils = ({ pageContext }) => {
   const [isMobile, getDimension] = useState(false)
-  const [seoData, setSeoData] = useState({})
   const { data, slug } = pageContext
+  const { description, ogImage, theme, title } = data
 
   // TODO: convert this to hook
   const setMobile = () => {
@@ -25,14 +25,11 @@ const GenerativeFossils = ({ pageContext }) => {
 
   useEffect(() => {
     w.addEventListener('resize', setMobile)
-    setSeoData(data.data)
 
     return () => {
       w.removeEventListener('resize', setMobile)
     }
-  }, [isMobile, seoData])
-
-  const { description, ogImage, theme, title } = seoData
+  }, [isMobile])
 
   return (
     <Layout nonav>
