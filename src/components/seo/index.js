@@ -116,7 +116,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
           content: defaultTitle
         },
         {
-          name: 'twitter:text:title',
+          name: 'twitter:title',
           content: defaultTitle
         },
         {
