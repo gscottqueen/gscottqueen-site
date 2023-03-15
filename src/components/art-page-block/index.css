@@ -63,7 +63,7 @@
 }
 
 .art-block.quote {
-  padding: 170px 40px 170px 170px;
+  padding: 170px 20px 170px 80px;
   font-size: 24px;
   text-align: left;
   position: relative;
@@ -131,8 +131,7 @@
   }
 
   .art-block.quote {
-    padding: 20px;
-    border: 20px solid red;
+    padding: 170px 40px 170px 170px;
   }
 
   .art-block.hero .hero-image {
