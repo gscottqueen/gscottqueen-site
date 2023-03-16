@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.husky",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\art-page-block",
+    "\\src\\images",
     "\\src\\pages",
     "\\src\\pages\\art",
-    "\\src\\pages\\art\\moment"
+    "\\src\\templates"
   ],
   "PreviewInSolutionExplorer": false
 }
