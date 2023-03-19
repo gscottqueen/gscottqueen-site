@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\images",
-    "\\src\\pages",
-    "\\src\\pages\\art",
-    "\\src\\templates"
+    "\\src\\art-pages",
+    "\\src\\art-pages\\generative-fossils",
+    "\\src\\art-pages\\new-media-generative-works",
+    "\\src\\images"
   ],
   "PreviewInSolutionExplorer": false
 }

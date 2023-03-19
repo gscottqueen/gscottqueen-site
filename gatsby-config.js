@@ -13,20 +13,6 @@ module.exports = {
     siteUrl: 'https://gscottqueen.com'
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [
-          'G-E14HPFEZYB'
-        ],
-        gtagConfig: {
-          anonymize_ip: true
-        },
-        pluginConfig: {
-          head: true
-        }
-      }
-    },
     'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',

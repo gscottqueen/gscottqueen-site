@@ -59,7 +59,7 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     nodeObj.length > 0 &&
     `${site.siteMetadata.baseUrl}${nodeObj[0].node.path}`
 
-  const removeString = (string) => string.replace(/(<([^>]+)>)/ig, '')
+  const removeString = (string) => string.replace(/(<([^>]+)>)/gi, '')
 
   return (
     <Helmet
@@ -155,7 +155,20 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
             'https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap'
         }
       ]}
-    />
+    >
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-E14HPFEZYB"
+      ></script>
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E14HPFEZYB');
+        `}
+      </script>
+    </Helmet>
   )
 }
 
