@@ -158,14 +158,14 @@ function Seo({ description, lang, meta, title, defaultImage, slug }) {
     >
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-E14HPFEZYB"
+        src="https://www.googletagmanager.com/gtag/js?id=G-41Z8N3T53N"
       ></script>
       <script>
         {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-E14HPFEZYB');
+        gtag('config', 'G-41Z8N3T53N');
         `}
       </script>
     </Helmet>
