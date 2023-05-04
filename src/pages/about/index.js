@@ -24,13 +24,11 @@ const IndexAbout = () => (
       />
       <div>
         <h2>About</h2>
-        <p>
-          G. Scott Queen is an emerging research and conceptual artist who takes
-          a technologist approach to creating physical and virtual works of art,
-          engaging with new media and observer interaction for expressive
-          purposes. His installations leverage generative and cybernetic
-          programming, AI, custom computers, extended reality (AR, VR,
-          Omniverse), interactive audio, video, and lighting.
+        <p>G. Scott Queen is an emerging research and conceptual artist who approaches the creation of physical and virtual works of art with a technologist&#39;s perspective. He employs new media and observer interaction to achieve expressive goals, utilizing generative and cybernetic programming, AI, custom computers, extended reality (AR, VR, Omniverse), interactive audio, video, and lighting in his installations.
+        </p>
+        <p>The artist intentionally breaks away from traditional art-making tools in order to disrupt the commonality of historical works and provide a fresh perspective for public interaction. Each installation draws from theoretical research and writings, environmental data, open-source machine intelligence, and direct human touch to create ephemeral streams of data that coalesce into transformative physical and virtual works using new media techniques.
+        </p>
+        <p>Queen&#39;s studio practice is built on his nearly decade-long software development experience, a degree in studio art, and several successful public works projects. His recent presentation of a multimedia experience at the 2023 Rail Trail Lights in Uptown Charlotte, as well as his inclusion in the Arts and Science Council (ASC) public artist directory, showcase his ability to envision and present innovative works of art.
         </p>
       </div>
       <div>
