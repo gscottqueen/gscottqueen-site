@@ -45,18 +45,5 @@
         "ogImage": ""
       }
     ]
-  },
-  {
-    "dir": "experiments",
-    "title": "Artificial Intelligence (AI)",
-    "items": [
-      {
-        "title": "Using MidJourney AI to conceptualize sculptures",
-        "link": "midjourney-ai-conceptual-rendering",
-        "description": "Using MidJourney AI to conceptualize sculptures.",
-        "extlink": "",
-        "ogImage": "midjourney-ai-conceptual-rendering.png"
-      }
-    ]
   }
 ]
