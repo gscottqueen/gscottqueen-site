@@ -35,6 +35,10 @@ const IndexAbout = () => (
         <ul className="about-list">
           <h2>Honors and Public Arts Awards</h2>
           <li>
+            Public Art Incubator, Arts and Science Council Charlotte,
+            NC, 2023
+          </li>
+          <li>
             Rail Trail Lights Award, Public works displayed in uptown Charlotte,
             NC, 2023
           </li>
@@ -111,6 +115,10 @@ const IndexAbout = () => (
       </ul>
       <ul className="about-list">
         <h2>Education</h2>
+        <li>
+          Professional Certification - XR (Extended Reality) Development,
+          New York University, 2023
+        </li>
         <li>
           Post-Bachelor&#39;s Studies, MicroMaster - Integrated Digital Media,
           New York University, Current
