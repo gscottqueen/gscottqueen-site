@@ -118,7 +118,7 @@ const GenerativeFossils = ({ pageContext }) => {
           </div>
         )}
       </ArtPageBlock>
-      <MailChimpDrop cta="Subscribe to get the drops!" />
+      <MailChimpDrop cta="Subscribe" />
       <SocialIcons />
     </Layout>
   )

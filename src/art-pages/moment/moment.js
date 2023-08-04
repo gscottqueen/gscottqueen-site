@@ -73,7 +73,7 @@ const Moment = ({ pageContext }) => {
         </p>
       </ArtPageBlock>
       <ArtPageBlock type="gallery" content={pageData.images} />
-      <MailChimpDrop cta="Subscribe to get the drops!" />
+      <MailChimpDrop cta="Subscribe" />
       <ArtPageBlock type="standard">
         <p>
           Charlotte City Center Partners commissioned “Moment” as part of the
