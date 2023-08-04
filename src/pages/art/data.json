@@ -4,6 +4,15 @@
     "title": "New Works",
     "items": [
       {
+        "title": "Integrating Human Data in Virtual Environments",
+        "link": "human-data-in-virtual-environments",
+        "theme": "light",
+        "description": "Brainware + New Media XR<br><br>An exploration of experimental generative art works that integrates EEG with extended reality.",
+        "ogDescription": "Brainware + New Media XR<br><br>An exploration of experimental generative art works that integrates EEG with extended reality.",
+        "ogImage": "eeg.png",
+        "ogAlt": "Artist wearing EEG headset."
+      },
+      {
         "title": "Moment",
         "link": "moment",
         "theme": "dark",
