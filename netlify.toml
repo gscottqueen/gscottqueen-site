@@ -21,3 +21,9 @@
   [headers.values]
     Content-Encoding = "br"
     Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/Build/*.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Content-Type = "application/javascript"
