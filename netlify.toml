@@ -23,7 +23,8 @@
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/Build/*.gz"
+  for = "/Build/*.js.gz"
   [headers.values]
     Content-Encoding = "gzip"
-    Content-Type = "application/javascript"
+    Accept-Encoding = "gzip"
+    Content-Type = "application/gzip"
