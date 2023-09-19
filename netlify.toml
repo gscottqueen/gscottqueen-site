@@ -27,4 +27,4 @@
   [headers.values]
     Content-Encoding = "gzip"
     Accept-Encoding = "gzip"
-    Content-Type = "application/gzip"
+    Content-Type = "application/javascript"
