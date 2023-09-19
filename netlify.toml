@@ -11,4 +11,11 @@
     Accept-Encoding = "gzip"
     Content-Type = "application/gzip"
 
+[[headers]]
+  for = "/**/*.gz"
+  [headers.values]
+    Content-Encoding = "gzip"
+    Accept-Encoding = "gzip"
+    Content-Type = "application/gzip"
+
 
