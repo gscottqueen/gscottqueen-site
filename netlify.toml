@@ -5,21 +5,20 @@
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/**/*.js.gz"
+  for = "/Build/*.js.gz"
   [headers.values]
     Content-Encoding = "gzip"
     Accept-Encoding = "gzip, deflate, br"
     Content-Type = "application/gzip"
 
 [[headers]]
-  for = "/**/*.js.gz"
+  for = "/Build/*.js.gz"
   [headers.values]
-    Content-Encoding = "gzip"
     Accept-Encoding = "gzip, deflate, br"
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/**/*.gz"
+  for = "/Build/*.gz"
   [headers.values]
     Content-Encoding = "gzip"
     Accept-Encoding = "gzip, deflate, br"
