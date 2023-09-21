@@ -22,8 +22,8 @@ const IndexArchives = ({ pageContext }) => {
         <h1 className="listing-heading">Interactive Digital (XR/3D)</h1>
         <ArtPageBlock type="video">
           <YoutubePlayer
-            videoRef="https://www.youtube.com/embed/videoseries?list=PLzS1mIBFtkc8wrAY1Ns1YgO3vksmNYgTD"
-            title="Generataive Fossils Process"
+            videoRef="https://www.youtube.com/embed/RTOczfzl2NU?si=4YW0o1hvjbV036f2"
+            title="Interactive Digital Reel"
           />
         </ArtPageBlock>
         {data.data.map((item, i) => {
