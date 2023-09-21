@@ -172,6 +172,50 @@ async function makeArtPages({ actions, graphql, reporter }) {
     )
   }
 
+async function makeInteractiveDigitalListingPage({ actions, graphql, reporter }) {
+  const result = await graphql(`
+    query {
+      allDataJson(filter: { dir: { eq: "interactive-digital" } }) {
+        edges {
+          node {
+            title
+            items {
+              description
+              details {
+                col1
+                col2
+              }
+              link
+              theme
+              ogImage
+              title
+              ogDescription
+              ogAlt
+              qrCode
+              qrCodeLink
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(result)
+  if (result.errors) {
+    reporter.panic('failed to create posts ', result.errors)
+  }
+
+  const groups = result.data.allDataJson.edges
+
+  actions.createPage({
+    path: '/interactive-digital',
+    component: require.resolve('./src/pages/interactive-digital/interactive-digital-listing'),
+    context: {
+      data: groups[0].node.items
+    }
+  })
+}
+
 async function makeGalleryPages({ actions, graphql, reporter }) {
   const result = await graphql(`
     query {
@@ -225,6 +269,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     makeExperimentsPages({ actions, graphql, reporter }),
     makeArtListingPage({ actions, graphql, reporter }),
     makeArtPages({ actions, graphql, reporter }),
+    makeInteractiveDigitalListingPage({ actions, graphql, reporter }),
     makeGalleryPages({ actions, graphql, reporter })
   ])
 }

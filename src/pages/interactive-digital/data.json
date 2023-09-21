@@ -1,0 +1,173 @@
+[
+  {
+    "dir": "interactive-digital",
+    "title": "Interactive Digital, XR + 3D modeling",
+    "items": [
+      {
+        "title": "Integrating Human Data in Virtual Environments",
+        "link": "https://github.com/gscottqueen/emotiv-bci-hdrp-vr",
+        "theme": "light",
+        "description": "Brainware + New Media XR<br><br>An exploration of experimental generative art works that integrates EEG with extended reality.",
+        "details": [
+          {
+            "col1": "Experience",
+            "col2": "VR"
+          },
+          {
+            "col1": "Engine",
+            "col2": "Unity"
+          },
+          {
+            "col1": "Pipeline",
+            "col2": "HDRP"
+          },
+          {
+            "col1": "Hardware",
+            "col2": "Emotive BCI, Oculus"
+          },
+          {
+            "col1": "Features",
+            "col2": "Hand tracking, Animation, Interactables, User Interface"
+          },
+          {
+            "col1": "Type",
+            "col2": "Experimental"
+          }
+        ],
+        "ogDescription": "Brainware + New Media XR<br><br>An exploration of experimental generative art works that integrates EEG with extended reality.",
+        "ogImage": "eeg.png",
+        "ogAlt": "Artist wearing EEG headset."
+      },
+      {
+        "title": "Generative Fossils",
+        "link": "/art/generative-fossils",
+        "theme": "dark",
+        "description": "A new series using generative models to create historical artifacts of imaginary creatures from virtual worlds.<br><br>A few lines of code, become vector points, xy plotter drawings, 3D prints, and augmented reality creatures. These each act as a container for the previous to dissolve the veil of reality.",
+        "details": [
+          {
+            "col1": "Experience",
+            "col2": "AR"
+          },
+          {
+            "col1": "Engine",
+            "col2": "Spark AR"
+          },
+          {
+            "col1": "3D Software",
+            "col2": "Blender"
+          },
+          {
+            "col1": "Hardware",
+            "col2": "Mobile"
+          },
+          {
+            "col1": "Features",
+            "col2": "Real World Object, Tap to Place, Pinch to scale"
+          },
+          {
+            "col1": "Type",
+            "col2": "Instagram Filter"
+          }
+        ],
+        "ogImage": "N2022.09.12-22.56.39_pseudo-fossil.jpg",
+        "ogAlt": "Crystal structure with fractured outcrop of 3d model."
+      },
+      {
+        "title": "New Media Generative Works",
+        "link": "/art/new-media-generative-works",
+        "theme": "light",
+        "description": "A collection of new media generative works that explore storytelling through the computational display of visual data and sound.",
+        "details": [
+          {
+            "col1": "Experience",
+            "col2": "Web"
+          },
+          {
+            "col1": "Software",
+            "col2": "P5.js, Blender"
+          },
+          {
+            "col1": "Platform",
+            "col2": "Web, WebGL"
+          },
+          {
+            "col1": "Features",
+            "col2": "Node, Procedural Generation"
+          },
+          {
+            "col1": "Type",
+            "col2": "Creative Code"
+          }
+        ],
+        "ogImage": "new-media-generative-works.jpg",
+        "ogAlt": "Crystal structure with fractured outcrop of 3d model.",
+        "qrCode": "",
+        "qrCodeLink": ""
+      },
+      {
+        "title": "Roll-A-Ball",
+        "link": "/unity/unity-roll-a-ball-surface-tracking/",
+        "theme": "dark",
+        "description": "Classic Roll-A-Ball exercise with gravity.",
+        "details": [
+          {
+            "col1": "Experience",
+            "col2": "Gameplay"
+          },
+          {
+            "col1": "Engine",
+            "col2": "Unity"
+          },
+          {
+            "col1": "Platform",
+            "col2": "Web, WebGL"
+          },
+          {
+            "col1": "Features",
+            "col2": "Surface Tracking, Camera Follow, Player Control, AI audio"
+          },
+          {
+            "col1": "Type",
+            "col2": "Coding Exercise"
+          }
+        ],
+        "ogImage": "roll-a-ball.png",
+        "ogAlt": "Synth-wave planet with rolling ball on horizon.",
+        "qrCode": "",
+        "qrCodeLink": ""
+      },
+      {
+        "title": "Dark Mirror",
+        "link": "/unity/unity-dark-mirror/",
+        "theme": "light",
+        "description": "Exploration of particle systems to create different visual effects.",
+        "details": [
+          {
+            "col1": "Experience",
+            "col2": "Gameplay"
+          },
+          {
+            "col1": "Engine",
+            "col2": "Unity"
+          },
+          {
+            "col1": "Platform",
+            "col2": "Web, WebGL"
+          },
+          {
+            "col1": "Features",
+            "col2": "Particle Systems, Spatial Audio, Ray Tracing, Colliders"
+          },
+          {
+            "col1": "Type",
+            "col2": "Coding Exercise"
+          }
+        ],
+        "ogImage": "dark-mirror.png",
+        "ogAlt": "Synth-wave planet with rolling ball on horizon.",
+        "qrCode": "",
+        "qrCodeLink": ""
+      }
+    ]
+  }
+]
