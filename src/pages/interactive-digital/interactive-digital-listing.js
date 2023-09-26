@@ -27,7 +27,7 @@ const IndexArchives = ({ pageContext }) => {
           />
         </ArtPageBlock>
         {data.data.map((item, i) => {
-          console.log(item)
+          // console.log(item)
           return (
             <div
               className={`latest-block ${item.theme}`}
@@ -87,13 +87,13 @@ const IndexArchives = ({ pageContext }) => {
     <Layout>
       {data && (
         <Seo
-          title="Art"
-          slug="art"
+          title="interactive-digital"
+          slug="interactive-digital"
           defaultImage={data[0].ogImage}
-          description={`Queen's latest work "${data[0].title}" explores ${data[0].ogDescription}`}
+          description="As a versatile professional, I am skilled in a range of areas, including Virtual Reality, Augmented Reality, Projection Mapping, Visual Albums, Creative Code, Web Development, Generative Drawings, 3D printing, Public Art, Art Fabrication, 3D Modeling, CADD, and Data Visualization."
         />
       )}
-      <ListingTemplate title="Art">
+      <ListingTemplate title="Interactive Digital">
         {data && <IndexListingComponent data={data} />}
         <div className="art-listing-links">
           Follow progress on <Link to={'/experiments'}>experiments</Link>, or
