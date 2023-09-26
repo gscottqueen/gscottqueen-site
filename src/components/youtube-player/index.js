@@ -26,10 +26,6 @@ const YoutubePlayer = ({ title, videoRef, ...props }) => {
       ? computedStyle['margin-top'].match(/(\d+)/)[1]
       : 0
 
-    console.log(backLinkNavElementHeight)
-    console.log(headingElementHeight)
-    console.log(Number(`${marginElementHeight}`))
-
     // get calculation
     const calculatedHeight =
       backLinkNavElementHeight +
