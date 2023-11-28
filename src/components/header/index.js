@@ -7,9 +7,11 @@ const Header = () => (
   <header>
     <div className="tape">
       <div>
-        <h1>
-          <a href="/">G. Scott Queen</a>
-        </h1>
+        <div>
+          <a href="/" className="h1">
+            G. Scott Queen
+          </a>
+        </div>
         <nav>
           <span>
             <span>
