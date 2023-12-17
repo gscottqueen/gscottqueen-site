@@ -200,7 +200,6 @@ async function makeInteractiveDigitalListingPage({ actions, graphql, reporter })
     }
   `)
 
-  console.log(result)
   if (result.errors) {
     reporter.panic('failed to create posts ', result.errors)
   }
