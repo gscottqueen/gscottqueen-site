@@ -26,11 +26,6 @@ const IndexPage = () => {
             </span>
           </h2>
         </Link>
-        <div className="embossing-tape">
-          <span>
-            <span>New Works Summer 2023</span>
-          </span>
-        </div>
       </div>
       <RegenButton anchor />
     </Layout>
