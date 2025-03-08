@@ -1,4 +1,4 @@
-import React from 'react'
+8import React from 'react'
 
 import { Layout, Seo, SocialIcons, Image } from '../../components'
 
@@ -67,82 +67,10 @@ const IndexAbout = () => (
         <li>Technology</li>
         <li>Cybernetics</li>
         <li>Artificial Synesthesia</li>
-        <li>Generative Works</li>
+        <li>Generative AI</li>
         <li>Brain Network Interfaces</li>
         <li>3D Printing</li>
         <li>Extended Reality (AR, VR, Omniverse)</li>
-      </ul>
-      <ul className="about-list">
-        <h2>Exhibitions</h2>
-        <li>V-Art, Flux Galleries, Group Exhibition, 2023</li>
-        <li>
-          Rail Trail Lights presented by US Bank, Public Exhibition, US Bank
-          Center City Partners, 2023
-        </li>
-        <li>
-          Nature & Technology, Honorable Mention, Virtual Exhibition, Visionary
-          Art Collective, 2022
-        </li>
-        <li>Augmented Reality, Charlotte Art League, Group Exhibition, 2022</li>
-        <li>
-          No Boundaries International Art Colony, Resident Exhibition, 2013
-        </li>
-        <li>NODA Studio Tours, North Davidson Art Association, 2013</li>
-        <li>
-          No Boundaries International Art Colony, Resident Exhibition, 2012
-        </li>
-        <li>State of the Art, Cameron Museum of Art, Group Exhibition, 2012</li>
-        <li>Pedestrian Public Art Exhibition, City of Wilmington, 2012</li>
-        <li>
-          Undergraduate Exhibition, University of North Carolina at Charlotte,
-          2012
-        </li>
-        <li>Larger than Life, Thrive Studios, 2011</li>
-        <li>Define Surrealism, Thrive Studios, 2011</li>
-        <li>Miniatures Show, Thrive Studios, 2011</li>
-        <li>Live Painting, Multiple Installations, 2011-2012</li>
-        <li>
-          Electro Sensory Stimulus (ESS) Multimedia Installation, Multiple
-          installations, 2011-2012
-        </li>
-        <li>
-          No Boundaries International Art Colony, Resident Exhibition, 2011
-        </li>
-        <li>
-          Student Art Exhibition, Cape Fear Community College, First Place
-          Painting, 2010
-        </li>
-      </ul>
-      <ul className="about-list">
-        <h2>Education</h2>
-        <li>
-          Professional Certification - XR (Extended Reality) Development,
-          New York University, 2023
-        </li>
-        <li>
-          Post-Bachelor&#39;s Studies, MicroMaster - Integrated Digital Media,
-          New York University, Current
-        </li>
-        <li>
-          Post-Bachelor&#39;s Studies, Aesthetics and Applied Ethics, University
-          of North Carolina at Charlotte, 2014
-        </li>
-        <li>
-          Bachelor&#39;s, Studio Art and Design, University of North Carolina
-          Wilmington, 2012
-        </li>
-      </ul>
-      <ul className="about-list">
-        <h2>Certifications</h2>
-        <li>
-          AR/VR Development and 3D graphics, New York University Tandon School
-          of Engineering, 2022-Current
-        </li>
-        <li>Creative Code, New York University, 2022</li>
-        <li>SCRUM Master, Scrum Alliance, 2016</li>
-        <li>Project Management Professional (PMP), TIA, 2016</li>
-        <li>Project Management Certification, Wake Forest University, 2015</li>
-        <li>Business Essentials Certification, Wake Forest University, 2015</li>
       </ul>
     </div>
     <cite>Front page image credit: Alex Gibbs</cite>
