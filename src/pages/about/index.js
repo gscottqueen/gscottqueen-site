@@ -72,7 +72,6 @@ const IndexAbout = () => (
         <li>3D Printing</li>
         <li>Extended Reality (AR, VR, Omniverse)</li>
       </ul>
-    </div>
     <cite>Front page image credit: Alex Gibbs</cite>
     <SocialIcons />
   </Layout>
