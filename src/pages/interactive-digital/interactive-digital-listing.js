@@ -20,14 +20,13 @@ const IndexArchives = ({ pageContext }) => {
     return (
       <div>
         <h1 className="listing-heading">Interactive Digital (XR/3D)</h1>
-        // <ArtPageBlock type="video">
-        //   <YoutubePlayer
-        //     videoRef="https://www.youtube.com/embed/RTOczfzl2NU?si=4YW0o1hvjbV036f2"
-        //     title="Interactive Digital Reel"
-        //   />
-        // </ArtPageBlock>
+        <ArtPageBlock type="video">
+          <YoutubePlayer
+            videoRef="https://www.youtube.com/embed/RTOczfzl2NU?si=4YW0o1hvjbV036f2"
+            title="Interactive Digital Reel"
+          />
+        </ArtPageBlock>
         {data.data.map((item, i) => {
-          // console.log(item)
           return (
             <div
               className={`latest-block ${item.theme}`}
